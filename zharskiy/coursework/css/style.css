@@ -1,0 +1,149 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #607D8B;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h4 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 30px;
+}
+header {
+    display: inline-block;
+    width: 100%;
+    background: url(../images/banner.jpg) no-repeat top center;
+    background-size: cover;
+}
+.before_header {
+    background-color: rgba(24, 30, 55, 0.85);
+}
+.header {
+    padding: 150px 270px 150px 80px;
+}
+.btn {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 20px 80px;
+    outline: none;
+}
+.btn:hover {
+    transition: 0.5s;
+    border: none;
+    color: #5ca4e8;
+    border: 1px solid #5ca4e8;
+    cursor: pointer;
+}
+.btn:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.first, 
+.second, 
+.third,
+.fifth {
+    display: flex;
+}
+.before_aliquam, 
+.before_tempus, 
+.before_magna, 
+.before_ipsum, 
+.before_consequat, 
+.before_etiam {
+    display: inline-block;
+    background-size: cover;
+}
+.before_aliquam {
+    width: 40%;
+    background: url(../images/pic01.jpg) no-repeat top center;
+}
+.aliquam {
+    background-color: rgba(30, 199, 255, 0.85);
+}
+.aliquam,
+.tempus,
+.magna,
+.ipsum,
+.consequat,
+.etiam {
+    transition: 0.5s;
+}
+.aliquam:hover,
+.tempus:hover,
+.magna:hover,
+.ipsum:hover,
+.consequat:hover,
+.etiam:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+.before_tempus {
+    width: 60%;
+    background: url(../images/pic02.jpg) no-repeat center center;   
+}
+.tempus {
+    background-color: rgba(125, 117, 178, 0.85);
+}
+.before_magna {
+    width: 60%;
+    background: url(../images/pic03.jpg) no-repeat top center;
+}
+.magna {
+    background-color: rgba(209, 127, 119, 0.85);
+}
+.before_ipsum {
+    width: 40%;
+    background: url(../images/pic04.jpg) no-repeat top center;
+}
+.ipsum {
+    background-color: rgba(213, 150, 90, 0.85);
+}
+.before_consequat {
+    width: 40%;
+    background: url(../images/pic05.jpg) no-repeat top center;
+}
+.consequat {
+    background-color: rgba(126, 151, 207, 0.85);
+}
+.before_etiam {
+    width: 60%;
+    background: url(../images/pic06.jpg) no-repeat top center;
+}
+.etiam {
+    background-color: rgba(104, 165, 138, 0.85)
+}
+.inside {
+    padding: 120px 270px 120px 80px;
+}
+.fourth {
+    display: inline-block;
+    background-color: #2a2f4a;
+    padding: 50px 270px 50px 80px;
+}
+/* ФОРМА!
+.form, 
+.email, 
+.phone, 
+.address {
+    display: inline-block;
+    border: 1px solid;
+}
+.form {
+    width: 60%;
+    height: 600px;
+}
+.phone, 
+.email, 
+.address {
+    widows: 40%;
+    height: 200px;
+} */
