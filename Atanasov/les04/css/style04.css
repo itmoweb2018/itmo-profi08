@@ -1,0 +1,31 @@
+div ul ul li {
+    color: red;
+}
+div div p a {
+    color: red;
+}
+
+/*
+.divRed {
+    color: red;
+}
+*/
+
+ul ~ a {
+    color: red;
+}
+
+/*
+div > ul {
+    color: red;
+}*/
+
+/*
+div + div {
+    color: red;
+}
+*/
+
+span {
+    color: red;
+}
