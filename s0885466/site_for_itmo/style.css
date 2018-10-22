@@ -23,10 +23,13 @@ body {
     text-transform: uppercase;
     font-size: 0.4em;
     font-weight: bold;
-
-
-
 }
+
+.menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 li:nth-last-child(n+4) {
     border-bottom: 1px solid aliceblue;
