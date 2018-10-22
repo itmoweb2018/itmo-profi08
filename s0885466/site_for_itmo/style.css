@@ -25,6 +25,17 @@ body {
     font-weight: bold;
 }
 
+.menu li:hover{
+    //color: red;
+    background: rgba(255,255,255,0.2);
+}
+
+.menu li:hover{
+//color: red;
+    background: rgba(255,255,255,0.2);
+}
+
+
 .menu li a{
     text-decoration: none;
     color: inherit;
@@ -45,6 +56,12 @@ li:nth-last-child(2) {
     color: #282250;
     margin: 10px 0px;
 }
+
+li:nth-last-child(2):hover{
+background:aliceblue;
+}
+
+
 
 .menu {
     background-color: rgba(29, 19, 69, 0.7);
