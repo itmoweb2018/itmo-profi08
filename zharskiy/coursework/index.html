@@ -5,20 +5,22 @@
     <title>My name is Maxim</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="script/script.js"></script>
 </head>
 <body>
     <header>
         <div class="before_header">
             <div class="header">
-                <div class="menu">
+                <div class="menu_btn">
+                    <a href="#" class="menu_btn-open" id="menu_btn-open">
+                        <span></span>
+                    </a>
                 </div>
-                <div class="text_header">
-                    <h1>Hi, my name is Maxim</h1>
-                    <hr>
-                    <h4>A responsive site template designed by htmls up<br>
-                        and released under the creative commons.</h4>
-                    <button class="btn">Get started</button>
-                </div>
+                <h1>Hi, my name is Maxim</h1>
+                <hr>
+                <h4>A responsive site template designed by htmls up<br>
+                    and released under the creative commons.</h4>
+                <button class="btn">Get started</button>     
             </div>
         </div>
     </header>
@@ -90,26 +92,54 @@
         </div>
         <button class="btn">Get started</button>
     </section>
-    <!-- ФОРМА!
-        <section class="fifth">
-        <div class="form">
-            <form method="POST" action="#">
-                <span class="formtext">Name</span><br>
-                <input type="text" name="name">
-            </form>
-        </div>
+    <section class="fifth">
+    <div class="form">
+        <form method="POST" action="#">
+            <fieldset>
+                <div class="name">
+                    <span>Name</span><br>
+                    <input type="text" name="name">
+                </div>
+                <div class="email_form">
+                    <span>Password</span><br>
+                    <input type="email" name="email">
+                </div>
+            </fieldset>
+            <div class="message">
+                <span>Message</span><br>
+                <input type="textarea" name="message">
+            </div>
+        </form>
+    </div>
+    <div class="epa">
         <div class="email">
-            Email<br>
-            awdwadwad@mail.ru
+            <span>Email</span><br>
+            <p></p><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
         </div>
         <div class="phone">
-            Phone<br>
-            7879134719846
+            <span>Phone</span><br>
+            <p><a href="+79999999999">8 (999) 999-99-99</a></p>
         </div>
         <div class="address">
-            Address<br>
-            awdawdawdkdajwiodjwoijd
+            <span>Address</span><br>
+            <p>Somewhere in Saint.P</p>
         </div>
-    </section> -->
+    </div>
+    </section> 
+
+    <div id="overlay" class="overlay">
+        <div class="modal_menu">
+            <div class="modal_menu-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Landing</a></li>
+                    <li><a href="#">Generic</a></li>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+                <button class="btn_get">Get started</button>
+                <button class="btn_log">Log in</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
