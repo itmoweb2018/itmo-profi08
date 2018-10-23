@@ -19,7 +19,10 @@ h3 {
     font-size: 30px;
 }
 h4 {
+    font-size: 14px;
     text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0.15em;
 }
 .first, 
 .second, 
@@ -76,13 +79,17 @@ header {
 .menu_btn-open span::after {
     transform: translateY(6px);
 }
+.under_line {
+    position: relative;
+    margin-top: 20px;
+}
 .btn {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
     border: 1px solid #fff;
     background-color: transparent;
-    padding: 20px 80px;
+    padding: 15px 80px;
     outline: none;
 }
 .btn:hover {
@@ -94,6 +101,11 @@ header {
 .btn:active {
     background-color: rgba(255, 255, 255, 0.10);
 }
+.btn_top {
+    position: absolute;
+    top: 0;
+    left: 480px;
+}
 /* 1st, 2nd, 3rd */
 .before_aliquam, 
 .before_tempus, 
@@ -103,13 +115,6 @@ header {
 .before_etiam {
     display: inline-block;
     background-size: cover;
-}
-.before_aliquam {
-    width: 40%;
-    background: url(../images/pic01.jpg) no-repeat top center;
-}
-.aliquam {
-    background-color: rgba(30, 199, 255, 0.85);
 }
 .aliquam,
 .tempus,
@@ -127,6 +132,13 @@ header {
 .etiam:hover {
     background-color: transparent;
     cursor: pointer;
+}
+.before_aliquam {
+    width: 40%;
+    background: url(../images/pic01.jpg) no-repeat top center;
+}
+.aliquam {
+    background-color: rgba(30, 199, 255, 0.85);
 }
 .before_tempus {
     width: 60%;
