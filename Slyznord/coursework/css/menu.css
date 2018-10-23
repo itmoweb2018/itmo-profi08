@@ -69,7 +69,8 @@
 	}
 
 	.logo {
-		width: 20%;
+		min-width: 20%;
+		max-width: 30%;
 	}
 
 	.forty {
@@ -163,6 +164,7 @@
 		height: 80vh;
 		max-height: 85vh;
 		background-image: url(../img/bg/banner.jpg);
+		background-attachment: fixed;
 		background-size: cover;
 		position: relative;
 		left: 0;

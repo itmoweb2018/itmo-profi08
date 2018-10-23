@@ -7,8 +7,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/body.css">
-	<link rel="stylesheet" type="text/css" href="css/landing.css">
+	<link rel="stylesheet" type="text/css" href="css/generic.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -18,11 +17,11 @@
 	<!-- JS and Fraemwork -->
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/menuAnim.js"></script>
-	<script type="text/javascript" src="js/animScroll.js"></script>
+	<script type="text/javascript" src="js/animScrollGeneric.js"></script>
 </head>
 <body>
 <!-- MENU AND LINK IN HEAD -->
-<menu class="navig">
+<menu class="navig" style="background: rgba(42,47,74,1);">
 	<div class="logo"><a href="#" class="fortyLink"><span class="forty">FORTY</span><span class="none">BY HTML5 UP</span></a></div>
 	<div class="menuBtn" id="Btn">
 		<div class="middleLine"></div>
@@ -34,83 +33,26 @@
 	<div class="menuContainer">
 		<a href="#" class="link">HOME</a>
 		<a href="#" class="link">LANDING</a>
-		<a href="generic.html" class="link">GENERIC</a>
+		<a href="#" class="link">GENERIC</a>
 		<a href="#" class="link" style="border: none;">ELEMENTS</a>
 		<a href="#" class="log" id="active">GET STARTED</a>
 		<a href="#" class="log">LOG IN</a>
 	</div>
 </div>
-<!-- END -->
 
-<!-- HEADER SECTION -->
-<section class="header">
-	<div class="header-headline">
-		<h2>Hi, my name if Forty</h2>
-	</div>
-	<div class="header-container">
-		<div class="header-text">
-			<p>
-				A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP AND RELASED UNDER THE CREATIVE COMMONS.
-			</p>
-		</div>
-		<div class="header-button">
-			<a class="hh" href="#body">GET STARTED<i class="fas fa-arrow-right"></i></a>
-		</div>
-	</div>
+<section class="content">
+	<h1>Generic</h1>
+	<div class="contentImg"></div>
+	<p>
+		Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
+	</p>
+	<p>
+		Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+	</p>
 </section>
-
-<!-- BODY SECTION -->
-<section class="body" id="body">
-	<div class="imgBox" id="one" style="background: url(img/bg/pic01.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Aliquam</h2>
-			<p>IPSUM DOLOR SIT AMET</p>
-		</div>
-	</div>
-	<div class="imgBox" id="two" style="background: url(img/bg/pic02.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Tempus</h2>
-			<p>FEUGIAT AMET TEMPUS</p>
-		</div>
-	</div>
-	<div class="imgBox" id="tree" style="background: url(img/bg/pic03.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Magna</h2>
-			<p>LOREM ETIAM NULLAM</p>
-		</div>
-	</div>
-	<div class="imgBox" id="four" style="background: url(img/bg/pic04.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Ipsum</h2>
-			<p>NISL SED ALIQUAM</p>
-		</div>
-	</div>
-	<div class="imgBox" id="five" style="background: url(img/bg/pic05.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Consequat</h2>
-			<p>IPSUM DOLOR SIT AMET</p>
-		</div>
-	</div>
-	<div class="imgBox" id="six" style="background: url(img/bg/pic06.jpg); background-size: cover;">
-		<div class="bodyHeadline">
-			<h2>Etiam</h2>
-			<p>FEUGIAT AMET TEMPUS</p>
-		</div>
-	</div>
-</section>
-
-<section class="landing">
-	<div class="landingContainer">
-		<h1>Massa libero</h1>
-		<p>
-			Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
-		</p>
-		<div class="header-button" style="margin: 0;">
-			<a class="hh" href="#body">GET STARTED<i class="fas fa-arrow-right"></i></a>
-		</div>
-	</div>
-</section>
-
 <section class="feedback">
 	<form>
 		<div class="form">
