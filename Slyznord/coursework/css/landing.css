@@ -1,0 +1,123 @@
+@media screen and (min-width: 840px) {
+	.landing {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-height: 45vh;
+		max-height: 60vh;
+		background: rgba(42,47,74,1);
+	}
+
+	.landingContainer {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: 4% 0 4% 0;
+	}
+
+	.myBtn {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 18%;
+		min-height: 6vh;
+		max-height: 8vh;
+		border: 2px solid #fff;
+		cursor: pointer;
+		transition: .5s ease-in-out;
+	}
+
+	.myBtn a {
+
+		text-decoration: none;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 500;
+		font-size: 0.9em;
+		letter-spacing: 0.2em;
+		cursor: pointer;
+		transition: .5s ease-in-out;
+	}
+
+	.myBtn:hover, a:hover { color: #9bf1ff; border-color: #9bf1ff; }
+
+	.landing h1 { font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 2em; color: #fff; padding: 0.6em 0; border-bottom: 2px solid #fff; width: 19%; }
+	.landing p { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1em; color: #fff; margin: 4% auto; }	
+}
+
+/*TABLET*/
+@media screen and (min-width: 700px) and (max-width: 840px) {
+	.landing {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-height: 45vh;
+		max-height: 60vh;
+		background: rgba(42,47,74,1);
+	}
+
+	.landingContainer {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: 4% 0 4% 0;
+	}
+
+	.myBtn {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 18%;
+		min-height: 6vh;
+		max-height: 8vh;
+		border: 2px solid #fff;
+		cursor: pointer;
+		transition: .5s ease-in-out;
+	}
+
+	.myBtn a {
+
+		text-decoration: none;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 500;
+		font-size: 0.9em;
+		letter-spacing: 0.2em;
+		cursor: pointer;
+		transition: .5s ease-in-out;
+	}
+
+	.myBtn:hover, a:hover { color: #9bf1ff; border-color: #9bf1ff; }
+
+	.landing h1 { font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 2em; color: #fff; padding: 0.6em 0; border-bottom: 2px solid #fff; width: 30%; }
+	.landing p { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1em; color: #fff; margin: 4% auto; }		
+}
+
+/*PHONES AND TABLET*/
+@media screen and (max-width: 700px) {
+	.landing {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		min-height: 45vh;
+		max-height: 60vh;
+		background: rgba(42,47,74,1);
+	}
+
+	.landingContainer {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: 6% auto;
+	}
+
+	.myBtn:hover, a:hover { color: #9bf1ff; border-color: #9bf1ff; }
+
+	.landing h1 { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1.3em; color: #fff; padding: 0.6em 0; border-bottom: 2px solid #fff; width: 40%; max-width: 45%; }
+	.landing p { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 0.8em; color: #fff; margin: 4% auto; letter-spacing: 0.1em; }		
+}
