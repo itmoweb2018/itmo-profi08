@@ -50,7 +50,8 @@ header {
     top: 10px;
     right: 20px;
 }
-.menu_btn-open {
+.menu_btn-open,
+.menu_btn-close {
     position: relative;
     display: block;
     width: 50px;
@@ -59,7 +60,9 @@ header {
 }
 .menu_btn-open span,
 .menu_btn-open span::before,
-.menu_btn-open span::after {
+.menu_btn-open span::after,
+.menu_btn-close span::before,
+.menu_btn-close span::after {
     position: absolute;
     top: 50%;
     margin-top: -1.5px;
@@ -70,14 +73,33 @@ header {
     background-color: #fff;
 }
 .menu_btn-open span::before,
-.menu_btn-open span::after {
+.menu_btn-open span::after,
+.menu_btn-close span::before,
+.menu_btn-close span::after {
     content: "";
 }
-.menu_btn-open span::before {
+.menu_btn-open span::before,
+.menu_btn-close span::before {
     transform: translateY(-6px);
 }
-.menu_btn-open span::after {
+.menu_btn-open span::after,
+.menu_btn-close span::after {
     transform: translateY(6px);
+}
+.menu_btn-close span::before {
+    transform: rotate(45deg);
+}
+.menu_btn-close span::after {
+    transform: rotate(-45deg);
+}
+#hover1.hover1,
+#hover1.hover1::before,
+#hover1.hover1::after {
+    background-color: #5ca4e8;
+}
+#hover2.hover2::before,
+#hover2.hover2::after {
+    background-color: #5ca4e8;
 }
 .under_line {
     position: relative;

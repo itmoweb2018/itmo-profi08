@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <script src="script/script.js"></script>
 </head>
 <body>
     <header>
         <div class="before_header">
             <div class="header">
-                <div class="menu_btn">
+                <div class="menu_btn" id="menu_btn">
                     <a href="#" class="menu_btn-open" id="menu_btn-open">
-                        <span></span>
+                        <span id="hover1"></span>
                     </a>
                 </div>
                 <h1>Hi, my name is Forty</h1>
@@ -132,6 +131,11 @@
 
     <div id="overlay" class="overlay">
         <div class="modal_menu">
+            <div class="menu_btn" id="menu_btn">
+                <a href="#" class="menu_btn-close" id="menu_btn-close">
+                    <span id="hover2"></span>
+                </a>
+            </div>
             <div class="modal_menu-content">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -144,5 +148,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
