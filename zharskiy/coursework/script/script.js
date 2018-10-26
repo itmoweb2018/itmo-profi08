@@ -5,6 +5,13 @@ document.getElementById("menu_btn-close").addEventListener("click",function(){
     document.getElementById("overlay").classList.remove("show")
 })
 
+document.getElementById("menu_btn-open").addEventListener("click",function(){
+    document.getElementById("blur-bg").classList.add("blur-bg")
+})
+document.getElementById("menu_btn-close").addEventListener("click",function(){
+    document.getElementById("blur-bg").classList.remove("blur-bg")
+})
+
 var open = document.getElementById("menu_btn-open")
 open.onmouseover = function(){
     document.getElementById("hover1").classList.toggle("hover1")
