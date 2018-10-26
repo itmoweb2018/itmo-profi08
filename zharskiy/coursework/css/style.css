@@ -6,7 +6,6 @@ body {
     background-color: #2a2f4a;
     color: #fff;
     margin: 0;
-    padding: 0;
 }
 a {
     text-decoration: none;
@@ -39,7 +38,7 @@ header {
     background-attachment: fixed;
 }
 .before_header {
-    background-color: rgba(24, 30, 55, 0.85);
+    background-color: rgba(24, 30, 55, 0.90);
     background-attachment: fixed;
 }
 .header {
@@ -113,9 +112,9 @@ header {
     background-color: transparent;
     padding: 15px 80px;
     outline: none;
+    transition: 0.5s;
 }
 .btn:hover {
-    transition: 0.5s;
     color: #5ca4e8;
     border: 1px solid #5ca4e8;
     cursor: pointer;
@@ -152,7 +151,7 @@ header {
 .ipsum:hover,
 .consequat:hover,
 .etiam:hover {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 .before_aliquam {
@@ -207,21 +206,125 @@ header {
 }
 /* 5th; Form */
 .form, 
-.email, 
-.phone, 
-.address {
+.epa {
     display: inline-block;
 }
 .form {
     background-color: #242943;
     border-right: 3px solid #2a2f4a;
+    border-bottom: 3px solid #2a2f4a;
     width: 60%;
-    height: 400px;
+    height: 500px;
     padding: 40px 80px;
 }
 .epa {
     width: 40%;
-    height: 400px;
+    height: 500px;
+    border-bottom: 3px solid #2a2f4a;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.name,
+.email_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.name {
+    width: 50%;
+}
+.email_form {
+    width: 50%;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.name input,
+.email_form input {
+    width: 90%;
+    height: 40px;
+}
+.message textarea {
+    width: 95%;
+    height: 180px;
+}
+.name input,
+.email_form input,
+.message textarea {
+    display: block;
+    background-color: #2a2f4a;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 1em;
+}
+.name input:focus,
+.email_form input:focus,
+.message textarea:focus {
+    outline-offset: -2px;
+    outline-color: #5ca4e8;
+}
+.name label,
+.email_form label {
+    padding-bottom: 20px
+}
+.message label {
+    padding: 20px 0;
+}
+.name label,
+.email_form label,
+.message label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+#submit,
+#reset {
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.5s;
+}
+#submit {
+    color: #242943;
+    text-transform: uppercase;
+    background-color: #fff;
+    margin: 40px 20px 0 0;
+    padding: 15px 50px;
+}
+#submit:hover {
+    background-color: #5ca4e8;
+    border: 1px solid #5ca4e8;
+    cursor: pointer;
+}
+#submit:active {
+    background-color: #307ec7;
+    border: 1px solid #307ec7;
+}
+#reset {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 30px;
+    margin: 40px 0 0 0;
+}
+#reset:hover {
+    color: #5ca4e8;
+    border: 1px solid #5ca4e8;
+    cursor: pointer;
+}
+#reset:active {
+    background-color: rgba(255, 255, 255, 0.10);
 }
 .epa span {
     font-weight: bold;
@@ -243,6 +346,55 @@ header {
     background-color: #242943;
     padding: 40px 50px;
     width: 100%;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #242943;
+}
+.footer {
+    padding: 80px 80px;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+}
+.footer .links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.footer a i {
+    color: #242943;
+    font-size: 1.1em;
+}
+.signature ul {
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+}
+.signature ul li {
+    margin-right: 20px;
+    font-size: 13px;
+    color: #434f63;
+}
+.signature ul li a {
+    color: #434f63;
+}
+.signature ul li+li {
+    border-left: 1px solid #434f63;
+    padding-left: 20px;
 }
 /* Modal window */
 .overlay {
@@ -283,9 +435,9 @@ header {
     padding: 10px 0;
     width: 320px;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 .modal_menu li a:hover {
-    transition: 0.5s;
     color: #5ca4e8;
 }
 .modal_menu li a:active {
@@ -303,13 +455,13 @@ header {
     padding: 15px 0;
     outline: none;
     margin-top: 20px;
+    transition: 0.5s;
 }
 .btn_get {
     color: #242943;
     background-color: #fff;
 }
 .btn_get:hover {
-    transition: 0.5s;
     background-color: #5ca4e8;
     border: 1px solid #5ca4e8;
     cursor: pointer;
@@ -322,7 +474,6 @@ header {
     background-color: transparent;
 }
 .btn_log:hover {
-    transition: 0.5s;
     color: #5ca4e8;
     border: 1px solid #5ca4e8;
     cursor: pointer;

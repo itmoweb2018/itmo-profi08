@@ -26,7 +26,7 @@
             </div>
         </div>
     </header>
-    <section class="first">
+    <section class="first" id="first">
         <div class="before_aliquam">
             <div class="aliquam">
                 <div class="inside">
@@ -95,39 +95,57 @@
         <button class="btn">Get started <i class="fas fa-long-arrow-alt-right"></i></button>
     </section>
     <section class="fifth">
-    <div class="form">
-        <form method="POST" action="#">
-            <fieldset>
+        <div class="form">
+            <form method="POST" action="#">
                 <div class="name">
-                    <span>Name</span><br>
-                    <input type="text" name="name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="email_form">
-                    <span>Password</span><br>
-                    <input type="email" name="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
                 </div>
-            </fieldset>
-            <div class="message">
-                <span>Message</span><br>
-                <input type="textarea" name="message">
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button type="submit" id="submit">Send message</button>
+                <button type="reset" id="reset">Clear</button>
+            </form>
+        </div>
+        <div class="epa">
+            <div class="email">
+                <span>Email</span><br>
+                <p><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
             </div>
-        </form>
-    </div>
-    <div class="epa">
-        <div class="email">
-            <span>Email</span><br>
-            <p></p><a href="mailto:mail@mail.ru">mail@mail.ru</a></p>
+            <div class="phone">
+                <span>Phone</span><br>
+                <p><a href="+79999999999">8 (999) 999-99-99</a></p>
+            </div>
+            <div class="address">
+                <span>Address</span><br>
+                <p>Somewhere in Saint.P</p>
+            </div>
         </div>
-        <div class="phone">
-            <span>Phone</span><br>
-            <p><a href="+79999999999">8 (999) 999-99-99</a></p>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="signature">
+                <ul>
+                    <li>© Untitled</li>
+                    <li>Design: <a href="#">HTML5 UP</a></li>
+                    <li>Demo Images: <a href="#">Unsplash</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="address">
-            <span>Address</span><br>
-            <p>Somewhere in Saint.P</p>
-        </div>
-    </div>
-    </section> 
+    </footer>
 
     <div id="overlay" class="overlay">
         <div class="modal_menu">
