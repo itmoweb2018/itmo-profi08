@@ -3,9 +3,15 @@ p {
     color:green;
     /*font-size: 20px;*/
 }
-=======
+
 p {
     color:green;
     /*font-size: 20px;*/
 }
->>>>>>> 62d6415862b775223c1e38096d6e97ce77de38e2
+
+#redColor{
+    color:red;
+}
+.red1{
+    color:green!important;
+}

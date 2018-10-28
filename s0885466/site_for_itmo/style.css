@@ -31,8 +31,9 @@ body {
 }
 
 .menu li:hover{
-//color: red;
+color: aquamarine;
     background: rgba(255,255,255,0.2);
+
 }
 
 
@@ -49,6 +50,7 @@ li:nth-last-child(n+4) {
 li:nth-last-child(1) {
 border: 1px solid aliceblue;
 
+
 }
 
 li:nth-last-child(2) {
@@ -58,7 +60,8 @@ li:nth-last-child(2) {
 }
 
 li:nth-last-child(2):hover{
-background:aliceblue;
+background: aquamarine;
+    color: #282250;
 }
 
 

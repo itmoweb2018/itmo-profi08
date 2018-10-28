@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .sidebar {
+        background: green;
+        float:left;
+        width: 50%;
+    }
+    .content {
+        background: yellowgreen;
+        //width: 10%;
+    }
+    .content::after {
+        content: ".";
+        clear: left;
+        display: block;
+        height: 0px;
+        visibility: hidden;
+    }
+
+</style>
+
+
+<div class="sidebar">Sidebar Sidebar Sidebar Sidebar Sidebar Sidebar Sidebar Sidebar Sidebar</div>
+<div class="content">Content Content Content Content Content Content Content Content Content
+    Content Content Content Content Content Content Content Content Content
+    Content Content Content Content Content Content Content Content Content
+    Content Content Content Content Content Content Content Content Content
+</div>
+
+<div>Footer</div>
+</body>
+</html>

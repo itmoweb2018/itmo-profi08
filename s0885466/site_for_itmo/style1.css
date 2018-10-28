@@ -1,0 +1,102 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    color:white;
+    background: black;
+}
+
+.galery{
+
+}
+/*сетка*/
+
+}
+
+header {
+    background-image: url("images/pic02.jpg");
+}
+
+.banner {
+    padding: 6rem 20%;
+}
+
+.banner h1 {
+    border-bottom: 1px white solid;
+    padding-bottom: 1rem;
+}
+
+.text p {
+     text-transform: uppercase;
+    width: 20rem;
+ }
+.text a {
+    border: solid 1px;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    float: right;
+    transition:all 5s;
+}
+
+.text a:hover{
+    color: #282250;
+    background: white;
+    padding: 1.3rem;
+    //-webkit-transform: rotate(1deg);
+    transform: rotate(180deg);
+    border: white 1px solid;
+    border-radius: 20px;
+}
+
+.fading {
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+}
+
+.mask {
+    background: rgba(127,255,212, 0.6);
+    transition: background 2s linear 0.5s;
+    height: 100%;
+
+}
+
+.mask:hover {
+    background: rgba(127,255,212, 0);
+
+}
+
+.text::after{
+    content: "";
+    display: block;
+    //width: 10px;
+    //height: 10px;
+    //background: red;
+    clear: both;
+}
+
+.photo-block {
+    background-color: #000;
+    background-image: url("images/pic02.jpg");
+    //padding: 5rem;
+}
+
+.feedback {
+ background: black;
+    padding:50px;
+}
+label {
+    display: block;
+    text-transform: uppercase;
+
+}
+input{
+    background: #282250;
+    border: none;
+    transition: all 1s;
+}
+input:focus {
+    border: none;
+    background: white;
+    border: 0px solid;
+    outline: none;
+}

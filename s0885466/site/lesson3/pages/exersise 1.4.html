@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .first {
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        background: red;
+    }
+
+    .second1 {
+     display: none;
+     }
+
+    .second2 {
+        display: block;
+    }
+
+    .second3 {
+    visibility: hidden;
+    }
+.overlay {
+   position: absolute;
+    background: rgba(0,128,0,0.7);
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 50%;
+   // right: 0px;
+    transform: translateX(-50%);
+
+
+}
+
+
+</style>
+<div class="first">first</div>
+<div>
+    <a class="second" href="in.html">1</a>
+    <a class="second1" href="in.html">2</a>
+    <a class="second2" href="in.html">3</a>
+</div>
+
+
+<div class="overlay"></div>
+</body>
+</html>
