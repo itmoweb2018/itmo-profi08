@@ -1,0 +1,43 @@
+.blue1 {
+    background-color: rgba(118,190,214,0.8);
+}
+.purple {
+    background-color:rgba(124, 115, 175, 0.8);
+}
+.pink {
+    background-color:rgba(230, 145, 136, 0.8);
+}
+.orange {
+    background-color:rgba(223, 181, 144, 0.8);
+}
+.blue2 {
+    background-color:rgba(123, 150, 204, 0.8);
+}
+.green {
+    background-color:rgba(120, 173, 150, 0.8);
+}
+
+.photo1 {
+    background-image: url("../images/pic01.jpg");
+    background-size: cover;
+}
+.photo2 {
+    background-image: url("../images/pic02.jpg");
+    background-size: cover;
+}
+.photo3 {
+    background-image: url("../images/pic03.jpg");
+    background-size: cover;
+}
+.photo4 {
+    background-image: url("../images/pic04.jpg");
+    background-size: cover;
+}
+.photo5 {
+    background-image: url("../images/pic05.jpg");
+    background-size: cover;
+}
+.photo6 {
+    background-image: url("../images/pic06.jpg");
+    background-size: cover;
+}

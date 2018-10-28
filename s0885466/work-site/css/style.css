@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/banner.jpg");
+    /*заливает фон на 100%*/
+    background-size: cover;
+    color: white;
+    font-family: "Open Sans";
+    box-shadow: black;
+}
+/*заливает фон на 100% цветом с прозрачностью поверх body*/
+.shadow {
+    position: absolute;
+    background-color: rgba(30,36,64,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    margin: 1rem;
+}
+
+header a:hover {
+    color:#53e3fb;
+}
+
+header a:hover .logo{
+    background:#53e3fb;
+}
+
+header a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header a+a {
+    float:right;
+    transition: all 1s;
+}
+
+a .logo{
+    font-weight: normal;
+    padding: 0.4rem;
+    transition: all 1s;
+}
+
+
+.logo{
+    background:white;
+    color: #242943;
+}
+
+
+.upper_case {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+
+}
+
+.hello {
+    padding: 10rem;
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: solid 1px white;
+    padding-bottom: 2rem;
+}
+
+
+.left {
+    float:left;
+    width: 37rem;
+}
+
+.right {
+    padding-top: 1.6rem;
+}
+
+.button{
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: all 1s;
+}
+
+.button:hover {
+    color: #53e3fb;
+    border-color: #53e3fb;
+}
+
+.height-25 {
+    height: 25rem;
+}
+
+section>div>a>div {
+   padding:7rem 0 0 5rem;
+}
+.col h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    width: 15rem;
+    font-size: 2rem;
+}
+
+
+.row a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: block;
+    transition: all 1s;
+
+}
+
+.row a p{
+    margin-top: -0.7rem;
+
+}
+
+.row a:hover {
+    background-color: transparent;
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
