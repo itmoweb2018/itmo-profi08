@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: arial sans-serif;
+color: white;
+}
+header{
+	background: #dee0e3;
+	background: url(../images/banner.jpg);
+	height: 450px;
+}
+.header_1 {
+	padding-top: 20px;
+	padding-left: 20px;
+
+}
+.logo {
+    width: 58px;
+    text-align: center;
+    float: left;
+    text-transform: uppercase;
+    background: white;
+    display: block;
+    color: black;
+
+
+}
+.first_line {
+	color: white;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 10px;
+}
+.menu {
+	float: right;
+	text-transform: uppercase;
+	padding-right: 20px;
+	color: white;
+}
+i la{
+	float:right;
+}
+
+.text {
+    padding: 8rem 20%;
+    text-align: center;
+    display: block;
+}
+h1{
+	text-transform: uppercase;
+	border-bottom: 2px solid;
+	padding-bottom: 1rem;
+	text-align: left;
+}
+.title {
+	box-sizing: border-box;
+}
+.title p {
+	float: left;
+	width: 20rem;
+	font-size: 12px;
+}
+.button {
+	float: left;
+    border: 2px solid #ffffff;
+    color: white;
+    width: 200px;
+    height: 36px;
+    text-align: center;
+    padding: 7px;
+    margin-top: 8px;
+    margin-left: 35px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+
+}
+.contener_1, .contener_2, .contener_3 {
+display: flex;
+height: 400px;
+align-items: stretch;
+}
+.contener_1 div, .contener_2 div, .contener_3 div {
+    padding: 100px;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+}
+.box_1 {
+flex: 4;
+background: #9bf1ff;
+background: url(../images/pic01.jpg);
+}
+.box_2 {
+flex: 8;
+background: #9bf1ff;
+background: url(../images/pic02.jpg);
+}
+.box_3 {
+flex: 8;
+background: #9bf1ff;
+background: url(../images/pic03.jpg);
+}
+.box_4 {
+flex: 4;
+background: #9bf1ff;
+background: url(../images/pic04.jpg);
+}
+.box_5 {
+flex: 4;
+background: #9bf1ff;
+background: url(../images/pic05.jpg);
+}
+.box_6 {
+flex: 8;
+background: #9bf1ff;
+background: url(../images/pic06.jpg);
+}
+.section-3{
+    background: #1a1821;
+    height: 400px;
+
+}
+.text-1 {
+    padding: 3rem 20%;
+    text-align: left;
+    display: block;
+
+
+}
+.title-1 p {
+    float: left;
+    width: 30rem;
+    font-size: 12px;
+}
+.button-1 {
+  
+    border: 2px solid #ffffff;
+    color: white;
+    width: 200px;
+    height: 36px;
+    text-align: center;
+    padding: 7px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+.two-1{
+
+}
