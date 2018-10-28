@@ -1,0 +1,207 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	/*font-family: arial;*/
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 0;
+}
+header {
+	background: #242A46;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.banner {
+	padding: 8rem 20%;
+}
+.banner h1 {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1rem;
+}
+.banner p{
+	text-transform: uppercase;
+}
+.banner a {
+	/*color: #fff;*/
+	border: 1px solid #fff;
+	padding: 0.5rem;
+	/*text-decoration: none;*/
+	display: inline-block;
+}
+
+.banner .floatfix p {
+	float: left;
+	width:30rem;
+	margin: 0;
+}
+.banner .floatfix a {
+	float: left;
+}
+
+/*проверить - почему все съезжает вниз если классу .banner указывать margin, а не padding???*/
+/*.header {
+	position: fixed;
+	border: 1px solid black;
+	padding: 1rem;
+	margin: 0 auto;
+	width: 100%;
+}*/
+
+
+.floatfix::after {
+	content: "";
+	clear: both;
+	display: block;
+	/*width: 10px;
+	height: 10px;
+	background: #fff;*/
+}
+
+.logo {
+	float: left;
+	width: 15rem;
+}
+.menu-button {
+	float: right;
+}
+
+.header {
+	padding: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+/*.logo a {
+	text-decoration: none;
+	color: #fff;
+}*/
+.logo a strong {
+	padding: 0.4rem;
+	background: #fff;
+	color: #242A46;
+}
+/*принаведении на ссылку*/
+a:hover {
+	color: #9bf1ff;
+}
+.logo a:hover strong {
+	background: #9bf1ff;
+}
+
+/*кнопка МЕНЮ*/
+.navigation strong {
+	float: left;
+	padding-right: 0.5rem;
+	/*width: 10rem;*/
+}
+.navigation span {
+	float: right;
+}
+
+.block-content {
+	/*background-image: url("../pic/pic08.jpg");*/
+	background-repeat: no-repeat;
+	background-size: cover;		/*Масштабирует изображение с сохранением пропорций так,
+	 чтобы его ширина или высота равнялась ширине или высоте блока.*/
+	background-color: #3C3EAB;
+	border: 1px solid black;
+	padding: 8rem;
+	/*opacity: 0.3;*/
+	/*z-index: 100; */
+	position: relative;		/*чтобы далее позиционировать ссылку absolut*/
+}
+
+					/*задние фоны для каждого блока*/
+.section1 .block-content.float40 {
+	background-image: url("../pic/pic01.jpg");
+	/*opacity: 0.3;*/
+	/*z-index: 1;*/
+
+}
+.section1 .block-content.float60 {
+	background-image: url("../pic/pic02.jpg");
+	/*opacity: 0.3;*/
+	/*z-index: 1;*/
+}
+.section2 .block-content.float60 {
+	background-image: url("../pic/pic03.jpg");
+}
+.section2 .block-content.float40 {
+	background-image: url("../pic/pic04.jpg");
+}
+.section3 .block-content.float40 {
+	background-image: url("../pic/pic05.jpg");
+}
+.section3 .block-content.float60 {
+	background-image: url("../pic/pic06.jpg");
+}
+
+		/*ссылка внутри каждого блока .block-content, "чтобы блоки были ссылками"*/
+.img-links {			
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*z-index: 4;*/
+}
+						/*задние фоны для ссылок - пока только первые две*/
+.section1 .block-content.float40 .img-links {
+	background-color: rgba(84, 199, 178, 0.6);
+}
+.section1 .block-content.float60 .img-links {
+	background-color: rgba(155, 84, 199, 0.6);
+	/*opacity: 0.6;*/
+}
+
+
+						/*смена заднего фона ссылки при наведении(убираем фон)*/
+/*почему так не работает???????*/
+/*.block-content:hover a {
+	background: none;
+}
+.block-content:hover .img-links {
+	background: none;
+}*/
+/*section .block-content:hover .img-links {
+	background: none;
+}*/
+
+/*работает только так, когда указываешь конкретно на каждый блок, но хотельсь бы одно правило для всех*/
+.section1 .block-content.float40:hover .img-links {
+	background: none;
+}
+.section1 .block-content.float60:hover .img-links {
+	background: none;
+}
+
+
+
+
+.block-content h3 {
+	/*padding-bottom: 1rem;*/
+	margin: 0;
+}
+.block-content p {
+	display: inline-block;
+	margin: 0;
+	/*border-top: 1px solid #fff;*/
+}
+.block-content p::before {		/*подчеркивание за границы блока p*/
+	content: "";
+	display: inline-block;
+	width: calc(100% + 2rem);
+	border: 1px solid #fff;
+}
+	
+
+.float40 {
+	float: left;
+	width: 40%;
+}
+.float60 {
+	float: left;
+	width: 60%
+}

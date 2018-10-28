@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+/*    box-sizing: border-box;*/
+    margin: 0;    
+    color: white;
+    font-family: "Open Sans";
+}
+
+/*  ---------- start HEADER  ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 30rem;
+    max-height: 80rem;
+    background-attachment: fixed;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36,41,67,0.6);
+}
+
+.menu {
+    line-height: 3em;
+    display: flex;
+/*    background-color: transparent;*/
+}
+/* Лого */
+.logo {
+    display: inline-block;
+    /* line-height: 2rem; */
+    margin: 0 1rem;
+}
+
+.logo:hover {
+    color: #9bf1ff;
+    transition: color 0.5s ease 0.1s;
+}
+
+.logo:hover strong {
+    background-color: #9bf1ff;
+    transition: background-color 0.5s ease 0.1s;
+}
+
+strong {
+    color: black;
+    background-color: white;
+/*    letter-spacing: 0.3rem;*/
+    margin: 0 0.5rem 0 0;
+    padding: 0 0.15rem 0 0.4rem;
+}
+/* Завершение лого */
+
+/* Кнопка меню */
+.menu_button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+/* Завершение кнопки меню */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 20%;    
+}
+
+.banner h1 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+/*    line-height: 1rem;*/
+}
+
+.buttonStarted a {
+    color: #fff;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 1rem; 
+    height: 3rem;
+}
+
+.bannerText p {
+    width: 20rem;
+}
+
+.bannerText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonStarted {
+    margin-left: 4rem; 
+}
+
+.buttonStarted a:hover {
+    color: #9bf1ff;
+    transition: color 0.5s ease 0.1s;
+}
+/* ---------- end HEADER ---------- */
+
+/*start text formatting*/
+.banner p, .menu, .buttonStarted, .boxpar {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.logo, .buttonStarted {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner, .menu, .imgBox {
+    user-select: none;
+}
+/*text formatting end*/
+
+/*Начало секции с картинками*/
+.photo-block {
+    background-color: black;
+/*    width: 60%;*/
+/*    padding: 5rem;*/
+    background-image: url("../img/pic02.jpg");
+/*    transform: translate(100px) scale(2);*/
+}
+
+.fading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0, 0.15);  
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.mask {
+/*    background-color: rgba(127,255,212,0.6);*/
+    transition: background 0.5s cubic-bezier(0, 0, 0.2, 1) 0.1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+/*start mask box color*/
+.box1 .mask {
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.box2 .mask {
+    background-color: rgba(150, 139, 206, 0.6);
+}
+.box3 .mask {
+    background-color: rgba(208, 108, 95, 0.6);
+}
+.box4 .mask {
+    background-color: rgba(228, 173, 118, 0.6);
+}
+.box5 .mask {
+    background-color: rgba(124, 154, 224, 0.6);
+}
+.box6 .mask {
+    background-color: rgba(124, 197, 159, 0.6);
+}
+/*end mask box color*/
+
+.mask:hover {
+    background-color: rgba(127,255,212,0);
+/*    transition: background 2s ease 0.5s;*/
+}
+
+
+/*Завершение секции с картинками*/
+
+
+/*try imgbox by flex*/
+.imgBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box_size1, .box_size2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 40vh;
+    min-height: 20em;
+    max-height: 40em;
+/*    justify-content: center;*/
+/*
+    vertical-align: baseline;
+    background-position: center;
+    background-size: cover;
+*/
+*/
+}
+/*
+.box_size1 {
+    flex-basis: 40%; 
+}
+
+.box_size2 {
+    flex-basis: 60%;
+}
+*/
+
+.box1, .box4, .box5 {
+    width: 40%;
+}
+
+.box2, .box3, .box6 {
+    width: 60%;
+}
+
+.box1 {background: url(../img/pic01.jpg);}
+.box2 {background: url(../img/pic02.jpg);}
+.box3 {background: url(../img/pic03.jpg);}
+.box4 {background: url(../img/pic04.jpg);}
+.box5 {background: url(../img/pic05.jpg);}
+.box6 {background: url(../img/pic06.jpg);}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    justify-content: center;
+/*    align-items: baseline;*/
+    height: auto;
+    width: auto;
+/*    margin: 0 10%;*/
+}
+
+.boxtext h1 {
+    border-bottom: 1px solid white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.boxpar {
+    
+}
+/*end imgbox by flex*/
+
+/*start feedback block*/
+
+section.feedback {
+    padding: 10rem;
+    background: #242943;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+}
+
+input {
+    background: #2a2f4a;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    color: #fff;
+}
+
+.radioBox {
+    background-color: #2a2f4a;
+}
+.radioBox span {
+    user-select: none;
+}
+
+
+
+/*end feedback block*/
+
+/*start adaptive*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    тут вписать правила для указанного разрешения экрана
+    col-1,  col-2,  col-3,  col-4,  col-5,  col-6,  col-7,  col-8, col-9,  col-10,  col-11,  col-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+/*endadaptive*/

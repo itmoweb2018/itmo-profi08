@@ -1,0 +1,39 @@
+.sidebar {
+    float: left;
+    background-color: darkgreen;
+    font-size: 40px;
+    color: white;
+    width: 50%;
+}
+
+.content {
+    float: left;
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+    width: 50%;
+}
+.content::after { 
+/*    чтобы после элемента контент прекратить обтекание.
+    ОБЯЗАТЕЛЬНО! задавать content */
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.footer {
+    clear: left;
+    background-color: orange;
+    font-size: 40px;
+    color: white;
+}
+
+.clearfix {
+/*    чтобы после какго-либо элемента прекратить обтекание*/
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
