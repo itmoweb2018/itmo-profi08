@@ -9,7 +9,7 @@ body {
     font-family: "Open Sans";
 }
 
-/* Старт стилей для "Головы" */
+/*  ---------- start HEADER  ---------- */
 header {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-/*    background-attachment: fixed;*/
+    height: 75vh;
+    min-height: 30rem;
+    max-height: 80rem;
+    background-attachment: fixed;
 }
 
 .headerBox {
@@ -53,7 +56,7 @@ header {
 strong {
     color: black;
     background-color: white;
-    letter-spacing: 0.3rem;
+/*    letter-spacing: 0.3rem;*/
     margin: 0 0.5rem 0 0;
     padding: 0 0.15rem 0 0.4rem;
 }
@@ -77,6 +80,7 @@ strong {
 .banner h1 {
     border-bottom: 1px solid #fff;
     padding-bottom: 1rem;
+    font-size: 3rem;
 /*    line-height: 1rem;*/
 }
 
@@ -106,11 +110,12 @@ strong {
     color: #9bf1ff;
     transition: color 0.5s ease 0.1s;
 }
+/* ---------- end HEADER ---------- */
 
-/*headers text formatting start*/
-.banner p, .menu, .buttonStarted {
+/*start text formatting*/
+.banner p, .menu, .buttonStarted, .boxpar {
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }
 
 .logo, .buttonStarted {
@@ -118,11 +123,10 @@ strong {
     color: #fff;
 }
 
-.banner, .menu {
+.banner, .menu, .imgBox {
     user-select: none;
 }
-/*headers text formatting end*/
-/* Завершение стилей для "Головы" */
+/*text formatting end*/
 
 /*Начало секции с картинками*/
 .photo-block {
@@ -144,8 +148,8 @@ strong {
 }
 
 .mask {
-    background-color: rgba(127,255,212,0.6);
-    transition: background 0.7s cubic-bezier(0, 0, 0.2, 1) 0.1s;
+/*    background-color: rgba(127,255,212,0.6);*/
+    transition: background 0.5s cubic-bezier(0, 0, 0.2, 1) 0.1s;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -153,10 +157,33 @@ strong {
     width: 100%;
 }
 
+/*start mask box color*/
+.box1 .mask {
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.box2 .mask {
+    background-color: rgba(150, 139, 206, 0.6);
+}
+.box3 .mask {
+    background-color: rgba(208, 108, 95, 0.6);
+}
+.box4 .mask {
+    background-color: rgba(228, 173, 118, 0.6);
+}
+.box5 .mask {
+    background-color: rgba(124, 154, 224, 0.6);
+}
+.box6 .mask {
+    background-color: rgba(124, 197, 159, 0.6);
+}
+/*end mask box color*/
+
 .mask:hover {
     background-color: rgba(127,255,212,0);
 /*    transition: background 2s ease 0.5s;*/
 }
+
+
 /*Завершение секции с картинками*/
 
 
@@ -170,20 +197,36 @@ strong {
 
 .box_size1, .box_size2 {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
     height: 40vh;
     min-height: 20em;
     max-height: 40em;
-    justify-content: center;
+/*    justify-content: center;*/
+/*
+    vertical-align: baseline;
     background-position: center;
     background-size: cover;
 */
+*/
 }
+/*
 .box_size1 {
     flex-basis: 40%; 
 }
 
 .box_size2 {
     flex-basis: 60%;
+}
+*/
+
+.box1, .box4, .box5 {
+    width: 40%;
+}
+
+.box2, .box3, .box6 {
+    width: 60%;
 }
 
 .box1 {background: url(../img/pic01.jpg);}
@@ -202,8 +245,8 @@ strong {
 .boxtext {
     display: flex;
     flex-direction: column;
-    margin: 3rem 1.5rem 1.5rem 3rem;
-/*    justify-content: center;*/
+    margin: 0 3rem;
+    justify-content: center;
 /*    align-items: baseline;*/
     height: auto;
     width: auto;
@@ -212,6 +255,13 @@ strong {
 
 .boxtext h1 {
     border-bottom: 1px solid white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.boxpar {
+    
 }
 /*end imgbox by flex*/
 

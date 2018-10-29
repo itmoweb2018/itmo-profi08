@@ -1,0 +1,104 @@
+.div--layer { 
+	display: none;
+}
+
+
+.modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	background: rgba(36, 41, 67, 0.9899);
+	z-index: 3;
+}
+
+.modal__menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	heigh: auto;
+	width: 40%;
+	font-size: 1em;
+}
+
+.menu__link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-bottom: thin solid rgba(212, 212, 255, 0.1);
+	margin: 2% 0;
+	height: auto;
+	width: 55%;
+}
+
+.div__link {
+	display: block;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-seif;
+	font-weight: 600;
+	letter-spacing: 0.3em;
+	color: white;
+	padding-bottom: 25px;
+	transition: .3s;
+}
+
+.div__link:hover {
+	color: #9bf1ff;
+}
+
+.myBtn {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.btn {
+	display: block;
+	width: 55%; height: auto;
+	cursor: pointer;
+	padding: 25px;
+	margin: 2% 0;
+	font-size: 1em;
+	letter-spacing: 0.3em;
+	font-weight: 600;
+	transition: .3s;
+}
+	
+.first {
+	border: none;
+	background: #fff;
+	color: #282828;
+}
+
+.first:hover {
+	background: #9bf1ff;
+}
+
+.second {
+	border: thin solid #fff;
+	color: #fff;
+	background: none;
+}
+
+.second:hover {
+	color: #9bf1ff;
+	border-color: #9bf1ff;
+}
+
+.close {
+	cursor: pointer;
+	position: fixed;
+	right: 2%; top: 2%;
+	color: #fff;
+	font-size: 2em;
+	transition: .1s ease-in-out;
+}
+
