@@ -27,6 +27,19 @@ $(document).ready(function(){
 		})
 	})
 
+	$('.nav').mouseover(function(){
+		$('.nav').css({
+			color: '#9bf1ff'
+		})
+	})
+
+	$('.nav').mouseout(function(){
+		$('.nav').css({
+			color: 'white'
+		})
+
+	})
+
     $('.description-button').click( function(){
 	var scroll_el = $(this).attr('href');
         if ($(scroll_el).length != 0) {
