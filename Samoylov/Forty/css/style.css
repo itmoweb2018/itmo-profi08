@@ -243,6 +243,7 @@ h1 {
 	border-top: 2px solid white;
 	margin-top: 2vh;
 	padding-top: 2vh;
+	padding-right: 2%;
 	color: white;
 	letter-spacing: 6px;
 	z-index: 2;
@@ -383,6 +384,7 @@ h1 {
 	font-weight: 600;
 	border-bottom: 2px solid white;
 	padding-bottom: 20px;
+	padding-right: 2%;
 	box-sizing: border-box;
 }
 
@@ -419,42 +421,33 @@ h1 {
 	flex-direction: row;
 	width: 58%;
 	height: auto;
+
 }
 
 .contact-form form {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	margin: 5% 0 5% 20%;
+	flex-direction: column;
+	height: auto;
 	width: 100%;
 }
 
-.contact-form input, textarea {
-	display: block;
+.input-column {
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	margin: 5%;
 }
-
 
 .input-column input {
-	font-size: 30px;
-	width: 38%;
-	height: auto;
+	display: block;
+	width: 48%%;
+	height: 30%;
+	
 }
 
-.input-column {
-	margin: 3%;
-	width: auto;
-}
-
-textarea {
-		width: 100%;
-		min-height: 160px;
-		max-height: 240px;
-}
-
-
-.area-column {
-	margin-left: 3%;
+#name {
 
 }
 
