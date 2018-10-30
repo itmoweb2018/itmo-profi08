@@ -415,41 +415,6 @@ h1 {
 	width: 100%;
 	border-bottom: thin solid rgba(212, 212, 255, 0.1);
 }
-/*
-.contact-form {
-	display: flex;
-	flex-direction: row;
-	width: 58%;
-	height: auto;
-
-}
-
-.contact-form form {
-	display: flex;
-	flex-direction: column;
-	height: auto;
-	width: 100%;
-}
-
-.input-column {
-	display: flex; 
-	flex-direction: row;
-	justify-content: center;
-	width: auto;
-	height: auto;
-	margin: 5%;
-}
-
-.input-column input {
-	display: block;
-	width: 48%%;
-	height: 30%;
-	
-}
-
-#name {
-
-}*/
 
 .form--container {
 	display: flex;
@@ -463,21 +428,36 @@ h1 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 85%; height: 450px;
-	margin: 0 auto;
+	width: 75%; height: auto;
+	margin: 5% auto;
+	margin-left: 20%;
+}
+
+.form--container label {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 4px;
 }
 
 .input__box {
 	display: flex;
 	flex-direction: column;
-	width: 46%; height: auto;
+	width: 48%; height: auto;
 }
 
 .input__box input {
-	width: 100%; height: 45px;
-	margin: 8% auto;
+	width: 92%; height: 35px;
+	margin: 4% auto;
+	padding: 4%;
 	background: #2a2f4a;
+	font-family: 'Source Sans Pro', sans-seif;
 	border: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.input__box input:focus {
+	outline: 2px solid #9bf1ff;
 }
 
 .textarea__box {
@@ -488,11 +468,20 @@ h1 {
 }
 
 .textarea__box textarea {
-	width: 100%; height: 240px;
-	margin: 4% auto;
+	width: 92%; height: 230px;
+	margin: 2% auto;
+	padding: 4%;
 	background: #2a2f4a;
+	font-family: 'Source Sans Pro', sans-seif;
+	color: #fff;
+	font-size: 20px;
 	border: none;
 }
+
+.textarea__box textarea:focus {
+	outline: 2px solid #9bf1ff;
+}
+
 
 .description {
 	font-family: 'Source Sans Pro', sans-seif;
@@ -500,19 +489,19 @@ h1 {
 	font-size: 1.2em;
 }
 
-.btn {
+.button {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	width: 50%; height: auto;
-	margin: 0 3.5%;
+	justify-content: flex-start;
+	width: 70%; height: auto;
+	margin: 0 0;
 }
 
-.myBtn {
+.buttons {
 	display: flex;
-	width: 45%; height: 50px;
-	margin: 0 2%;
+	justify-content: center;
+	margin-right: 4%;
+	cursor: pointer;
 }
 
 .one {
@@ -521,6 +510,14 @@ h1 {
 	color: #282828;
 	font-size: 1em;
 	font-weight: 600;
+	letter-spacing: 4px;
+	width: 45%;
+	height: 65px;
+	transition: .5s;
+}
+
+.one:hover {
+	background: #9bf1ff;
 }
 
 .two {
@@ -529,9 +526,16 @@ h1 {
 	color: #fff;
 	font-size: 1em;
 	font-weight: 600;
+	letter-spacing: 4px;
+	width: 25%;
+	height: 65px;
+	transition: .5s;
 }
 
-
+.two:hover {
+	color: #9bf1ff;
+	border: 2px solid #9bf1ff;
+}
 
 .contacts-info {
 	font-family: 'Source Sans Pro', sans-seif;
