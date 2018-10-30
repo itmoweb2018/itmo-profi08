@@ -30,7 +30,6 @@ h1 {
 	background-position: top;
 	background-attachment: fixed;
 	max-width: 100%;
-
 }
 
 .banner-head {
@@ -594,6 +593,32 @@ h1 {
 	border-bottom: 1px dotted #242943;
 }
 
+@media (max-width: 1102px) {
+	.contacts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.form--container {
+		display: flex;
+		flex-direction: column;
+		width: 100%; height: auto;
+		justify-content: center;	
+	}
+
+	.form--container form {
+		margin-left: auto;
+	}
+
+	.contacts-info {
+		width: 100%;
+	}
+
+	.info:first-child {
+		border-top: thin solid rgba(212, 212, 255, 0.1);	
+	}
+}
+
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -658,3 +683,4 @@ h1 {
 	margin: 0 1%;
 	padding: 0 1%;
 }
+
