@@ -11,45 +11,25 @@ a {
     text-decoration: none;
     color: #fff;
 }
-h1 {
-    font-size: 3.1rem;
-}
-h3 {
-    font-size: 1.9rem;
-}
-h4 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 0.15em;
-}
-.first, 
-.second, 
-.third,
 .fifth {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-top: 3px solid #2a2f4a;
 }
 /* Header */
 header {
     position: relative;
-    max-height: 36.88rem;
-    background: url(../images/banner.jpg) no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.before_header {
-    background-color: rgba(24, 30, 55, 0.90);
-    max-height: 36.88rem;
-    background-attachment: fixed;
+    background-color: #2a2f4a;
+    width: 100%;
+    height: 3.19rem;
 }
 .header {
-    padding: 10.9rem 16.9rem 12.5rem 7.5rem;
+    height: 100%;
 }
 .logo {
     position: absolute;
-    top: 1.56rem;
+    top: 1rem;
     left: 1.25rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -80,7 +60,7 @@ header {
 }
 .menu_btn {
     position: absolute;
-    top: 0.63rem;
+    top: 0;
     right: 1.25rem;
 }
 .menu_btn-open,
@@ -134,112 +114,37 @@ header {
 #hover2.hover2::after {
     background-color: #5ca4e8;
 }
-.under_line {
-    position: relative;
-    margin-top: 1.25rem;
+/* Main */
+main {
+    min-height: 50rem;
+    background-color: #242943;
+    padding: 2.5rem 9.34rem 2.5rem 7.5rem;
 }
-.under_line h4 {
+.main h2 {
     display: inline-block;
-    margin: 0;
+    font-size: 2.5rem;
+    padding: 0 1.88rem 0.63rem 0;
+    border-bottom: 1px solid;
 }
-.btn {
-    color: #fff;
-    font-size: 0.94rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 1rem 2.67rem;
-    outline: none;
-    transition: 0.5s;
-    letter-spacing: 0.15em;
-}
-.btn:hover {
-    color: #5ca4e8;
-    border: 1px solid #5ca4e8;
-    cursor: pointer;
-}
-.btn:active {
-    background-color: rgba(255, 255, 255, 0.10);
-}
-.btn_top {
-    position: absolute;
-    /* top: 0;
-    left: 30rem; */
-}
-/* 1st, 2nd, 3rd */
-.aliquam,
-.tempus,
-.magna,
-.ipsum,
-.consequat,
-.etiam {
-    transition: 0.5s;
-    max-height: 25rem;
-}
-.aliquam:hover,
-.tempus:hover,
-.magna:hover,
-.ipsum:hover,
-.consequat:hover,
-.etiam:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-.before_aliquam {
-    width: 40%;
-    background: url(../images/pic01.jpg) no-repeat top center;
-}
-.aliquam {
-    background-color: rgba(30, 199, 255, 0.85);
-    background-size: cover;
-}
-.before_tempus {
-    width: 60%;
-    background: url(../images/pic02.jpg) no-repeat center center;   
-}
-.tempus {
-    background-color: rgba(125, 117, 178, 0.85);
-    background-size: cover;
-}
-.before_magna {
-    width: 60%;
-    background: url(../images/pic03.jpg) no-repeat top center;
-}
-.magna {
-    background-color: rgba(209, 127, 119, 0.85);
-    background-size: cover;
-}
-.before_ipsum {
-    width: 40%;
-    background: url(../images/pic04.jpg) no-repeat top center;
-}
-.ipsum {
-    background-color: rgba(213, 150, 90, 0.85);
-    background-size: cover;
-}
-.before_consequat {
-    width: 40%;
-    background: url(../images/pic05.jpg) no-repeat top center;
-}
-.consequat {
-    background-color: rgba(126, 151, 207, 0.85);
-    background-size: cover;
-}
-.before_etiam {
-    width: 60%;
+.img_wrap {
+    width: 100%;
+    height: 25rem;
     background: url(../images/pic06.jpg) no-repeat top center;
-}
-.etiam {
-    background-color: rgba(104, 165, 138, 0.85);
     background-size: cover;
 }
-.inside {
-    padding: 7.5rem 16.88rem 7.5rem 5rem;
+.img_wrap::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
-/* 4th */
-.fourth {
-    padding: 3.125rem 16.88rem 3.125rem 7rem;
+.main p {
+    margin: 1.88rem 0;
+    line-height: 1.5em;
+    color: #f5ecd9;
+    font-size: 1.13rem;
+    font-weight: 300;
 }
 /* 5th; Form */
 .form {
@@ -549,12 +454,6 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1920px) {
-    .header {
-        padding: 10.9rem 10rem 12.5rem 7.5rem;
-    }
-    .fourth {
-        padding: 3.125rem 10rem 3.125rem 7rem;
-    }
     #submit,
     #reset {
         padding: 0.94rem 1rem;
@@ -566,14 +465,6 @@ footer {
     }
     .overlay {
         font-size: 16px;
-    }
-    .before_aliquam,
-    .before_tempus,
-    .before_magna,
-    .before_ipsum,
-    .before_consequat,
-    .before_etiam {
-        width: 50%;
     }
     #submit,
     #reset {
@@ -587,14 +478,6 @@ footer {
     .overlay {
         font-size: 12px;
     }
-    .before_aliquam,
-    .before_tempus,
-    .before_magna,
-    .before_ipsum,
-    .before_consequat,
-    .before_etiam {
-        width: 50%;
-    }
     #submit,
     #reset {
         padding: 0.94rem 0.5rem;
@@ -607,31 +490,8 @@ footer {
     .overlay {
         font-size: 10px;
     }
-    .before_aliquam,
-    .before_tempus,
-    .before_magna,
-    .before_ipsum,
-    .before_consequat,
-    .before_etiam {
-        width: 100%;
-    }
-    .inside {
-        padding: 5rem 10rem 5rem 4rem;
-    }
-    .header {
-        padding: 10.9rem 10rem 12.5rem 4rem;
-    }
-    .fourth {
-        padding: 3.125rem 16.88rem 3.125rem 4rem;
-    }
     .footer {
         padding: 2.5rem 4rem;
-    }
-    .under_line h4 {
-        display: block;
-    }
-    .btn_top {
-        margin-top: 2rem;
     }
     .form {
         width: 100%;
