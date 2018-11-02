@@ -1,7 +1,9 @@
-document.getElementById("menu_btn-open").addEventListener("click",function(){
+document.getElementById("menu_btn-open").addEventListener("click",function(e){
+    e.preventDefault();
     document.getElementById("overlay").classList.add("show")
 })
-document.getElementById("menu_btn-close").addEventListener("click",function(){
+document.getElementById("menu_btn-close").addEventListener("click",function(e){
+    e.preventDefault();
     document.getElementById("overlay").classList.remove("show")
 })
 
