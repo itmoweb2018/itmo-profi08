@@ -16,9 +16,9 @@ header{
    
 }
 .header_1 {
-	padding-top: 20px;
+	display: block;
 	padding-left: 20px;
-    display: block;
+    
 
 }
 .logo {
@@ -27,8 +27,9 @@ header{
     float: left;
     text-transform: uppercase;
     background: white;
-    display: block;
+    
     color: black;
+    margin: 20px;
 
 
 }
@@ -36,13 +37,17 @@ header{
 	color: white;
     text-transform: uppercase;
     float: left;
-    padding-left: 10px;
+    
+    margin: 20px 20px 0 0;
+
 }
 .menu {
 	float: right;
 	text-transform: uppercase;
 	padding-right: 20px;
 	color: white;
+    margin: 20px 20px 0 0;
+
 }
 i la{
 	float:right;
@@ -95,6 +100,17 @@ h1{
     float: left;
     height: 300px;
 
+}
+.section-2 h1{
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding-bottom: 1rem;
+    text-align: left;
+    width: 14em;
+    margin: 4em 0 0 3em;
+}
+.second_line {
+margin-left: 5em;
 }
 .box_1 {
      width: 35%;
@@ -196,7 +212,7 @@ text-decoration: none;
 .grid .blok5{
    background: #1e1c27;
    grid-row: 4;
-   grid-column: 1/6;
+   grid-column: 1/5;
  
 }
 
