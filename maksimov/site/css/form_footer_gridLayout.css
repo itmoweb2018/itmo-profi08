@@ -1,0 +1,213 @@
+/* используем grid-template-columns и grid-template-rows*/
+/*.gridlayout-container {
+	display: grid;
+	grid-template-columns: 8fr 4fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;	
+}
+.item-gridlayout {
+	background: orange;
+	border: 1px solid black;
+}*/
+
+
+/* используем grid-column и grid-row */
+
+		/*сама сетка*/
+.gridlayout-container {
+	display: grid;
+	/*grid-gap: 10px 10px;*/
+}
+.item-gridlayout {		
+	background: #242943;
+	/*border: 1px solid black;*/  /*для наглядности*/
+}
+
+.item-gridlayout:first-child {
+	grid-column: 1 / 9; 
+	grid-row: 1 / 4;
+}
+.item-gridlayout:nth-child(2) {
+	grid-column: 9 / 13;
+	grid-row: 1 / 2;
+	/*max-width: 500px;*/
+}
+.item-gridlayout:nth-child(3) {
+	grid-column: 9 / 13;
+	grid-row: 2 / 3;
+}
+.item-gridlayout:nth-child(4) {
+	grid-column: 9 / 13;
+	grid-row: 3 / 4;
+}
+.item-gridlayout:last-child {
+	grid-column: 1 / 13;
+	grid-row: 4 / 5;
+}
+
+		/*правила для всего контента*/
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #9bf1ff;
+}
+		/*1-й элемент grid-контейнера (форма)*/
+.form {
+	padding: 8rem 4rem;
+	border-right: 1px solid red;/*rgba(212, 212, 255, 0.1);*/
+}
+.row {
+	display: flex;
+}
+.input-fields {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item-flex {
+	flex-basis: calc(50% - 2rem);
+}
+.message {
+	flex-basis: 100%;
+}
+label {
+	display: block;
+	margin: 0 0 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+input {
+	display: block;
+	background: #2A2F4A;
+	color: #fff;
+	margin: 0 0 2rem 0;
+	height: 2.5rem;
+	padding: 0 1rem;
+	width: 100%;
+	border: none;
+}
+/*для input стоит required(запрет на отправку если поле не заполнено), 
+при этом в браузере поле обрамляется красной рамкой. ниже св-во чтобы рамку красную убрать*/
+input:invalid {
+	box-shadow: none;
+}
+textarea {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	max-width: 100%;
+	background: #2A2F4A;
+	color: #fff;
+	border: none;
+	resize: vertical; /*разрешить изменение размера области только по вертикали*/
+	min-height: 6rem; /*минимальная высота области ввода*/
+}
+.action-button {
+	margin: 2rem 0;
+	padding: 0;
+}
+.send-message {
+	background: #fff;
+	color: #242943;
+	/*padding: 2rem;*/
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	margin: 0;
+}
+.send-message:hover {
+	background: #9bf1ff;
+}
+.clear-form {
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	margin: 0 1rem;
+}
+.clear-form:hover {
+	border: 1px solid #9bf1ff;
+	color: #9bf1ff;
+}
+
+			/*2-й, 3-й и 4-й элементы (контакты)*/
+.right-section {
+	padding: 4rem 0 2rem 3rem;
+	border: 1px solid blue;/*rgba(212, 212, 255, 0.1)*/
+}
+/*св-ва для иконок шрифта awesom(не являющихся ссылками)*/
+.icon-fa {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #242943;
+	background: #fff;
+	font-size: 1.2rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+.contacts {
+	padding: 0.5rem 0 2rem 1.5rem;
+}
+.contacts h3 {
+	margin: 0 0 2rem 0;
+}
+
+			/*5-й элемент (footer)*/
+.footer {
+	padding: 4rem 5%;
+	border-top: 1px solid rgba(212, 212, 255, 0.1);
+}
+.icon-footer {
+	margin-bottom: 2rem; 
+}
+.icon-footer li {
+	display: inline-block;
+	padding: 0;
+	margin-right: 2rem;
+}
+.no-list {		/*убрать у списка паддинги - чтобы слева не оставалось поля(для правильной центровки)*/
+	padding: 0;
+}
+/*св-ва для иконок шрифта awesom(являющихся ссылками)*/
+.icon-footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #242943;
+	background: #fff;
+	font-size: 1.2rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;	
+}
+.icon-footer a:hover {
+	background: #9bf1ff;
+}
+
+.copyright li {
+	display: inline-block;
+	padding: 0 1rem 0 0;
+	border-right: 1px solid rgba(212, 212, 255, 0.1);
+	color: rgba(244, 244, 255, 0.2);
+}
+.copyright li:not(:first-child) {     /*для всех потомков li сласса copyright, кроме первого*/
+	padding-left: 1rem;
+}
+.copyright a {
+	border-bottom: 1px dotted rgba(212, 212, 255, 0.1);
+	color: rgba(244, 244, 255, 0.2);
+}
+.copyright a:hover {
+	border: none;
+	color: #9bf1ff;
+}
