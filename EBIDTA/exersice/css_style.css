@@ -7,6 +7,21 @@ padding: 0;
 font-family: open sans;
 color: white;
 }
+
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+/* start commented backslash hack \*/
+* html .row { height: 1%; }
+.row { display: block; }
+/* close commented backslash hack */
+
 header{
 	background: #dee0e3;
 	background: url(../images/banner.jpg) no-repeat fixed;
@@ -186,61 +201,52 @@ text-decoration: none;
 }
 .section-4{
     background: #2e2b3c;
-    height: auto;
+    height: 500px;
     width: auto;
-}
-.grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr; 
-    grid-auto-rows:minmax( 150px, auto);
-    grid-gap: 1px;
+    font-size: 30px;
+    color: #fff;
 }
 
-.grid .blok1{
-   background: #1e1c27;
-   grid-column: 1 / 4;
-   grid-row: 1 / 4;
-   
+.row {
+    box-sizing: border-box;
+}
+.form_zone {
+    width: 65%;
+    min-height: 450px;
+    float: left;
+}
+.inner_form {
+    background: #16151d;
+    height: 450px;
 
 }
-.grid .blok2, .grid .blok3, .grid .blok4{
-   background: #1e1c27;
-   grid-column: 4;
- 
-}
-
-.grid .blok5{
-   background: #1e1c27;
-   grid-row: 4;
-   grid-column: 1/5;
- 
-}
-
 form {
-    padding-top: 6em;
-    padding-left: 17em;
-    padding-bottom: 6em;
+    
     text-transform: uppercase;
     width: auto;
+    padding: 30px 60px;
 
+}
+.form_box {
+    margin: 30px 5px 30px 160px;
 }
 
 label {
    display: block;
-   margin-bottom: 1em;
+   margin-bottom: 10px;
    font-size: 12px;
 }
 
 #name,  #email {
-    width: 20em;
-    height: 3em;
+    width: 260px;
+    height: 40px;
     background: #2e2b3c;
     border: none;
 }
 
 
 textarea {
-    width: 41em;
+    width: 535px;
     height: 15em;
     display: block;
     margin-top: 2em;
@@ -290,11 +296,25 @@ textarea {
     margin-top: 4em;
 }
 
+
+.sidebar {
+    width: 35%;
+    background: #1e1c27;
+    min-height: 450px;
+    float: left;
+    
+}
+.inner_sidebar {
+    background: #16151d;
+    height: 148px;
+    margin: 0 0 2px 2px;
+
+}
 .icon1{
-    width: 3em;
-    height:2em;
-    margin-top: 2em;
-    margin-left: 2em;
+    padding-top: 10px;
+    width: 15px;
+    height: 15px;
+    margin-left: 76px;
    
     
 }
@@ -303,7 +323,7 @@ textarea {
     font-family: "fontawesome";
     position: absolute;
     padding: 6px;
-    font-size: 25px;
+    font-size: 22px;
     color: black;
     background: white;
     border-radius: 50%;
@@ -315,14 +335,26 @@ textarea {
    
     margin: 5px 55px;
     font-size: 17px;
+    width: 245px;
+}
+.icon1 .phone p {
+    font-size: 15px;
+    margin-left: 0;
 }
 
+.phone_zone {
+    background: #16151d;
+    height: 148px;
+    margin: 0 0 2px 2px;
+}
 .icon1 a, .icon1 .phone {
     text-decoration: none;
     color: #fff;
     display: block;
-    margin-top: 29px;
+    margin-top: 14px;
     margin-left: 55px;
+    font-size: 20px;
+    width: 190px;
 }
 
 .fa-phone:before {
@@ -330,12 +362,22 @@ textarea {
     font-family: "fontawesome";
     position: absolute;
     padding: 6px;
-    font-size: 25px;
+    font-size: 22px;
     color: black;
     background: white;
     border-radius: 50%;
   display: block;
     float: left;
     clear: both;
-  
+  }
+
+.address_zone {
+    background: #16151d;
+    height: 148px;
+    margin: 0 0 2px 2px;
+}
+.inner_footer {
+    background: #16151d;
+    margin-top: 2px;
+    height: 4em;
 }
