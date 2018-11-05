@@ -1,0 +1,62 @@
+.shadow.shadow-second {
+height: 100%;
+    opacity: 0;
+}
+
+
+
+.background-second-page {
+    background: #242943;
+    background-position: top;
+    background-attachment: fixed;
+    height: 100%;
+    z-index: 1;
+    position: static;
+    border-bottom: 1px solid #2A2F4A;
+}
+
+
+
+.header-second {
+    background: #2A2F4A;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+.header-second>div+div{
+   float:right;
+    width: 30%;
+    text-align: right;
+}
+
+.header-second>div{
+    float:right;
+    width: 70%;
+    float: left;
+}
+
+.hello-second h1{
+    display: inline-block;
+    padding: 0 2rem 1rem 0;
+}
+
+.hello-second {
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+
+.content {
+    width: 100%;
+}
+
+.content .image {
+    width: 100%;
+}
+
+.content p {
+   padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}

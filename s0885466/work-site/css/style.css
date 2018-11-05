@@ -18,7 +18,7 @@ body {
     background-attachment: fixed;
     /*заливает фон на 100%*/
     background-size: cover;
-    padding: 2rem;
+    //padding: 2rem;
     height: 40rem;
     z-index: 1;
     position: static;
@@ -27,6 +27,7 @@ body {
 header {
     position: relative;
     z-index: 2;
+    padding: 2rem;
 }
 
 
@@ -92,7 +93,7 @@ a .logo{
 
 h1 {
     font-size: 3rem;
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px white;
     padding-bottom: 2rem;
 }
 

@@ -1,4 +1,4 @@
-@media (max-device-width: 769px ) {
+@media (max-device-width: 1200px ) {
     .information .form {
         width: 52%;
         padding: 4rem 0rem 2rem 4rem;
@@ -11,6 +11,10 @@
     }
     .second {
         padding: 10% 5% 10% 7%;
+    }
+
+    .hello-second {
+        padding: 12% 7% 7% 7%;
     }
 
 
@@ -125,6 +129,12 @@
         padding-left: 3rem;
         padding-top: 5rem;
     }
+
+    .hello-second {
+        padding: 15% 5% 5% 5%;
+    }
+
+
 
 
 }
