@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>grid layout</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> 
+	<link rel="stylesheet" type="text/css" href="css/form_footer_gridLayout.css">
+</head>
+<body>
+	
+	<!-- forms + footer на grid layout -->
+	<!-- используем grid-template-columns и grid-template-rows-->
+	<!--<div class="gridlayout-container">
+		<section class="item-gridlayout">1</section>
+		<section class="item-gridlayout">2</section>
+		<section class="item-gridlayout">3</section>
+		<section class="item-gridlayout">4</section>
+		<section class="item-gridlayout">5</section>
+	</div>-->
+
+
+	<!-- forms + footer на grid layout -->
+	<!-- используем grid-column и grid-row-->
+	<div class="gridlayout-container">
+		<section class="item-gridlayout">
+			<div class="form">
+				<form>					
+					<!-- flex контейнер (поля ввода)-->
+					<div class="input-fields row">
+						<!-- ввод имени-->
+						<div class="item-flex">
+							<label for="nameField">Name</label>
+							<input type="text" name="username" id="nameField" placeholder="введите имя" required="">
+						</div>
+						<!-- ввод почты-->
+						<div class="item-flex">
+							<label for="emailField">Email</label>
+							<input type="email" name="emailField" id="emailField" placeholder="введите почту" required="">
+						</div>
+						<!-- ввод сообщения -->
+						<div class="message">
+							<label>Message</label>
+							<textarea name="message" id="message" rows="8"></textarea>
+						</div>
+					</div>
+					<!-- flex контейнер (кнопки действий)-->
+					<div class="action-button row">
+						<div>
+							<input class="send-message" type="submit" name="" value="send message">
+						</div>
+						<div>
+							<input class="clear-form" type="reset" value="clear">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="item-gridlayout">
+			<div class="right-section row">
+				<div class="icon-fa">
+					<span class="fas fa-envelope"></span>
+				</div>
+				<div class="contacts">	
+					<h3>Email</h3>
+					<a href="">myemail@adress.com</a>
+				</div>
+			</div>
+		</section>
+		<section class="item-gridlayout">
+			<div class="right-section row">
+						<div class="icon-fa">
+							<span class="fas fa-phone"></span>
+						</div>
+						<div class="contacts">
+							<h3>Phone</h3>
+							<span>+79210000000</span>
+						</div>	
+					</div>
+		</section>
+		<section class="item-gridlayout">
+			<div class="right-section row">
+						<div class="icon-fa">
+							<span class="fas fa-home"></span>
+						</div>
+						<div class="contacts">
+							<h3>Adress</h3>
+							<span>		
+								190025 St-Petersberg
+								<br>
+								Nevskiy avenue, 36
+								<br>
+								Russian Federation
+							</span>
+						</div>	
+					</div>
+		</section>
+		<section class="item-gridlayout">
+			<div class="footer">
+				<section class="icon-footer">
+					<div>
+						<ul class="no-list">
+							<li>
+								<a class="fab fa-twitter" href=""></a>	
+							</li>
+							<li>
+								<a class="fab fa-facebook-f" href=""></a>
+							</li>
+							<li>
+								<a class="fab fa-instagram" href=""></a>
+							</li>
+							<li>
+								<a class="fab fa-github" href=""></a>
+							</li>
+							<li>
+								<a class="fab fa-linkedin-in" href=""></a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="copyright">
+					<div>
+						<ul class="no-list">
+							<li>@United</li>
+							<li>
+								Design:
+								<a href="https://html5up.net/forty">HTML5 UP</a>
+							</li>
+							<li>
+								Demo images:
+								<a href="https://unsplash.com/">Unsplash</a>
+							</li>
+						</ul>	
+					</div>
+				</section>		
+			</div>
+		</section>
+	</div>
+
+</body>
+
+</html>

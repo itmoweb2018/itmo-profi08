@@ -1,0 +1,133 @@
+@media (max-device-width: 769px ) {
+    .information .form {
+        width: 52%;
+        padding: 4rem 0rem 2rem 4rem;
+    }
+    .information .email-address>div{
+        padding: 4rem 4rem 2rem 1rem;
+    }
+    .information .email-address>div+div+div{
+        padding: 4rem 4rem 2rem 1rem;
+    }
+    .second {
+        padding: 10% 5% 10% 7%;
+    }
+
+
+}
+
+
+
+@media (max-device-width: 479px ) {
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        flex-basis: 100%;
+    }
+
+   header a span {
+       font-size: 2rem;
+   }
+    header a span+span {
+        display:none;
+    }
+    header a+a span {
+        display: none;
+    }
+    header .fa-lg {
+        font-size: 4em;
+        transition: all 1s;
+    }
+    .information .form {
+        width: 100%;
+        padding: 4%;
+        height: 62rem;
+        border-bottom: 2px solid #2A2F4A;
+    }
+    .div50 {
+        float: left;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .about-message {
+       padding: 1% 1% 6% 1%;
+    }
+
+    .information form textarea{
+        width: 99%;
+    }
+
+    .information form label {
+        font-size: 2rem;
+    }
+
+    .information form .button-for-mobile{
+        font-size: 2.5rem;
+        padding: 2rem 4rem 2rem 4rem;
+        border: 3px solid white;
+
+    }
+
+    .information form .super-button{
+        font-size: 2.5rem;
+        padding: 2rem;
+        margin-right: 2rem;
+    }
+
+    .mobile-style-button {
+        margin: 2% 0 2% 0;
+    padding: 1%;
+    }
+
+    .information .email-address {
+        width: 100%;
+
+    }
+
+    .second {
+        padding: 10% 5% 10% 5%;
+    }
+
+    .second p{
+        font-size: 1rem;
+        padding-bottom: 10%;
+    }
+
+.right .button,.second .button {
+    font-size: 2rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    font-weight: lighter;
+    border: solid 3px white;
+}
+
+
+    .information .email-address>div{
+        padding: 4rem 2rem 3rem 3rem;
+    }
+
+    .information .email-address>div+div+div{
+        padding: 4rem 2rem 3rem 3rem;
+    }
+
+
+    .footer>div{
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+
+}
+
+
+

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:300,400,600,700,800" rel="stylesheet"> 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
 </head>
 <body>
 	<!-- LAYER AND MENU -->
@@ -53,7 +54,7 @@
 	</div>
 	<div class="content-block">
 		<div class="element-row-one">
-			<div onClick="window.location='#'" id="element-one" class="elements">
+			<div onClick="window.location='second.html'" id="element-one" class="elements">
 			<div class="element-layer-one">
 				<div class="element-container">
 					<div class="element-name">Aliquam</div>
@@ -61,7 +62,7 @@
 				</div>
 			</div>
 			</div>
-			<div onClick="window.location='#'" id="element-two" class="elements">
+			<div onClick="window.location='second.html'" id="element-two" class="elements">
 			<div class="element-layer-two">	
 				<div class="element-container">
 					<div class="element-name">Tempus</div>
@@ -71,7 +72,7 @@
 			</div>
 		</div>
 		<div class="element-row-two">
-			<div onClick="window.location='#'" id="element-three" class="elements">
+			<div onClick="window.location='second.html'" id="element-three" class="elements">
 			<div class="element-layer-three">
 				<div class="element-container">
 					<div class="element-name">Magna</div>
@@ -79,7 +80,7 @@
 				</div>
 			</div>
 			</div>
-			<div onClick="window.location='#'" id="element-four" class="elements">
+			<div onClick="window.location='second.html'" id="element-four" class="elements">
 				<div class="element-layer-four">
 				<div class="element-container">
 					<div class="element-name">Ipsum</div>
@@ -89,7 +90,7 @@
 			</div>
 		</div>
 		<div class="element-row-three">
-			<div onClick="window.location='#'" id="element-five" class="elements">
+			<div onClick="window.location='second.html'" id="element-five" class="elements">
 			<div class="element-layer-five">
 				<div class="element-container">
 					<div class="element-name">Consequat</div>
@@ -97,7 +98,7 @@
 				</div>
 			</div>
 			</div>
-			<div onClick="window.location='#'" id="element-six" class="elements">
+			<div onClick="window.location='second.html'" id="element-six" class="elements">
 			<div class="element-layer-six">
 				<div class="element-container">
 					<div class="element-name">Etiam</div>
@@ -115,23 +116,31 @@
 		</div>
 	</div>
 	<div class="contacts">
-		<div class="contact-form">
+
+		<div class="form--container">
 			<form>
-				<div class="input-column">
-					<label for="name">name</label>
-					<input type="text" name="name" id="name">
-				</div>
-				<div class="input-column">
-					<label for="email">email</label>
-					<input type="email" name="email" id="email">
+				<div class="input__box">
+					<label class="description" for="name">NAME</label>
+					<input type="text" name="name">
 				</div>
 
-				<div class="area-column">
-					<label for="message">message</label>
-					<textarea name="message" id="message"></textarea>
+				<div class="input__box">
+					<label class="description" id="email">EMAIL</label>
+					<input type="text" name="email" id="email">
 				</div>
+
+				<div class="textarea__box">
+					<label class="description">MESSAGE</label>
+					<textarea></textarea>
+				</div>
+			
+			<div class="button">
+				<button type="submit" class="buttons one">SEND MESSAGE</button>
+				<button type="reset" class="buttons two">CLEAR</button>
+			</div>
 			</form>
 		</div>
+
 		<div class="contacts-info">
 			<div class="info">
 				<div class="info-ico"><i class="fas fa-envelope"></i></div>

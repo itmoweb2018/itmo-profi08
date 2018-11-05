@@ -6,34 +6,54 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 <body>
-    <div class="shadow">
+<div class="menu" id="modal">
+    <div class="close"><a href=""><i class="fas fa-times fa-2x"></i></a></div>
+    <div class="center-menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Landing</a></li>
+            <li><a href="">Generic</a></li>
+            <li><a href="">Elements</a></li>
+            <li><a href="">Get started</a></li>
+            <li><a href="">Log in</a></li>
+        </ul>
+    </div>
+</div>
+        <div class="shadow">
+        </div>
+        <div class="background-page">
         <header class="upper_case clearfix">
-            <a href="index.html"><span class="logo">Forty</span><span> by html5 up</span></a>
-            <a href=""><span>menu </span><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+            <a href="index.html"><span class="logo">Forty</span><span> by Alinovskiy</span></a>
+            <a href="#modal"><span>menu</span><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
         </header>
         <section class="hello clear"><h1>Hi, my name is Forty</h1>
             <div>
                 <div class="upper_case left">
-                <p>A responsive site template designed by HTML5 UP
-                    and released under the Creative Commons.</p>
+                    <p>A responsive site template designed by HTML5 UP
+                        and released under the Creative Commons.</p>
                 </div>
-            <div class="right">
-                <a href="" class="button upper_case">get started
-                    <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
-                </a>
-            </div>
+                <div class="right">
+                    <a href="" class="button upper_case">get started
+                        <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </section>
+        </div>
+
         <section class="row">
             <div class="col-5 height-25 col photo1">
                 <a href="" class="blue1">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
@@ -41,7 +61,7 @@
             <div class="col-7 height-25 col photo2">
                 <a href="" class="purple">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
@@ -49,7 +69,7 @@
             <div class="col-7 height-25 col photo3">
                 <a href="" class="pink">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
@@ -57,7 +77,7 @@
             <div class="col-5 height-25 col photo4">
                 <a href="" class="orange">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
@@ -65,7 +85,7 @@
             <div class="col-5 height-25 col photo5">
                 <a href="" class="blue2">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
@@ -73,14 +93,14 @@
             <div class="col-7 height-25 col photo6">
                 <a href="" class="green">
                     <div>
-                        <h3>Aliquam</h3>
+                        <h3 class="class-h3">Aliquam</h3>
                         <p class="upper_case">Ipsum dolor sit amet</p>
                     </div>
                 </a>
             </div>
         </section>
         <section class="second">
-            <h3>Massa libero</h3>
+            <h3 class="class-h3">Massa libero</h3>
             <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
                 Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque
@@ -90,66 +110,83 @@
             </p>
             <a href="" class="button upper_case">get started <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></a>
         </section>
-        <section class="row-nowrap border-bottom background-color">
-            <div class="left-section upper_case col-5">
-                <form method="post" class="row">
-                    <div>
-                        <label>Name</label>
+        <section class="information clearfix">
+            <div class="form">
+                <form method="post">
+                    <div class="clearfix">
+                    <div class="div50">
+                        <label class="upper_case">Name</label>
                         <input type="text">
                     </div>
-                    <div>
-                        <label>Email</label>
+                    <div class="div50">
+                        <label class="upper_case">Email</label>
                         <input type="text">
                     </div>
-                    <div>
-                        <label>Message</label>
+                    </div>
+                    <div class="about-message">
+                        <label class="upper_case">Message</label>
                         <textarea></textarea>
                     </div>
-                    <a href="" class="button upper_case super-button">send message</a>
-                    <a href="" class="button supper_case">Clear</a>
+
+                    <div class ="mobile-style-button">
+                        <a href="" class="button upper_case super-button">send message</a>
+                        <a href="" class="button supper_case button-for-mobile">Clear</a>
+                    </div>
                 </form>
             </div>
-            <div class="right-section col-7">
+            <div class="email-address">
                 <div>
-                    <i class="fa fa-envelope-open fa-3x" aria-hidden="true"></i>
-                    <h3>Email</h3>
-                    <a href="">information@untitled.tld</a>
+                    <div class="around-ico-1">
+                        <i class="fa fas fa-envelope fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                    </div>
+                    <div class="div-with-a">
+                        <a href="">information@untitled.tld</a>
+                    </div>
                 </div>
                 <div>
-                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-                    <h3>Phone</h3>
-                    <p>(000) 000-0000 x12387</p>
+                    <div class="around-ico-1">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                    </div>
+                    <div class="div-with-a">
+                        <p>(000) 000-0000 x12387</p>
+                    </div>
                 </div>
                 <div>
-                    <i class="fa fa-address-book fa-3x" aria-hidden="true"></i>
-                    <h3>Address</h3>
-                    <p>1234 Somewhere Road #5432</p>
-                    <p>Nashville, TN 00000</p>
-                    <p>United States of America</p>
+                    <div class="around-ico-1">
+                        <i class="fas fa-home fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                    </div>
+                    <div class="div-with-a">
+                        <p>1234 Somewhere Road #5432</p>
+                        <p>Nashville, TN 00000</p>
+                        <p>United States of America</p>
+                    </div>
                 </div>
             </div>
-
         </section>
+
         <div class="footer background-color">
             <div>
-                <!--<div>-->
-                    <!--<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>-->
-                    <!--<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
-                    <!--<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
-                    <!--<a href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>-->
-                    <!--<a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>-->
-                <!--</div>-->
-                <div>
-                    <a href=""><i class="a-style fa fa-cog fa-spin fa-3x fa-fw"></i></a>
-                    <a href=""><i class="a-style fa fa-cog fa-spin fa-3x fa-fw"></i></a>
-                    <a href=""><i class="a-style fa fa-cog fa-spin fa-3x fa-fw"></i></a>
-                    <a href=""><i class="a-style fa fa-cog fa-spin fa-3x fa-fw"></i></a>
-                    <a href=""><i class="a-style fa fa-cog fa-spin fa-3x fa-fw"></i></a>
-               </div>
-
+                <div class="around-ico"><a href="#"><i class=" a-style fab fa-twitter fa-2x"></i></a></div>
+                <div class="around-ico"><a href="#"><i class=" a-style fab fa-facebook fa-2x"></i></a></div>
+                <div class="around-ico"><a href="#"><i class=" a-style fab fa-instagram fa-2x"></i></a></div>
+                <div class="around-ico"><a href="#"><i class=" a-style fab fa-github fa-2x"></i></a></div>
+                <div class="around-ico"><a href="#"><i class=" a-style fab fa-linkedin-in fa-2x"></i></a></div>
 
             </div>
         </div>
-    </div>
+        <div class="last-div background-color">
+            <div>© Untitled</div>
+            <div>Design: <a href="">HTML5 UP</a></div>
+            <div>Demo Images: <a href="">Unsplash</a></div>
+        </div>
 </body>
 </html>

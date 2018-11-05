@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.nav').click(function(){
-		$('.div--layer').toggle(300);
+		$('.div--layer').fadeIn(300);
 	})
 
 	$('.close').click(function(){
