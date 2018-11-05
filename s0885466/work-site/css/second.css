@@ -1,9 +1,3 @@
-.shadow.shadow-second {
-height: 100%;
-    opacity: 0;
-}
-
-
 
 .background-second-page {
     background: #242943;
@@ -42,7 +36,7 @@ height: 100%;
 
 .hello-second {
     padding-bottom: 3rem;
-    width: 100%;
+    width: auto;
 }
 
 

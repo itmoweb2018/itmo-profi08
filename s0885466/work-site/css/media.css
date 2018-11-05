@@ -48,6 +48,14 @@
     header a+a span {
         display: none;
     }
+
+    .menu-shadow {
+        display: none;
+    }
+
+
+
+
     header .fa-lg {
         font-size: 4em;
         transition: all 1s;
