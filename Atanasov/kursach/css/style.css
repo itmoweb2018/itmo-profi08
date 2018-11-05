@@ -6,6 +6,9 @@ body {
 /*    box-sizing: border-box;*/
     margin: 0;    
     color: white;
+}
+
+body, input, textarea {
     font-family: "Open Sans";
 }
 
@@ -102,7 +105,10 @@ strong {
     display: inline-block;
     justify-content: flex-start;
     max-width: 40rem;
-    margin-right: 1rem;
+}
+
+.bannerText p {
+    margin: 2rem 1rem 2rem 0;
 }
 
 .buttonStarted {
@@ -125,12 +131,18 @@ strong {
 /* ---------- end HEADER ---------- */
 
 /*start text formatting*/
-.banner p, .menu, .buttonStarted, .boxpar {
+.banner p,
+.menu,
+.buttonStarted,
+.buttonSend,
+.boxpar,
+label {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
-.logo, .buttonStarted {
+.logo,
+.buttonStarted    {
     text-decoration: none;
     color: #fff;
 }
@@ -140,7 +152,7 @@ strong {
 }
 /*text formatting end*/
 
-/*Начало секции с картинками*/
+/*----------Начало секции с картинками----------*/
 .photo-block {
     background-color: black;
 /*    width: 60%;*/
@@ -199,7 +211,7 @@ strong {
 /*Завершение секции с картинками*/
 
 
-/*try imgbox by flex*/
+/*----------try imgbox by flex----------*/
 .imgBox {
     display: flex;
     flex-direction: row;
@@ -276,20 +288,27 @@ strong {
     
 } */
 
-/*end imgbox by flex*/
+/*----------end imgbox by flex----------*/
 
-/* start afterBoxText */
+/*----------start afterBoxText----------*/
+/*
 .afterBox {
     display: block;
     background-color: #2a2f4a;
     width: 100%;
     height: 100%;
 }
+*/
 
 .bannerAfterBox {
     padding: 5rem 10%;
     margin: 0 auto;
-    width: calc(100% - 3rem);
+/*    width: calc(100% - 3rem);*/
+    
+    display: block;
+    background-color: #2a2f4a;
+    width: 100%;
+   /*  height: 100%; */
 }
 
 #afterMainH {
@@ -303,33 +322,157 @@ strong {
     margin-bottom: 0.8rem;
 }
 
-.afterBannerText{
+.afterBannerText {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
+    margin: 2rem 0;
     
 }
+
+.afterBannerText p {
+    margin: 0;
+}
 /* end afterBoxText */
+
+
 
 /*start feedback block*/
 
 section.feedback {
-    padding: 10rem;
+    padding: 5rem 10%;
+    margin: 0 auto; /* вынести в отдельное с баннером афтер */
     background: #242943;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 1fr 0.5fr 1fr 0.5fr;
+}
+
+#NameFeedback {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#EmailFeedback {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#MessageFeedback {
+    grid-column: 1/3;
+    grid-row: 2/5;
+}
+
+#ButtonFeedback {
+    grid-column: 1/2;
+    grid-row: 5/7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+#iconEmail {
+    position: relative;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    border-left: 1px solid rgba(212, 212, 255, 0.1);
+   /*  border-bottom: 1px solid rgba(212, 212, 255, 0.1); */
+}
+
+#iconPhone {
+    position: relative;
+    grid-column: 3/5;
+    grid-row: 3/5;
+    border-left: 1px solid rgba(212, 212, 255, 0.1);
+    /* border-bottom: 1px solid rgba(212, 212, 255, 0.1); */
+}
+
+#iconAddress {
+    position: relative;
+    grid-column: 3/5;
+    grid-row: 5/7;
+    border-left: 1px solid rgba(212, 212, 255, 0.1);
+    /* border-bottom: 1px solid rgba(212, 212, 255, 0.1); */
+}
+
+.buttonSend a {
+    color: #242943;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 1rem; 
+    height: 3rem;
+    text-decoration: none;
+    line-height: 3.5rem;
+    
+}
+
+.buttonSend a:hover {
+    background-color: #9bf1ff;
+    border: 1px solid #9bf1ff;
+    transition: 0.5s ease 0.1s; 
+} 
+
+#iconPhone::before {  /* переравотать */
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block;
+   /*  margin-left: -3em; */
+    position: absolute;
+    top: 0;
+    width: calc(100vw + 3em);
+}
+
+#iconAddress::before {  /* переравотать */
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block;
+   /*  margin-left: -3em; */
+    position: absolute;
+    top: 0;
+    width: calc(100vw + 3em);
+}
+
+#NameFeedback,
+#EmailFeedback,
+#MessageFeedback {
+    margin-right: 2rem;
+    margin-top: 2rem;
 }
 
 label {
     display: block;
-    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /* margin-top: 2rem; */
 }
-
-input {
+ 
+input, textarea {
+    display: block;
     background: #2a2f4a;
     border: none;
     padding: 1rem;
     outline: none;
     color: #fff;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.1rem;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #9bf1ff;
+    box-shadow: 0 0 0 2px #9bf1ff;
+    transition: border-color 0.5s ease 0.1s;
+    transition: box-shadow 0.5s ease 0.1s;
+}
+
+#messageField {
+    height: 15rem;
+} 
 
 .radioBox {
     background-color: #2a2f4a;

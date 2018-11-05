@@ -1,0 +1,826 @@
+[33mcommit e26d42138bee713b0151acb9b10807ee37f51a59[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: cc8d1b4 23c8540
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Nov 5 16:20:42 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit cc8d1b4c7b5f45a8b1747e563579a6384ba82575[m
+Merge: b8283e9 654cd9b
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Nov 5 16:20:19 2018 +0300
+
+    sdd
+
+[33mcommit 23c8540145469e0075cb1f8ca60fa3937209981a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Nov 5 15:38:29 2018 +0300
+
+    last version
+
+[33mcommit b8283e985a2f82919202b6647d6a42c888b653a4[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Nov 5 13:29:04 2018 +0300
+
+     main page + modal window
+
+[33mcommit 654cd9b0c378a7de5859de6a20166c409ff4078b[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Mon Nov 5 01:16:20 2018 +0300
+
+    added: feedback box grid'ed, feedback button fixed.
+    Not already ready
+
+[33mcommit 0925e5978d5690547a2ee5fa837e6ed371b61dd7[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Sun Nov 4 06:32:09 2018 +0200
+
+    version3
+
+[33mcommit 5d3e2af769726705f94044fd609d91d2e283cdaa[m
+Merge: e5579e6 5763c7d
+Author: Vitaly <tax.info@bk.ru>
+Date:   Fri Nov 2 23:33:49 2018 +0200
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit e5579e6c76e7e2be92fafd2ce6f71988649ba0b1[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Fri Nov 2 23:30:58 2018 +0200
+
+    main page last version 2.11.2018
+
+[33mcommit 5763c7d6d6eff03cb2f815d760f9eaa4b6885f31[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Sat Nov 3 00:22:08 2018 +0300
+
+    final version
+
+[33mcommit a10ae960e099a5f3c70835355e23bee5de02499f[m
+Merge: e49e5a8 fb04b99
+Author: Vitaly <tax.info@bk.ru>
+Date:   Fri Nov 2 22:11:24 2018 +0200
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit e49e5a8de541d768508194a082af3309c9eaf032[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Fri Nov 2 22:06:39 2018 +0200
+
+    second version 2.11.2018
+
+[33mcommit f986bdb68b99baf86b25459373b7c8ea6a75e316[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Fri Nov 2 21:54:48 2018 +0200
+
+    new version 2.11.2018
+
+[33mcommit fb04b9987ffcd3920ccc3f21e0b0d6fcba2c51c3[m
+Author: Samoylov <win9@ya.ru>
+Date:   Thu Nov 1 14:53:07 2018 +0300
+
+    add adaptive
+
+[33mcommit b147c03a03446cf2d387be791a3ebb984468cb68[m
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Thu Nov 1 14:09:56 2018 +0300
+
+    mysite final
+
+[33mcommit 27f71d2c1183af8ad6629e15417f93632b11043b[m
+Author: Samoylov <win9@ya.ru>
+Date:   Wed Oct 31 02:57:42 2018 +0300
+
+    finished
+
+[33mcommit ce111ff264301e29237ec2f03b91befab745815d[m
+Author: Samoylov <win9@ya.ru>
+Date:   Wed Oct 31 02:55:12 2018 +0300
+
+    finished
+
+[33mcommit a096fcfd2b6b4a5df27aabbd0880dfa679effb7b[m
+Author: Samoylov <win9@ya.ru>
+Date:   Wed Oct 31 01:26:21 2018 +0300
+
+    add adaptive
+
+[33mcommit 94c0dfe85f7c249741323745b6e71a8c86a41a16[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 30 16:25:15 2018 +0300
+
+    finished
+
+[33mcommit c7ba1705082d8f0fc3496de26566d96b4ad50aae[m
+Author: Slyznord <mr.tadesse@bk.ru>
+Date:   Tue Oct 30 15:21:01 2018 +0300
+
+    complete form
+
+[33mcommit bd0e02695fdf574ce5ec78c96a7c981267dbbc71[m
+Merge: 4c64c56 d2f3e84
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 30 14:13:37 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 4c64c5641e6cda46d542da82cd1ca97ea640fd94[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 30 14:11:40 2018 +0300
+
+    new
+
+[33mcommit d2f3e84304086459700474109daef5a0f6a4798e[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Mon Oct 29 23:53:18 2018 +0300
+
+    added: header flex'ed; after imf box with text.
+
+[33mcommit 11944ee554a6f1ab215239ea2a5dc5ea72379d77[m
+Merge: f4389eb c35e990
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 29 23:35:38 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit f4389eb4ebb00453a38da61053735babea44247f[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 29 23:35:19 2018 +0300
+
+    add second page
+
+[33mcommit c35e9902b6aca545212814a4478780837bc6474a[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 29 23:29:53 2018 +0300
+
+    29/10/2018
+
+[33mcommit b56d239cb53e2dc970d729b8d816bed2b855d909[m
+Merge: a629817 08f3b2e
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 29 23:29:23 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit a629817f97d797f86da271d5766daafea0114c23[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 29 23:27:52 2018 +0300
+
+    29/10/2018.
+
+[33mcommit 08f3b2efec4bef38566982b8252d9181727bffe8[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 29 16:11:02 2018 +0300
+
+    add footer v2
+
+[33mcommit 814269c0fd505fadaba61c0a1264bc0c6ed921a2[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 29 15:44:28 2018 +0300
+
+    add footer
+
+[33mcommit 0d450614e88b4418ecac5465fb18b40d85c6bd59[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 29 14:27:50 2018 +0300
+
+    add new features
+
+[33mcommit fd6f646a222f40f805526c39c0c601947febe0ee[m
+Merge: fbdb11d 74f39f6
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sun Oct 28 23:49:48 2018 +0300
+
+    nout
+
+[33mcommit fbdb11d6037ecbacad3e69295ed8efa4be85d360[m
+Merge: 112fc5d 4e6e81d
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sun Oct 28 23:41:31 2018 +0300
+
+    123
+
+[33mcommit 74f39f699a19af257889d3dfaf41251dbf69b008[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sun Oct 28 23:40:05 2018 +0300
+
+    added: fonts, color, and isco chto-to
+
+[33mcommit 112fc5d1d06e2766e544b8954521bb754358c8fd[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sun Oct 28 23:37:54 2018 +0300
+
+    adasd
+
+[33mcommit 4e6e81d799f53a14a187bb4429aa428cdf89834e[m
+Author: s20371 <0885466@gmail.com>
+Date:   Sun Oct 28 23:21:46 2018 +0300
+
+    28.10.2018
+
+[33mcommit 86ae335104f6981c6f5b39243aca63a42c164e6e[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Sun Oct 28 16:21:17 2018 +0200
+
+    exersice
+
+[33mcommit d635710fe45a4343306cafc7268231bbf86a84fd[m
+Author: Vitaly <tax.info@bk.ru>
+Date:   Sun Oct 28 13:47:25 2018 +0200
+
+    site
+
+[33mcommit 4284ecbc6285e26a47dd5718534dcbb0f8ba25b0[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sun Oct 28 00:44:51 2018 +0300
+
+    added: some flex+transimagic for kursach
+
+[33mcommit dad66ab739cf13c7dcf007d3c54a75b60dc3783b[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Sat Oct 27 01:50:42 2018 +0300
+
+    is it finish
+
+[33mcommit 5a2855036dae754eb569f1e26157608b7bcac066[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Fri Oct 26 23:22:09 2018 +0300
+
+    the main page need some changes
+
+[33mcommit e5bd85b13b24f5b31be7575913813b6b6621f05f[m
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Fri Oct 26 12:05:16 2018 +0300
+
+    main page v1
+
+[33mcommit fd3c26772988a23f4fba562544777caa3cf1599d[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Wed Oct 24 23:41:09 2018 +0300
+
+    added: les06 and begin kursach
+
+[33mcommit fb0a3ee4cd6fd5a7398108150877a6a58d501cda[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Wed Oct 24 02:23:08 2018 +0300
+
+    js suck
+
+[33mcommit fc078c3767ac6b2da48dc0de9f8028d15d191702[m
+Author: Slyznord <mr.tadesse@bk.ru>
+Date:   Tue Oct 23 21:47:13 2018 +0300
+
+    finish
+
+[33mcommit 47a982cdfb552015367ae30b517250ce6034c221[m
+Author: Slyznord <mr.tadesse@bk.ru>
+Date:   Tue Oct 23 21:44:46 2018 +0300
+
+    newPage
+
+[33mcommit df1f087542f6f1320df931fe4a6aad587b5486ea[m
+Author: Slyznord <mr.tadesse@bk.ru>
+Date:   Tue Oct 23 21:15:41 2018 +0300
+
+    forty
+
+[33mcommit 93939e1af30656301078217cac25605e9920facd[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 23 20:50:53 2018 +0300
+
+    add coursework project
+
+[33mcommit 36bbd2387c064b04cc3d360c101af75012cd0885[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 23 16:55:31 2018 +0300
+
+    new block
+
+[33mcommit f06b8b0af7d0ff5dab82a502dd5de9f1a2277640[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Tue Oct 23 16:29:39 2018 +0300
+
+    small changes
+
+[33mcommit af1f12b5204fb4791ff1f1e33aead31a0a8de6f3[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 23 15:00:15 2018 +0300
+
+    corrective menu
+
+[33mcommit 50c8f1c07d21e81e774d172ea3fd2400e00be03b[m
+Merge: 86bd915 464a22e
+Author: OTV777 <OTV777@yandex.ru>
+Date:   Tue Oct 23 14:37:36 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 86bd915a36259e4f476b25c534bd0704489e0ce2[m
+Author: Nilov Mikhail <OTV777@yandex.ru>
+Date:   Tue Oct 23 14:13:07 2018 +0300
+
+    NilovMikhail joined. It is my first commit to common repo
+
+[33mcommit 464a22e34be6720d105976126b5f79e6e8b21503[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 23 01:39:35 2018 +0300
+
+    add menu block with color layers
+
+[33mcommit b37d6a8e970070faa0a11c06a132c3e9560bef89[m
+Author: Samoylov <win9@ya.ru>
+Date:   Tue Oct 23 00:47:27 2018 +0300
+
+    add elements menu block
+
+[33mcommit 280734e8abc47b5d38d107886cb2d4107ce1c9f8[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Mon Oct 22 23:29:40 2018 +0300
+
+    added: modal window
+
+[33mcommit 4be3a492a3c95e6781e9dd46bf59afb2c91b010d[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 22 14:01:25 2018 +0300
+
+    last version 22/10/2018
+
+[33mcommit bb90c80183cdc8dfb96170770b67081323b290a5[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 22 13:53:14 2018 +0300
+
+    page with links
+
+[33mcommit db15f0f216b2b5e7c8037eff36d1133c5304ab9a[m
+Author: s20371 <0885466@gmail.com>
+Date:   Mon Oct 22 13:37:35 2018 +0300
+
+    ver 22/10/2018
+
+[33mcommit d0d332bd2800d9abe0b8e1a33af0bad1bc72d506[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 22 13:21:25 2018 +0300
+
+    changes 2
+
+[33mcommit 81167c25b91746381ea7e2cbccdbee0ffd90780c[m
+Merge: 977a266 cbe6d84
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 22 13:18:49 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 977a2664daed9854ef271a7012ec78b2b1b41080[m
+Author: Samoylov <win9@ya.ru>
+Date:   Mon Oct 22 13:18:16 2018 +0300
+
+    changes
+
+[33mcommit cbe6d84bc57d84bec658a32f8a4baba4e7a7fddd[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 02:32:22 2018 +0300
+
+    gitignore
+
+[33mcommit e7534030dbea5be58a0b9504e86a5ac84864d550[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 02:25:27 2018 +0300
+
+    the menu had been done
+
+[33mcommit c2f7d8266b6d28b20a4f50cc4e28841fc43f742e[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 02:14:59 2018 +0300
+
+    git
+
+[33mcommit 1438b748c1ca7e8199b4643a28bec21164e35eb5[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 01:47:10 2018 +0300
+
+    gitignore had been added
+
+[33mcommit 9bc5598999706d6c6b1cf9ba03fe3e31932300cf[m
+Merge: 670bf85 1c10188
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 01:45:25 2018 +0300
+
+    gitignore for mac had been added
+
+[33mcommit 670bf8589e809750b67388a1db5748a089516b59[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 22 01:32:32 2018 +0300
+
+    the menu had been done
+
+[33mcommit 1c10188da919860a02166cfda3776be01b0d40a3[m
+Author: Samoylov <win9@ya.ru>
+Date:   Sun Oct 21 23:25:25 2018 +0300
+
+    start forty project
+
+[33mcommit 2eff1bcfe22944cb4436ba565cadce85f9684620[m
+Merge: 79b5289 94bc0a5
+Author: Samoylov <win9@ya.ru>
+Date:   Sun Oct 21 23:23:38 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 94bc0a5b5f07a654f8867b9f82db522669aa30eb[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sun Oct 21 00:35:47 2018 +0300
+
+    added something new
+
+[33mcommit 30ad7d66c5f0fb53d6711a087540b2887fdfb929[m
+Author: Maikl Tadesse <mr.tadesse@bk.ru>
+Date:   Sat Oct 20 19:25:15 2018 +0300
+
+    forty
+
+[33mcommit c6d6486467865d3f70d51e287db8cf2fb95ed766[m
+Author: Vitaly <Vitaly@mail.ru>
+Date:   Sat Oct 20 14:43:11 2018 +0300
+
+    EBIDTA
+
+[33mcommit 79b528914a07d3ce996d45b7bfc82b2f6d28eb41[m
+Merge: 9f8da82 9bbf237
+Author: Samoylov <win9@ya.ru>
+Date:   Sat Oct 20 11:10:56 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 9bbf2379cb7529f6affe2cf844ac2f543dc7783f[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Fri Oct 19 23:11:24 2018 +0300
+
+    coursework
+
+[33mcommit 47b207effa18e5bb32a59c6ea4559eb022f47777[m
+Author: Evgeniy K <mailo@maissl.com>
+Date:   Fri Oct 19 22:17:47 2018 +0300
+
+    Fixed
+
+[33mcommit d07c9c9d5162725f63304628d2bd5bd82c830c8d[m
+Merge: bc69f74 8a2689b
+Author: Evgeniy K <mailo@maissl.com>
+Date:   Fri Oct 19 22:10:10 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 9f8da82b644f106532610a56d49b1041a26f4266[m
+Merge: 9867eaa 8a2689b
+Author: Samoylov <win9@ya.ru>
+Date:   Thu Oct 18 17:20:15 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 9867eaa166b6da7e19053111e102a63700156f74[m
+Author: Samoylov <win9@ya.ru>
+Date:   Thu Oct 18 17:20:05 2018 +0300
+
+    commit
+
+[33mcommit 8a2689b925c38f6feb1f92f980788932cfc3baa6[m
+Author: s20371 <0885466@gmail.com>
+Date:   Wed Oct 17 20:18:25 2018 +0300
+
+    17.10.2018 20:18
+
+[33mcommit df52e5168172c85eadbb8e89086ed9235fe0cb47[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Wed Oct 17 20:10:52 2018 +0300
+
+    Ia vse ispravlu
+
+[33mcommit d73fda73bb4c3b57b1a822a83abc411139544d3d[m
+Merge: bd87e0d 62d6415
+Author: alinovskiy <0885466@gmail.com>
+Date:   Wed Oct 17 20:07:47 2018 +0300
+
+    dasdsadad
+
+[33mcommit bd87e0d74ef79a6ac129d49124627f5c63c7db19[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Wed Oct 17 20:01:14 2018 +0300
+
+    ya pitayus vse ispravit(((
+
+[33mcommit 62d6415862b775223c1e38096d6e97ce77de38e2[m
+Author: s20371 <0885466@gmail.com>
+Date:   Wed Oct 17 19:53:59 2018 +0300
+
+    to do true
+
+[33mcommit 326cfe9313debd08c814fe5b2b858ec89f76bd84[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Wed Oct 17 19:41:08 2018 +0300
+
+    dsd
+
+[33mcommit 5916fae95008f3a25d5d2e54e5753236a55ef4f9[m
+Author: s20371 <0885466@gmail.com>
+Date:   Wed Oct 17 19:22:20 2018 +0300
+
+    second commit
+
+[33mcommit 2a6a2abc58beb291545338b8349c050f317e75aa[m
+Author: s20371 <0885466@gmail.com>
+Date:   Wed Oct 17 19:18:20 2018 +0300
+
+    first commit
+
+[33mcommit fbdf0674615a2e2bc427cbdefe62a4b1c142001a[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Tue Oct 16 19:00:20 2018 +0300
+
+    new 16.10.2018
+
+[33mcommit bc69f74f3798aebd619cec9b327c87b566688c1f[m
+Author: Evgeniy K <mailo@maissl.com>
+Date:   Tue Oct 16 00:24:31 2018 +0300
+
+    fix of last commit
+
+[33mcommit 15fe423e6b83c80820ac051ae56a9e2ae8692737[m
+Author: Evgeniy K <mailo@maissl.com>
+Date:   Tue Oct 16 00:22:49 2018 +0300
+
+    fix of last commit
+    
+    Signed-off-by: Evgeniy K <mailo@maissl.com>
+
+[33mcommit a53b0c1ae20a5b294fb6ecdec37232a58247671e[m
+Merge: 1ac2901 a951d5c
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Mon Oct 15 23:32:35 2018 +0300
+
+    chto proishodit
+
+[33mcommit 1ac29016b892512f7f284d69275a00fa556fcd82[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Mon Oct 15 23:20:58 2018 +0300
+
+    homework les03
+
+[33mcommit a951d5cf296a66648db4992938c25ff229b043e6[m
+Author: zharskiy <m.zharskiy@yandex.ru>
+Date:   Mon Oct 15 19:29:27 2018 +0300
+
+    homework
+
+[33mcommit b03ce8c74dfc0bb1f3c0faddf2cbdc9440c2c0bb[m
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Mon Oct 15 16:25:55 2018 +0300
+
+    homework 3.1
+
+[33mcommit 3cc7c73d3f8ea61b9b119c90ed42efb8e1abb3bc[m
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Mon Oct 15 14:25:47 2018 +0300
+
+    add pic
+
+[33mcommit 15d22aad4ec3f3fd92f68fb431cb69ab5a0ee20b[m
+Merge: 7575af9 5de2ed2
+Author: Fetisova <fet.an2016@ya.ru>
+Date:   Sun Oct 14 14:38:41 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 5de2ed27f1441405f884ab9fbfaa2361739686f4[m
+Merge: d79527f 81edfb0
+Author: Malika Tokhchukova <malika@MacBook-Pro-Malika.local>
+Date:   Sat Oct 13 22:29:04 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit d79527f6c5daf852f8012c5ec188c691f30c1370[m
+Author: Malika Tokhchukova <malika@MacBook-Pro-Malika.local>
+Date:   Sat Oct 13 22:28:37 2018 +0300
+
+    del
+
+[33mcommit acbf139d6e2d403b9466caa776c374dd609c5809[m
+Merge: 910bff8 494bcf2
+Author: Malika Tokhchukova <malika@MacBook-Pro-Malika.local>
+Date:   Sat Oct 13 22:24:49 2018 +0300
+
+    merge
+
+[33mcommit 81edfb094e6051be030c4dfa60bf1ff11e7ccf39[m
+Author: an-komarova@mail.ru <an-komarova@mail.ru>
+Date:   Sat Oct 13 22:20:28 2018 +0300
+
+    renamed
+
+[33mcommit 5c33fb92bf09e6d7dc3b7f31353797c9e1a62655[m
+Author: an-komarova@mail.ru <an-komarova@mail.ru>
+Date:   Sat Oct 13 22:13:53 2018 +0300
+
+    v1
+
+[33mcommit 494bcf2bc80c87f4cd854fb2368851ceb5d8ef4b[m
+Merge: 79d3aab fbfbc28
+Author: an-komarova@mail.ru <an-komarova@mail.ru>
+Date:   Sat Oct 13 22:05:16 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit fbfbc2869fd4f9dd41b6d7ac6fb0f31e290c8388[m
+Merge: dede1df a34195d
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sat Oct 13 21:45:36 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit dede1df6848c4dc82e45e508165628be6a5229d9[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sat Oct 13 21:45:32 2018 +0300
+
+    v4
+
+[33mcommit 5d2d349c77988b5ec39ad11dbd35e7c47d86a257[m
+Author: alinovskiy <0885466@gmail.com>
+Date:   Sat Oct 13 21:29:10 2018 +0300
+
+    v1
+
+[33mcommit a34195df79cdee30490090a2a32e2608222d5672[m
+Author: Maikl Tadesse <mr.tadesse@bk.ru>
+Date:   Sat Oct 13 19:33:23 2018 +0300
+
+    tadesse
+
+[33mcommit 22a4230b34237fd911994ea94a12489b13e3e6db[m
+Merge: 17dd67a 7d35242
+Author: Maikl Tadesse <mr.tadesse@bk.ru>
+Date:   Sat Oct 13 19:26:09 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 7d352428d9282ceb5eed92163f566ec782749953[m
+Merge: 104aa15 cc74ef4
+Author: Samoylov <win9@ya.ru>
+Date:   Sat Oct 13 19:23:24 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 7575af9511c0e1c11d5f9a491c81bdedf97a6a61[m
+Merge: 81c1281 cc74ef4
+Author: Fetisova <fet.an2016@ya.ru>
+Date:   Sat Oct 13 19:22:36 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 81c1281718466f8cac1a9b94dba4f219c92a8ede[m
+Author: Fetisova <fet.an2016@ya.ru>
+Date:   Sat Oct 13 19:20:01 2018 +0300
+
+    common repo
+
+[33mcommit cc74ef428c0f6dcfa14c98b549670057e1318ce5[m
+Merge: 991f749 0bb0864
+Author: Maxim <mail@mail.ru>
+Date:   Sat Oct 13 19:19:51 2018 +0300
+
+    v2
+
+[33mcommit 991f74950664967c26b675f95ddc72f955859200[m
+Merge: 655cf58 308d2d7
+Author: Maxim <mail@mail.ru>
+Date:   Sat Oct 13 19:17:36 2018 +0300
+
+    gitignore
+
+[33mcommit 104aa154ca2a6b173654e4c97af40bb99a96b795[m
+Merge: 8f37636 0bb0864
+Author: Samoylov <win9@ya.ru>
+Date:   Sat Oct 13 19:15:43 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 8f37636e2bae35cd1bb9d8ab71e31a27e41f6533[m
+Author: Samoylov <win9@ya.ru>
+Date:   Sat Oct 13 19:14:14 2018 +0300
+
+    ver 1.0
+
+[33mcommit 910bff8df53e1d8c883f03197de4e41a2dd317fc[m
+Author: Malika Tokhchukova <malika@MacBook-Pro-Malika.local>
+Date:   Sat Oct 13 19:14:09 2018 +0300
+
+    double
+
+[33mcommit 79d3aab903c9fd8c19f551720ff828e2e37c86bc[m
+Author: an-komarova@mail.ru <an-komarova@mail.ru>
+Date:   Sat Oct 13 19:12:23 2018 +0300
+
+    v1
+
+[33mcommit 0bb086402214bcc31c2cba0c7ecea1fb45f517ed[m
+Merge: 2fc488b 308d2d7
+Author: Evgeniy <mymail@gmail.com>
+Date:   Sat Oct 13 19:11:05 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 655cf5892a5ef1733585c0dcb4f96aec14fbf5d0[m
+Merge: 3d3a4ab 5ddfd43
+Author: Maxim <mail@mail.ru>
+Date:   Sat Oct 13 19:09:38 2018 +0300
+
+    v1
+
+[33mcommit 308d2d7e446e7ad845141f25089ba310883df808[m
+Merge: 4c1f04e 5ddfd43
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sat Oct 13 19:08:54 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 2fc488b1ddd06a2d03ad47a1934940c2065c7c64[m
+Merge: 8dfc734 5ddfd43
+Author: Evgeniy <mymail@gmail.com>
+Date:   Sat Oct 13 19:08:52 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 3d3a4ab242e3631f5870f2af5596495c749adbd2[m
+Merge: 80de835 ee7260c
+Author: Maxim <mail@mail.ru>
+Date:   Sat Oct 13 19:05:08 2018 +0300
+
+    join
+
+[33mcommit 17dd67aaffeace289305f049f25ca8fab120045a[m
+Merge: 01027a9 5ddfd43
+Author: Maikl Tadesse <mr.tadesse@bk.ru>
+Date:   Sat Oct 13 19:04:49 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 4c1f04e591f781e85799a25b9fd821912b680526[m
+Merge: 26ac4f9 ee7260c
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sat Oct 13 19:02:35 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 5ddfd43a96f3cca9f63b44ce0446ee2d723f8143[m
+Merge: 1569898 ee7260c
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Sat Oct 13 19:02:30 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 8dfc73491e232b834d065050a7b650654a026c2f[m
+Merge: 02c2de3 ee7260c
+Author: Evgeniy <mymail@gmail.com>
+Date:   Sat Oct 13 19:02:22 2018 +0300
+
+    Merge branch 'master' of https://github.com/itmoweb2018/itmo-profi08
+
+[33mcommit 26ac4f9453d91f425aa693bbbeaa98ec2ccb5bf3[m
+Author: Atanasov <mephistosaa@gmail.com>
+Date:   Sat Oct 13 19:00:07 2018 +0300
+
+    Atanasov repo
+
+[33mcommit 80de835ee0e3486ccf665d561149a3317436a484[m
+Author: Maxim <mail@mail.ru>
+Date:   Sat Oct 13 18:59:54 2018 +0300
+
+    zharskiy joined
+
+[33mcommit 01027a909a09849a7d6782523ec1020248d4d544[m
+Author: Maikl Tadesse <mr.tadesse@bk.ru>
+Date:   Sat Oct 13 18:59:45 2018 +0300
+
+    v2
+
+[33mcommit 02c2de3e05256270eae930e6fdd172878dc0af6d[m
+Author: Evgeniy <mymail@gmail.com>
+Date:   Sat Oct 13 18:59:30 2018 +0300
+
+    v1
+
+[33mcommit 1569898372cf6117552fec8fcb82d7c2567318b2[m
+Author: dmitriy <paradoxxru@list.ru>
+Date:   Sat Oct 13 18:59:27 2018 +0300
+
+    ver1
+
+[33mcommit ee7260c86d2dd1a8bfd6564807b8d76b108ab6f5[m
+Author: DESKTOP-NLPV82F\bojuv <bojuvi19@gmail.com>
+Date:   Sat Oct 13 09:56:03 2018 +0300
+
+    bobrova_julia joined. It is my first commit to common repo
+
+[33mcommit 7ea324725c05bf2f3f77d57913f3a6a74a239fb7[m
+Author: Maxim <mail@mail.ru>
+Date:   Fri Oct 12 15:50:07 2018 +0300
+
+    zharskiy joined. It is my first commit to common repo

@@ -189,6 +189,7 @@ header {
 .before_aliquam {
     width: 40%;
     background: url(../images/pic01.jpg) no-repeat top center;
+    background-size: cover;
 }
 .aliquam {
     background-color: rgba(30, 199, 255, 0.85);
@@ -196,7 +197,8 @@ header {
 }
 .before_tempus {
     width: 60%;
-    background: url(../images/pic02.jpg) no-repeat center center;   
+    background: url(../images/pic02.jpg) no-repeat center center;
+    background-size: cover;   
 }
 .tempus {
     background-color: rgba(125, 117, 178, 0.85);
@@ -205,6 +207,7 @@ header {
 .before_magna {
     width: 60%;
     background: url(../images/pic03.jpg) no-repeat top center;
+    background-size: cover;
 }
 .magna {
     background-color: rgba(209, 127, 119, 0.85);
@@ -213,6 +216,7 @@ header {
 .before_ipsum {
     width: 40%;
     background: url(../images/pic04.jpg) no-repeat top center;
+    background-size: cover;
 }
 .ipsum {
     background-color: rgba(213, 150, 90, 0.85);
@@ -221,6 +225,7 @@ header {
 .before_consequat {
     width: 40%;
     background: url(../images/pic05.jpg) no-repeat top center;
+    background-size: cover;
 }
 .consequat {
     background-color: rgba(126, 151, 207, 0.85);
@@ -229,6 +234,7 @@ header {
 .before_etiam {
     width: 60%;
     background: url(../images/pic06.jpg) no-repeat top center;
+    background-size: cover;
 }
 .etiam {
     background-color: rgba(104, 165, 138, 0.85);

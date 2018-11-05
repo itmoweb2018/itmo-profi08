@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    //grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+grid-template-areas:
+"header"
+    "article"
+    "aside"
+    "footer"
+;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+        "header header"
+        "aside article"
+        "footer footer"
+    }
+}
+
+
+.grid header,aside {
+    background: gray;
+    border-radius: 5px;
+}
+.grid article,footer {
+    background: silver;
+    border-radius: 5px;
+}
+
+header {
+    grid-area:header;
+}
+
+article {
+    grid-area:article;
+}
+
+aside {
+    grid-area:aside;
+}
+
+footer {
+    grid-area:footer;
+}
