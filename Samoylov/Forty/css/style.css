@@ -333,11 +333,6 @@ h1 {
 	z-index: 1;
 }
 
-
-
-
-
-
 .info-block {
 	height: 500px;
 	width: 100%;
@@ -479,6 +474,7 @@ h1 {
 .buttons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-right: 4%;
 	cursor: pointer;
 }
@@ -638,7 +634,8 @@ h1 {
 	padding: 0 1%;
 }
 
-@media screen and (max-device-width: 479px) {
+@media screen and (max-device-width: 479px), 
+@media screen and (max-width: 479px) {
 
 	.headline-top {
 		text-align: center;
@@ -702,7 +699,8 @@ h1 {
 	}
 }
 
-@media screen and (min-device-width: 480px) and (max-device-width: 1102px) {
+@media screen and (min-device-width: 480px) and (max-device-width: 1102px),
+@media screen and (min-width: 480px) and (max-width: 1102px) {
 	.headline-top {
 		text-align: center;
 	}
