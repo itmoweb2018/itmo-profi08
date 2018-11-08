@@ -6,6 +6,9 @@ body {
 /*    box-sizing: border-box;*/
     margin: 0;    
     color: white;
+}
+
+body, input, textarea {
     font-family: "Open Sans";
 }
 
@@ -102,7 +105,10 @@ strong {
     display: inline-block;
     justify-content: flex-start;
     max-width: 40rem;
-    margin-right: 1rem;
+}
+
+.bannerText p {
+    margin: 2rem 1rem 2rem 0;
 }
 
 .buttonStarted {
@@ -125,12 +131,18 @@ strong {
 /* ---------- end HEADER ---------- */
 
 /*start text formatting*/
-.banner p, .menu, .buttonStarted, .boxpar {
+.banner p,
+.menu,
+.buttonStarted,
+.buttonSend,
+.boxpar,
+label {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
-.logo, .buttonStarted {
+.logo,
+.buttonStarted    {
     text-decoration: none;
     color: #fff;
 }
@@ -140,7 +152,7 @@ strong {
 }
 /*text formatting end*/
 
-/*Начало секции с картинками*/
+/*----------Начало секции с картинками----------*/
 .photo-block {
     background-color: black;
 /*    width: 60%;*/
@@ -199,7 +211,7 @@ strong {
 /*Завершение секции с картинками*/
 
 
-/*try imgbox by flex*/
+/*----------try imgbox by flex----------*/
 .imgBox {
     display: flex;
     flex-direction: row;
@@ -276,20 +288,27 @@ strong {
     
 } */
 
-/*end imgbox by flex*/
+/*----------end imgbox by flex----------*/
 
-/* start afterBoxText */
+/*----------start afterBoxText----------*/
+/*
 .afterBox {
     display: block;
     background-color: #2a2f4a;
     width: 100%;
     height: 100%;
 }
+*/
 
 .bannerAfterBox {
     padding: 5rem 10%;
     margin: 0 auto;
-    width: calc(100% - 3rem);
+/*    width: calc(100% - 3rem);*/
+    
+    display: block;
+    background-color: #2a2f4a;
+    width: 100%;
+   /*  height: 100%; */
 }
 
 #afterMainH {
@@ -303,44 +322,241 @@ strong {
     margin-bottom: 0.8rem;
 }
 
-.afterBannerText{
+.afterBannerText {
     display: block;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
+    margin: 2rem 0;
     
+}
+
+.afterBannerText p {
+    margin: 0;
 }
 /* end afterBoxText */
 
-/*start feedback block*/
+
+
+/*-----start feedback block-----*/
 
 section.feedback {
-    padding: 10rem;
+    padding: 0 10% 5rem 10%;
+    margin: 0 auto; /* вынести в отдельное с баннером афтер */
     background: #242943;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section.feedbackLeft {
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+}
+
+section.feedbackRight {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr;
+}
+
+section.feedbackLeft::before {
+    content: "";
+    grid-column: 1/3;
+    grid-row: 1/4;
+    border-right: 1px solid rgba(212, 212, 255, 0.1);
+    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+section.feedbackRight::before {
+    content: "";
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+#NameFeedback {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#EmailFeedback {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#MessageFeedback {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#ButtonFeedback {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+#iconEmail {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#iconPhone {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#iconAddress {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.feedbackData{
+    margin-left: 5rem;    
+}
+
+.feedbackH {
+    font-size: 1.7rem;
+    margin: 0 0 1rem 0;
+}
+
+.feedbackDataInfo {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.buttonSend a {
+    color: #242943;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 1rem; 
+    margin-right: 2rem;
+    height: 3rem;
+    text-decoration: none;
+    line-height: 3.5rem;
+    
+}
+
+.buttonSend a:hover {
+    background-color: #9bf1ff;
+    border: 1px solid #9bf1ff;
+    transition: 0.5s ease 0.1s; 
+} 
+
+#iconPhone::before {  /* переравотать */
+    content: "";
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#iconAddress::before {  /* переравотать */
+    content: "";
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#NameFeedback,
+#EmailFeedback,
+#MessageFeedback {
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+#NameFeedback,
+#EmailFeedback {
+    padding-top: 3rem;
+}
+
+#iconEmail,
+#iconPhone,
+#iconAddress {
+    position: relative;
+    padding: 10%;
+}
+
+#iconEmail .feedbackData .feedbackDataInfo {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+#iconEmail .feedbackData .feedbackDataInfo:hover {
+    color: #9bf1ff;
+    text-decoration: none;
+    border-bottom: none;
+    transition: 0.5s ease 0.1s;
 }
 
 label {
     display: block;
-    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /* margin-top: 2rem; */
 }
-
-input {
+ 
+input, textarea {
+    display: block;
     background: #2a2f4a;
     border: none;
     padding: 1rem;
     outline: none;
     color: #fff;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.1rem;
 }
 
-.radioBox {
-    background-color: #2a2f4a;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #9bf1ff;
+    box-shadow: 0 0 0 2px #9bf1ff;
+    transition: border-color 0.5s ease 0.1s;
+    transition: box-shadow 0.5s ease 0.1s;
 }
-.radioBox span {
-    user-select: none;
+
+#messageField {
+    height: 15rem;
+} 
+
+.logoPic {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
 }
 
+.logoPic i {
+    color: #242943;
+    font-size: 1.5rem;
+    position: absolute;
+}
 
-
-/*end feedback block*/
+/*-----end feedback block-----*/
 
 /*start adaptive*/
 

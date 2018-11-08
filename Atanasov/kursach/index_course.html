@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Atanasov Coursework</title>
 </head>
 <body>
+
 <!--start HEADER -->
     <header>
         <div class="headerBox">
@@ -35,6 +37,7 @@
         </div>
     </header>
 <!--end header-->
+
 <!--Блок с картинками-->
 <!--
     <section class="gallery">
@@ -163,7 +166,7 @@
 <!--stop imgbox by flex-->
 
 <!-- start massa libero box -->
-    <div class="afterBox">
+<!--    <div class="afterBox">-->
         <div class="bannerAfterBox">
             <h1 id="afterMainH">Massa libero</h1>
             <div class="afterBoxText">
@@ -175,33 +178,75 @@
                 </div>
             </div>
         </div>
-    </div>
+<!--    </div>-->
 <!-- stop massa libero box -->
 
-   <!--start for form feedback-->
+<!--start form feedback-->
     <section class="feedback">
-        <form action="">
-            <div class="row">
-                <div class="col-6">
-                    <label for="nameField">Name</label>
-                    <input type="text" id="nameField" placeholder="Введите имя" required>
+        <section class="feedbackLeft">
+            <div id="NameFeedback">
+                <label for="nameField">Name</label>
+                <input type="text" id="nameField" required>
+            </div>
+            <div id="EmailFeedback">
+                <label for="emailField">Email</label>
+                <input type="email" id="emailField" required>
+            </div>
+            <div id="MessageFeedback">
+                <label for="messageField">Message</label>
+                <textarea id="messageField"></textarea>
+            </div>
+            <div id="ButtonFeedback">
+                <div class="buttonSend">
+                    <a href="">Send Message</a>
                 </div>
-                <div class="col-6">
-                    <label for="emailField">Email</label>
-                    <input type="email" id="emailField" placeholder="Введите email" required>
+                <div class="buttonStarted">
+                    <a href="">Clear</a>
                 </div>
             </div>
-            <div class="radioBox">
-                <input type="radio" name="variant" value="1">
-                <span>first</span>
-                <input type="radio" name="variant" value="2">
-                <span>second</span>
-                <input type="radio" name="variant" value="3">
-                <span>third</span>
+        </section>
+        <section class="feedbackRight">
+            <div id="iconEmail">
+                <div class="logoPic">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <section class="feedbackData">
+                    <h3 class="feedbackH">Email</h3>
+                    <a href="" class="feedbackDataInfo">information@untitled.tld</a>
+                </section>
             </div>
-            <button>Отправить</button>
-        </form>
+            <div id="iconPhone">
+                <div class="logoPic">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <section class="feedbackData">
+                    <h3 class="feedbackH">Phone number</h3>
+                    <span href="" class="feedbackDataInfo">(000) 000-0000 x12387</span>
+                </section>
+            </div>
+            <div id="iconAddress">
+                <div class="logoPic">
+                    <i class="fas fa-home"></i>
+                </div>            
+                <section class="feedbackData">
+                    <h3 class="feedbackH">Address</h3>
+                    <p class="feedbackDataInfo">1234 Somewhere Road #5432<br>Nashville, TN 00000<br>United States of America</p>
+                </section>
+            </div>
+        </section>         
     </section>
+<!--stop form feedback-->
+
+   <!--
+    <script type="text/javascript">a=confirm("Перейти к сайту?")</script>
+    <script type="text/javascript">alert("Press OK")</script> 
+-->
+<!--
+    <script type="text/javascript">if (name == "admin") {
+    console.log("admin");
+} else if (name == "root) { console.log('admin"); } else { console.log(name); }</script>
+-->
+    <!-- <script type="text/javascript">x=1000; while (x>0) {x--; console.log(x)};</script> -->
 <!--end of form-->
 </body>
 </html>
