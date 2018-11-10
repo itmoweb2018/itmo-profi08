@@ -1,0 +1,387 @@
+/*Дополнительные свойства для всех элементов см в grid_flex.css!*/
+
+/*Верхняя часть*/
+header
+{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+}	
+.header	
+{	
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	text-transform: uppercase;
+}
+.logo
+{
+	display:flex;
+	justify-content: flex-start;
+}
+.logo p
+{
+	margin:0;
+}
+.forty
+{
+	color:black;
+	background:white;
+}
+.header a
+{
+	text-decoration: none;
+	color:white;
+}
+.banner
+{
+	padding: 7rem 20%;
+}
+
+.banner h1
+{
+	border-bottom: 2px solid white;
+	padding-bottom: 1rem;
+}
+.button a
+{
+	color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 11rem;
+    border: 2px solid white;
+    transition: border 2s linear 0.5s;
+    transition: color 0.5s linear 0.5s;		
+}
+.button a:hover
+{
+	color:#00bcd4;
+	border:2px solid #00bcd4;
+}
+.text
+{
+	display:flex;
+	justify-content: space-between;
+	padding-right: 20rem;
+	text-transform: uppercase;
+}
+
+/*Основная часть с фотографиями*/
+h2
+{
+	border-bottom:2px solid white;
+}
+.row p
+{
+	text-transform: uppercase;
+}
+.fading
+{
+	background: rgba(0,0,0,0.5);
+	max-width: 100%;
+	height: 100%;
+}
+.mask /*параметры для всех слоев mask*/
+{
+	padding: 15%;
+	padding-top:10rem;
+	max-width: 100%;
+	height:100%;
+	transition: background 2s linear 0.5s;	
+}
+/*FOTO1*/
+.photo-block1 
+{
+	background-image: url(../images/pic01.jpg);/*путь относительно файла css*/
+	background-size: cover;
+}
+.first
+{
+	background: rgba(0,188,212,0.6);
+}
+.first:hover
+{
+	background: rgba(0,188,212,0);
+}
+/*FOTO2*/
+.photo-block2
+{
+	background-image: url(../images/pic02.jpg);
+	background-size: cover;
+}
+.second
+{
+	background: rgba(134,77,236,0.6);
+}
+.second:hover
+{
+	background: rgba(134,77,236,0);
+}
+/*FOTO3*/
+.photo-block3
+{
+	background-image: url(../images/pic03.jpg);
+	background-size: cover;
+}
+.third
+{
+	background: rgba(244,67,54,0.5);
+}
+.third:hover
+{
+	background: rgba(244,67,54,0);
+}
+/*FOTO4*/
+.photo-block4
+{
+	background-image: url(../images/pic04.jpg);
+	background-size: cover;	
+}
+.fourth
+{
+	background: rgba(255, 152, 0, 0.5);
+}
+.fourth:hover
+{
+	background: rgba(255,152,0,0);
+}
+/*FOTO5*/
+.photo-block5
+{
+	background-image: url(../images/pic05.jpg);
+	background-size: cover;
+}
+.fifth
+{
+	background: rgba(55, 49, 218, 0.5);
+}
+.fifth:hover
+{
+	background: rgba(55, 49, 218, 0);
+}
+/*FOTO6*/
+.photo-block6
+{
+	background-image: url(../images/pic06.jpg);
+	background-size: cover;
+}
+.sixth
+{
+	background: rgba(127,255,212,0.3);
+}
+.sixth:hover
+{
+	background: rgba(127,255,212,0);
+}
+.last_box
+{
+	background-color:#2a2f4a;
+	padding:10rem;
+}
+.last
+{
+	line-height: 2;
+} 
+/*Feedback & Contacts*/
+.row
+{
+	display: flex;
+	flex-direction: row;
+}
+.feedback
+{
+	background: #242943;
+	padding:0rem;
+	display:flex;
+	flex-direction: row;
+}
+label
+{
+	display: block;
+	text-transform: uppercase;
+	padding-bottom:1rem;
+}
+input 
+{
+	background: #2a2f4a;
+	border:none;
+	padding:1rem;
+	outline: none;
+	color:white;
+	padding-right:7rem;
+}
+.feedback .row
+{
+	padding-top: 6rem;
+    padding-bottom: 2rem;
+    padding-right: 5%;
+    padding-left: 20%;
+}
+.col-7
+{
+	border-bottom:2px dotted #2a2f4a;	
+}
+.cont
+{
+    border: 2px dotted #2a2f4a;
+    padding-left: 5rem;
+    border-top: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.contacts
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.cont h2
+{
+	border-bottom:none;
+}
+.Message
+{
+    padding-left: 20%;
+    padding-top: 0rem;
+    text-transform: uppercase;
+    padding-right: 5%;
+}
+textarea
+{
+	background: #2a2f4a;
+	border:none;
+}
+footer
+{
+	background: #242943;
+}
+.circles
+{
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding:6rem;
+	background: #242943;
+	max-width: 35%;
+}
+.circles div
+{
+	width:50px;
+	height:50px;
+	background: white;
+	border-radius: 25px;
+	padding:0rem;
+	color:black;
+}
+/*Модальное окно*/
+.modal
+{
+	background:rgba(36, 41, 67, 0.85);
+	z-index: 9999;
+	max-width:100%;
+	height: 50rem;
+	text-align:center;
+	display:none;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position:absolute;
+}
+.modal:target
+{
+	display:block;	
+}
+.close
+{
+	text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.Menu
+{
+	display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+/*    height: content;*/
+    padding: 10% 40% 10% 40%;
+/*    max-width: content;*/
+/*    text-decoration: none;*/
+}
+ /*кнопки синие*/
+
+.home,
+.land,
+.gen,
+.el,
+.log
+{
+	display: inline-block;
+    border-bottom: 1px solid;
+    max-width: 300px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin: 0;
+/*    color:white;*/
+/*    text-decoration: none;*/
+}
+.start
+{
+/*	color:black;*/
+/*	display: inline-block;*/
+/*    border-bottom: 1px solid;*/
+    max-width: 300px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin-bottom:5px;
+    background: white;
+/*    text-decoration: none;*/
+}
+.log
+{
+	border:1px solid;
+	margin-top:5px;
+}
+.Menu a
+{
+	text-decoration:none;
+	color:white;
+}
+.start a
+{
+	color:#2a2f4a;
+}
+
+/*Адаптация*/
+
+@media (max-width: 1025px)
+{
+	.feedback 
+	{
+		flex-direction:column;
+		align-items: right;
+	}
+	.contacts 
+	{
+		max-width:100%;
+	}
+	.cont
+	{
+		border: none;
+		max-width: 100%;
+	}
+	.col-8, .col-4
+	{
+		flex-basis: 100%;
+	}
+}
+@media(max-width: 800px)
+{
+	.row
+	{
+		flex-direction: column;
+	}
+}
