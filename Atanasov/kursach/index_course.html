@@ -10,7 +10,6 @@
     <title>Atanasov Coursework</title>
 </head>
 <body>
-
 <!--start HEADER -->
     <header>
         <div class="headerBox">
@@ -20,7 +19,7 @@
                     <span>by Atanasov A.</span>
                 </a>
                 <div class="menu_button">
-                    <span>Menu</span>
+                    <a href="" class="buttonMenu" id="showMenu"><span>Menu</span><i class="fas fa-bars"></i></a>
                 </div>
             </div>
             <div class="banner">
@@ -29,9 +28,7 @@
                     <div class="bannerText">
                         <p>A responsive site template designed by html5 up and released under the creative commons.</p>
                     </div>
-                    <div class="buttonStarted">
-                        <a href="">Get Started</a>
-                    </div>
+                    <a href="" class="buttonStarted">Get Started<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -165,21 +162,17 @@
     </div>
 <!--stop imgbox by flex-->
 
-<!-- start massa libero box -->
-<!--    <div class="afterBox">-->
-        <div class="bannerAfterBox">
-            <h1 id="afterMainH">Massa libero</h1>
-            <div class="afterBoxText">
-                <div class="afterBannerText">
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-                </div>
-                <div class="buttonStarted">
-                    <a href="">Get Started</a>
-                </div>
+<!--start text box-->
+    <div class="bannerAfterBox">
+        <h1 id="afterMainH">Massa libero</h1>
+        <div class="afterBoxText">
+            <div class="afterBannerText">
+                <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
             </div>
+            <a href="" class="buttonStarted">Get Started<i class="fas fa-arrow-right"></i></a>
         </div>
-<!--    </div>-->
-<!-- stop massa libero box -->
+    </div>
+<!--stop text box-->
 
 <!--start feedback form-->
     <section class="feedback">
@@ -197,12 +190,8 @@
                 <textarea id="messageField"></textarea>
             </div>
             <div id="ButtonFeedback">
-                <div class="buttonSend">
-                    <a href="">Send Message</a>
-                </div>
-                <div class="buttonStarted">
-                    <a href="">Clear</a>
-                </div>
+                <a href="" class="buttonSend">Send Message</a>
+                <a href="" class="buttonClear">Clear</a>
             </div>
         </section>
         <section class="feedbackRight">
@@ -238,34 +227,54 @@
 <!--stop feedback form-->
 
 <!-- start footer -->
-<footer>
-    <div id="footerOne"> 
-        <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/itmoweb2018/itmo-profi08" target="_blank" class="logoPic">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-    <div id="footerTwo">
-        <ul id="copyright">
-            <li>© Untitled</li>
-            <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-            <li>Demo Images: <a href="https://unsplash.com" target="_blank">Unsplash</a></li>
-            <li>Coursework made by Atanasov A.</li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div id="footerOne"> 
+            <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/itmoweb2018/itmo-profi08" target="_blank" class="logoPic">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://vk.com/club172398919" target="_blank" class="logoPic">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div id="footerTwo">
+            <ul id="copyright">
+                <li>© Untitled</li>
+                <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+                <li>Demo Images: <a href="https://unsplash.com" target="_blank">Unsplash</a></li>
+                <li>Coursework made by Atanasov A.</li>
+            </ul>
+        </div>
+    </footer>
 <!-- stop footer -->
+
+<!-- start modal window -->
+    <div id="overlay" class="hide">
+        <div class="overlayBox">
+            <div id="buttonOverlayClose">
+                <a href="" class="buttonMenu"><span>Close Menu</span><i class="fas fa-times"></i></a>
+            </div>
+            <section id="overlayMenu">
+                <ul>
+                    <li>Home</li>
+                    <li>Landing</li>
+                    <li>Generic</li>
+                    <li>Elements</li>
+                    <li>Get Started Button</li>
+                    <li>Log In Button</li>
+                </ul> 
+            </section>
+        </div>
+    </div>
+<!-- stop modal window -->
    <!--
     <script type="text/javascript">a=confirm("Перейти к сайту?")</script>
     <script type="text/javascript">alert("Press OK")</script> 
@@ -277,5 +286,6 @@
 -->
     <!-- <script type="text/javascript">x=1000; while (x>0) {x--; console.log(x)};</script> -->
 <!--end of form-->
+<script type="text/javascript" src="js/scriptjursach.js"></script>
 </body>
 </html>
