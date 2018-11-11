@@ -1,0 +1,39 @@
+
+.header {
+	position: fixed;
+	background: #2A2F4A;
+	width: 100%;
+	/*z-index: 1;*/ /*чтобы при прокрутки вниз(на второй и третей странице) кнопка меню была все еще
+	 поверх всех блоков(чтобы на нее можно было нажать). так как в блоке форм используется 
+	 абсолбтное позиционирование - элемент ниже по коду с таким позиционированием становиться "ближе" всех
+	 по слою. При задании индекса только здесь класс header будет выше*//*Отключил, так как отказался 
+	 от абсолютного позиционирования*/
+}
+
+#content {
+	background: #242943;
+	padding: 8rem 5%;
+	border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+h1 {
+	display: inline-block;
+	font-size: 2.5rem;
+	color: #fff;
+}
+h1::after {
+	content: "";
+	display: block;
+	width: calc(100% + 2rem);
+	border-bottom: 1px solid #fff;
+	padding-bottom:2rem;
+}
+p {
+	color: #fff;
+	margin-bottom: 2rem; 
+}
+
+.image img {
+	display: block;
+	width: 100%;
+}

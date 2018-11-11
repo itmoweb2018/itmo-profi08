@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="examples of the work of photographers and their life stories">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>About Gregor</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> 
+	<link rel="stylesheet" type="text/css" href="css/second_page.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	
+	<header>
+								<!-- logo + menu-button -->
+		<div class="header floatfix">
+			<div class="logo">
+				<a href="main.html">
+					<strong>Dmitriy</strong>
+					<span>Design web</span>
+				</a>
+			</div>
+			<div class="menu-button">
+				<nav class="navigation floatfix">
+					<a href="#menu">
+						<strong>Menu</strong>		<!--если исрользовать тэг p, то все съедет,
+						 так как p блочный-->
+						<span class="fas fa-bars"></span>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>	
+
+		<!-- Content -->
+	<div id="content">
+		<div class="topic">
+			<h1>Gregor</h1>
+		</div>
+		<div class="image">
+			<img src="pic/Gregor.jpg" alt="Gregor image">
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugit at, labore provident quibusdam dolore explicabo, alias, quod voluptate quis sint voluptates iusto exercitationem aliquam.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, perferendis temporibus nesciunt enim quisquam, laudantium culpa magnam fugiat cupiditate aliquam consequuntur obcaecati laboriosam commodi ducimus dolores nobis ipsum officiis! In temporibus, numquam dicta laudantium totam dolor dolore similique aperiam earum ipsa molestias sint atque nostrum asperiores corrupti deleniti autem quasi quam! Est vero error accusantium, optio itaque velit quod nostrum.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur temporibus asperiores totam voluptatum dolor quisquam aperiam distinctio odio repellendus nihil, eius ratione facere quis at quo aut ducimus in excepturi optio esse accusamus atque modi, quidem! Quae sit sint dolor! Laborum veniam ipsum voluptatem sed quibusdam mollitia, error suscipit alias!
+		</p>
+	</div>
+		
+	<!-- форма и контакты -->
+	<section id="contacts">
+		<!-- flex контейнер1 -->
+		<div class="all-contacts row">
+			<!-- левая секция (ввод данных)-->
+			<section class="left-section col-8">
+				<form>					
+					<!-- flex контейнер 1.2.a (поля ввода)-->
+					<div class="input-fields row">
+						<!-- ввод имени-->
+						<div class="item-flex">
+							<label for="nameField">Name</label>
+							<input type="text" name="username" id="nameField" placeholder="введите имя" required=""> <!--*в чем разница между placeholder и value - почему если указан value, то он светиться внутри поля вместо placeholder -->
+						</div>
+						<!-- ввод почты-->
+						<div class="item-flex">
+							<label for="emailField">Email</label>
+							<input type="email" name="emailField" id="emailField" placeholder="введите почту" required="">
+						</div>
+						<!-- ввод сообщения -->
+						<div class="message">
+							<label>Message</label>
+							<textarea name="message" id="message" rows="8"></textarea>
+						</div>
+					</div>
+					<!-- flex контейнер 1.2.b (кнопки действий)-->
+					<div class="action-button row">
+						<div>
+							<input class="send-message" type="submit" name="" value="send message">
+						</div>
+						<div>
+							<input class="clear-form" type="reset" value="clear">
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- правая секция (контактная информация)-->
+			<section class="right-section col-4">
+				<section>
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-envelope"></span>
+						</div>
+						<div class="contacts">	
+							<h3>Email</h3>
+							<a href="">myemail@adress.com</a>
+						</div>	
+					</div>
+				</section>
+				<section>	
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-phone"></span>
+						</div>
+						<div class="contacts">
+							<h3>Phone</h3>
+							<span>+79210000000</span>
+						</div>	
+					</div>
+				</section>	
+				<section>	
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-home"></span>
+						</div>
+						<div class="contacts">
+							<h3>Adress</h3>
+							<span>		
+								190025 St-Petersberg
+								<br>
+								Nevskiy avenue, 36
+								<br>
+								Russian Federation
+							</span>
+						</div>	
+					</div>
+				</section>	
+			</section>
+		</div>
+	</section>
+	
+	<!--   FOOTER   -->
+	<footer id="footer">
+		<div class="footer">
+			<section class="icon-footer">
+				<div>
+					<ul class="no-list">
+						<li>
+							<a class="fab fa-twitter" href=""></a>	
+						</li>
+						<li>
+							<a class="fab fa-facebook-f" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-instagram" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-github" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-linkedin-in" href=""></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="copyright">
+				<div>
+					<ul class="no-list">
+						<li>@United</li>
+						<li>
+							Design:
+							<a href="https://html5up.net/forty">HTML5 UP</a>
+						</li>
+						<li>
+							Demo images:
+							<a href="https://unsplash.com/">Unsplash</a>
+						</li>
+					</ul>	
+				</div>
+			</section>
+			
+		</div>		
+	</footer>
+
+	<!-- модальное окно - МЕНЮ-->
+	<div class="overlay" id="menu">
+		<div class="menu">
+			<ul class="links">
+				<li>
+					<a href="main.html">Home</a>
+				</li>
+				<li>
+					<a href="">empty</a>
+				</li>
+				<li>
+					<a href="second_page.html">About Irma</a>
+				</li>
+				<li>
+					<a href="third_page.html">About Gregor</a>
+				</li>
+			</ul>
+			<ul class="actions">
+				<li>
+					<a class="button-getStarted" href="">Get started</a>
+				</li>
+				<li>
+					<a class="button-logIn" href="">Login</a>
+				</li>
+			</ul>
+			<div class="exit-button">
+				<a href="">Exit</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

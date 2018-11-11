@@ -1,0 +1,41 @@
+.block_sections{
+    position: relative;
+    left: calc(50% - 738px);
+}
+.block_section1_2{
+    position: inherit;
+
+}
+.block_section3_4{
+    position: inherit;
+
+}
+.section1{
+    background: #bababa;
+    display: inline-block;
+    border: 1px solid purple;
+}
+.section1 img{
+    position: relative;
+    left: calc(50% - 75px);
+}
+
+.section2{
+    background: aqua;
+    display: inline-block;
+    border: 1px solid purple;
+}
+.section2 img{
+    position: relative;
+    left: calc(50% - 75px);
+}
+
+.section3{
+    background: aqua;
+    display: inline-block;
+    border: 1px solid purple;
+}
+.section3 img{
+    position: relative;
+    left: calc(50% - 75px);
+}

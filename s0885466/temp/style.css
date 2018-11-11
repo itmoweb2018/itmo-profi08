@@ -1,0 +1,73 @@
+body {
+    box-sizing: border-box;
+}
+.logo {
+    width: 30%;
+
+    background-color: yellow;
+    float: left;
+
+}
+.menu {
+    width: 70%;
+
+    background-color: red;
+    float: left;
+
+}
+
+
+.banner {
+    width: 50%;
+
+    background-color: steelblue;
+    float: left;
+}
+
+.slider {
+    width: 50%;
+
+    background-color: green;
+    float: left;
+}
+
+
+.clear {
+    content: ".";
+    display: block;
+    clear: both;
+}
+.content {
+
+    background-color: brown;
+
+
+}
+
+.content1 {
+
+    background-color: red;
+
+
+}
+
+
+
+#content {
+    float:left;
+    width:40%;
+    background: yellowgreen;
+}
+
+
+#sidebar {
+    float:left;
+    width:60%;
+}
+
+#container {
+    //width:960px;
+    //margin:0 auto;
+    background: blue;
+    overflow: hidden
+}

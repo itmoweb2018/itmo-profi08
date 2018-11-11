@@ -1,0 +1,592 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	margin: 0;
+}
+#header {
+	background-image: url("../pic/banner.jpg");
+	background-attachment: fixed; /*фоновое изображение вместе с содержимым элемента не будет прокручиваться*/
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.banner {
+	padding: 8rem 5%;
+	/*border: 1px solid black;*/
+}
+.banner h1 {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1rem;
+}
+.banner p{
+	text-transform: uppercase;
+}
+/*для кнопки Get Start со стрелкой*/
+.banner a {
+	border: 1px solid #fff;
+	padding: 0;
+	display: inline-block;
+}
+.banner ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+.banner li {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+}
+/*конец кнопки*/
+
+.banner .floatfix p {
+	float: left;
+	width:40%;
+	margin: 0;
+}
+.banner .floatfix a {
+	float: left;
+}
+
+/*"закрываем" flot элемент*/
+.floatfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.logo {
+	float: left;
+	width: 15rem;
+}
+.menu-button {
+	float: right;
+}
+
+.header {
+	padding: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.logo a strong {
+	padding: 0.4rem;
+	background: #fff;
+	color: #242A46;
+}
+/*при наведении на ссылку*/
+a:hover {
+	color: #9bf1ff;
+}
+.banner a:hover {
+	border: 1px solid #9bf1ff;
+}
+.logo a:hover strong {
+	background: #9bf1ff;
+}
+
+	/*кнопка МЕНЮ*/
+.navigation strong {
+	float: left;
+	padding-right: 0.5rem;
+}
+.navigation span {
+	float: right;
+}
+
+						/*блок Main*/
+
+.float40 {
+	float: left;
+	width: 40%;
+}
+.float60 {
+	float: left;
+	width: 60%;
+}
+.block-content {
+	background-repeat: no-repeat;
+	background-size: cover;		/*Масштабирует изображение с сохранением пропорций так,
+	 чтобы его ширина или высота равнялась ширине или высоте блока.*/
+	position: relative;		/*чтобы далее позиционировать ссылку absolut*/
+}
+		/*ссылка внутри каждого блока .block-content, "чтобы блоки были ссылками"*/
+.img-links {			
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+					/*задние фоны для каждого блока*/
+.section1 .block-content.float40 {
+	background-image: url("../pic/pic01.jpg");
+}
+.section1 .block-content.float60 {
+	background-image: url("../pic/pic02.jpg");
+}
+.section2 .block-content.float60 {
+	background-image: url("../pic/pic03.jpg");
+}
+.section2 .block-content.float40 {
+	background-image: url("../pic/pic04.jpg");
+}
+.section3 .block-content.float40 {
+	background-image: url("../pic/pic05.jpg");
+}
+.section3 .block-content.float60 {
+	background-image: url("../pic/pic06.jpg");
+}
+
+/*задаем ширину и высоту во весь блок + отступы*/
+.mask {
+	padding: 8rem;
+	width: 100%;
+	height:100%;
+	transition: background 1s ease 0s;
+}
+
+						/*передние фоны(mask)*/
+.section1 .float40 .mask {
+	background: rgba(84, 199, 178, 0.6);
+}
+.section1 .float60 .mask {
+	background: rgba(155, 84, 199, 0.6);
+}
+.section2 .float60 .mask {
+	background: rgba(199, 111, 111, 0.6);
+}
+.section2 .float40 .mask {
+	background: rgba(240, 183, 127, 0.6);
+}
+.section3 .float40 .mask {
+	background: rgba(111, 145, 199, 0.6);
+}
+.section3 .float60 .mask {
+	background: rgba(111, 199, 160, 0.6);
+}
+
+
+
+						/*смена заднего фона ссылки при наведении(убираем фон)*/
+
+#goStart section .block-content:hover .mask {
+	background: none;
+}
+
+
+
+.block-content h3 {
+	margin: 0;
+}
+.block-content p {
+	display: inline-block;
+	margin: 0;
+}
+.block-content p::before {		/*подчеркивание за границы блока p*/
+	content: "";
+	display: inline-block;
+	width: calc(100% + 2rem);
+	border: 1px solid #fff;
+}
+	
+
+/*Баннер 2(banner2)*/
+/*"верхний" и "нижний" баннеры похожи, но для нижнего нужны некоторые переопределения*/
+.banner2 {
+	background: #2A2F4A;
+}
+.banner h3 {
+	width: 8rem;
+	border-bottom: 1px solid #fff;
+}
+}
+.banner h3::after {
+	content: "";
+	display: inline-block;
+	width: calc(100% + 2rem);
+	border-bottom: 1px solid #fff;
+}
+
+/*сетка на flex */
+.row{
+	display: flex;
+}
+.col-1 {
+	flex-basis: 8.33%;
+	max-width: 8.33%;    
+}
+.col-2 {
+	flex-basis: 16.66%;
+	max-width: 16.66%;
+}
+.col-3 {
+	flex-basis: 25%;
+	max-width: 25%;
+}
+.col-4 {
+	flex-basis: 33.33%;
+	max-width: 33.33%;
+}
+.col-5 {
+	flex-basis: 41.66%;
+	max-width: 41.66%;
+}
+.col-6 {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+.col-7 {
+	flex-basis: 58.33%;
+	max-width: 58.33%;
+}
+.col-8 {
+	flex-basis: 66.66%;
+	max-width: 66.66%;
+}
+.col-9 {
+	flex-basis: 75%;
+	max-width: 75%;
+}
+.col-10 {
+	flex-basis: 83.33%;
+	max-width: 83.33%;
+}
+.col-11 {
+	flex-basis: 91.66%;
+	max-width: 91.66%;
+}
+.col-12 {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+
+		/* форма и контакты */
+/* левая секция */
+.left-section {
+	border-right: 1px solid rgba(212, 212, 255, 0.1);
+	padding: 8rem 5%;
+}
+
+
+#contacts {
+	background: #242943;
+}
+.input-fields {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item-flex {
+	flex-basis: calc(50% - 2rem);
+}
+label {
+	display: block;
+	margin: 0 0 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+input {
+	display: block;
+	background: #2A2F4A;
+	color: #fff;
+	margin: 0 0 2rem 0;
+	height: 2.5rem;
+	padding: 0 1rem;
+	width: 100%;
+	border: none;
+}
+
+/*для input стоит required(запрет на отправку если поле не заполнено), 
+при этом в браузере поле обрамляется красной рамкой. ниже св-во чтобы рамку красную убрать*/
+input:invalid {
+	box-shadow: none;
+}
+
+.message {
+	flex-basis: 100%;
+}
+textarea {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	max-width: 100%;
+	background: #2A2F4A;
+	color: #fff;
+	border: none;
+	resize: vertical; /*разрешить изменение размера области только по вертикали*/
+	min-height: 6rem; /*минимальная высота области ввода*/
+}
+
+.action-button {
+	margin: 2rem 0;
+	padding: 0;
+}
+.send-message {
+	background: #fff;
+	color: #242943;
+	/*padding: 2rem;*/
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	margin: 0;
+}
+.send-message:hover {
+	background: #9bf1ff;
+}
+.clear-form {
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	margin: 0 1rem;
+}
+.clear-form:hover {
+	border: 1px solid #9bf1ff;
+	color: #9bf1ff;
+}
+
+
+		/*правая секция контактов*/
+
+.right-section section {
+	padding: 4rem 0 2rem 3rem;
+}
+.right-section section:not(:last-child) {
+	border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+
+/*св-ва для иконок шрифта awesom(не являющихся ссылками)*/
+.icon-fa {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #242943;
+	background: #fff;
+	font-size: 1.2rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+.contacts {
+	padding: 0.5rem 0 2rem 1.5rem;
+}
+.contacts h3 {
+	margin: 0 0 2rem 0;
+}
+.contacts a {
+	border-bottom: 1px dotted #fff;
+}
+.contacts a:hover {
+	border: none;
+}
+			/* - FOOTER - */
+#footer {
+	background: #242943;
+	border-top: 1px solid rgba(212, 212, 255, 0.1);
+}
+.footer {
+	padding: 4rem 5%;
+}
+.icon-footer {
+	margin-bottom: 2rem; 
+}
+.icon-footer li {
+	display: inline-block;
+	padding: 0;
+	margin-right: 2rem;
+}
+/*св-ва для иконок шрифта awesom(являющихся ссылками)*/
+.icon-footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #242943;
+	background: #fff;
+	font-size: 1.2rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;	
+}
+.icon-footer a:hover {
+	background: #9bf1ff;
+}
+
+.copyright li {
+	display: inline-block;
+	padding: 0 1rem 0 0;
+	/*border-right: 1px solid rgba(212, 212, 255, 0.1);*/
+	color: rgba(244, 244, 255, 0.2);
+}
+/*для всех потомков li сласса copyright, кроме первого*/
+.copyright li:not(:first-child) {
+	padding-left: 1rem;
+}
+.copyright li:not(:last-child) {
+	border-right: 1px solid rgba(212, 212, 255, 0.1);
+}
+.copyright a {
+	border-bottom: 1px dotted rgba(212, 212, 255, 0.1);
+	color: rgba(244, 244, 255, 0.2);
+}
+.copyright a:hover {
+	border: none;
+	color: #9bf1ff;
+}
+		/* конец footer */
+
+
+			/*Модальное окно - МЕНЮ*/
+.overlay {
+	display: none;
+	/*opacity: 0;*/
+	position: fixed;
+	background: rgba(35, 41, 66, 0.96);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*z-index: 2;*/ /*чтобы перекрыть logo+menu, так как использовался z-index 
+	в закрепленном Меню(на 2 и 3 страницах)*/
+}
+/* чтобы срабатывала кнопка Menu и открывалось модальное окно */
+#menu:target {
+	display: block;
+}
+.menu {
+	/*position: absolute;*/
+	font-size: 20px;
+	margin: auto;
+	margin-top: 10rem;
+	width: 240px;
+	height: 240px;
+}
+.menu ul {
+	padding: 0;
+}
+.links, .actions {
+	display: block;
+	list-style: none;
+	font-family: "Open Sans";
+	text-align: center;
+	line-height: 2;  /*межстрочный интервал*/
+	text-transform: uppercase;  /*все буквы заглавные*/
+	/*letter-spacing: 1em;*/ /*расстояние между буквами*/
+	font-weight: 600; /*Устанавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100.*/
+
+}
+
+.links li:not(:first-child) {   /*для всех элементов списка li, являющихся потомками класса links, но
+																			кроме первого элемента li*/
+	border-top: 1px solid #fff;
+}
+
+.links a, .actions a, .exit-button a {
+	text-decoration: none;  /*убираем подчеркивание ссылок*/
+}	
+
+.button-getStarted {
+	display: block;
+	background: #fff;
+	color: #242942;
+	width: 100%;
+	padding: 0 1em;
+	margin: 1em 0;
+}
+.links a, .exit-button a {
+	color: #fff;
+}
+
+/*цвет ссылок первых 4-х кнопок меню при наведении*/
+.links a:hover, .exit-button a:hover {
+	color: #9bf1ff;
+}
+.button-logIn:hover {		/*действия при наведении на кнопку(ссылку) LOGIN*/
+	color: #9bf1ff;
+	border: 1px solid #9bf1ff;
+}
+.button-getStarted:hover {		/*действия при наведении на кнопку(ссылку) GET STARTED*/
+	background: #9bf1ff;
+	color: #242942;
+}
+
+.button-logIn {
+	display: block;
+	background: transparent; /*прозрачный*/
+	border: 1px solid #fff;
+	width: 100%;
+	padding: 0 1em;
+	margin: 1em 0;
+	color: #fff;  
+}
+
+.exit-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	font-weight: 600;
+}
+/*   -   конец модального окна  -  */
+
+
+/*для тестов*/
+.no-list {		/*убрать у списка паддинги - чтобы слева не оставалось поля(для правильной центровки)*/
+	padding: 0;
+}
+
+			/* - Адаптивность - */
+@media (min-width: 320px) and (max-width: 767px) {
+body {
+	font-size: 10px;
+}
+.header {
+	display: none;
+}
+#content,.banner,.left-section,.footer,.right-section section {
+	padding: 1rem 5%;
+}
+.col-1,
+.col-2, 
+.col-3, 
+.col-4, 
+.col-5, 
+.col-6, 
+.col-7, 
+.col-8, 
+.col-9, 
+.col-10,
+.col-11,
+.col-12
+{
+	flex-basis: 100%;
+	max-width: 100%;
+}
+.row {
+	flex-wrap: wrap;
+}
+.float40 {
+	float: left;
+	width: 100%;
+}
+.float60 {
+	float: left;
+	width: 100%;
+}
+.icon-footer li {
+	margin-right: 0.5rem;
+}
+.copyright li:not(:first-child) {
+	padding-left: 0;
+}
+.copyright li {
+	padding: 0 0.5rem 0 0;
+}
+}

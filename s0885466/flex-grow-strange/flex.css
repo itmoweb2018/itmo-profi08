@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.red {
+    background:#BE4C39;
+}
+
+.blue {
+    background: #2793C7;
+}
+
+section {
+    flex-basis: 300px;
+    padding: 20px;
+}
+
+aside {
+    flex-basis: 200px;
+    padding: 20px;
+}
