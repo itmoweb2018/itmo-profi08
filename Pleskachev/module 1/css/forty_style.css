@@ -1,0 +1,770 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+	background: #242943;
+	font-family: 'Open Sans';
+	color: #fff;
+	width: 100%;
+	margin: 0;
+}
+/*шапка сайта целиком (фон и его затемнение)*/
+.header {
+    display: block;
+    background: url(../pics/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 35rem;
+    max-height: 36.88rem;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.header::after {
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    max-height: 36.88rem;
+    left: 0;
+    top: 0;
+    content: '';
+    background-color: rgba(23,28,60,0.8);
+    z-index: 0;
+}   
+/*верхняя строка*/
+.hat {
+    position: relative;
+    z-index: 2;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo {
+    position: absolute;
+    padding-top: 1.4rem;
+    padding-left: 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 1s;
+}
+.logo b {
+    color: #242943;
+    background-color: #fff;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-weight: 600;
+    transition: all 1s;
+}
+.logo span {
+	transition: all 1s;
+}
+.logo:hover b {
+    background-color: #53e3fb;
+    transition: all 1s;
+}
+.logo:hover span {
+    color: #53e3fb;
+    transition: all 1s;
+}
+.menubutton {
+	position: absolute;
+    padding-top: 1.4rem;
+    padding-left: 1rem;
+	right: 5px;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 1s;
+}
+.menubutton:hover {
+    color: #53e3fb;
+    transition: all 1s;
+}
+/*заголовок с кнопкой*/
+.headermainblock {
+    position: relative; 
+    top: 35%;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 2;
+}
+h1 {
+	font-size: 3.1rem;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #fff;
+}
+.under_line {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+.under_line p {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.4rem; 
+    width: 45%;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;    
+}
+/*кнопка погнали*/
+.getstarted {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-height: 4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: 0.2em;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 1s;	
+}
+.getstarted:hover {
+    color: #53e3fb;
+    border: 2px solid #53e3fb;
+    transition: all 1s;
+}
+/*Экран меня во весь экран*/
+#menublock {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(42,47,74,0.95);
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+}
+#menublock:target {
+    display: block;
+}
+.menulist {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15%;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+.menu1,
+.menu2,
+.menu3 { 	
+	font-weight: 500;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: thin solid rgba(108,116,154,0.5);
+    transition: .5s;
+    width: 18%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.menu4 { 
+	font-weight: 500;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .5s;
+    width: 18%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.menu5 {
+	color: #242943;
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.3%;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    border: thin solid #fff;
+    transition: .5s;
+    width: 18%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.menu6 {
+	font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 0.3%;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: thin solid #fff;
+    transition: .5s;
+    width: 18%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.menu1:hover,
+.menu2:hover,
+.menu3:hover,
+.menu4:hover { 
+	color: #53e3fb;
+    transition: all 1s;
+}
+.menu6:hover { 
+	color: #53e3fb;
+	border: thin solid #53e3fb;	
+    transition: all 1s;
+}
+.menu5:hover { 
+	background-color: #53e3fb;
+	border: thin solid #53e3fb;
+    transition: all 1s;
+}
+.exit {
+    color: #fff;
+    background: rgba(42,47,74,1);
+    border-color: rgba(42,47,74,1);
+	position: absolute;
+	top: 1.5em;
+	right: 1.5em;
+    transition: all 1s;
+}
+.exit:hover {
+    color: #53e3fb;
+    transition: all 1s;
+}
+/*секция с блоками*/
+.body {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	width: 100%;
+}
+/*заголовки и параграфы на блоках*/
+.body h2 {
+	position: absolute;
+	top: 37%;
+    left: 6rem;
+	font-size: 1.7rem;
+	z-index: 2;
+}
+.body p {
+	position: absolute;
+	top: 50%;
+    left: 6rem;
+	padding-top: 1.3rem;
+	border-top: solid 1px #fff;
+	font-size: 0.8rem;
+	letter-spacing: 0.3rem;
+	font-weight: 700;
+	z-index: 2;
+}
+/*3 строки*/
+.firstblock,
+.seckondblock,
+.thirdblock {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+/*фоновые вставки*/
+#one {background: url(../pics/pic01.jpg); background-size: cover; background-position: center}
+#two {background: url(../pics/pic02.jpg); background-size: cover; background-position: center}
+#tree {background: url(../pics/pic03.jpg); background-size: cover; background-position: center}
+#four {background: url(../pics/pic04.jpg); background-size: cover; background-position: center}
+#five {background: url(../pics/pic05.jpg); background-size: cover; background-position: center}
+#six {background: url(../pics/pic06.jpg); background-size: cover; background-position: center}
+/*описание блочков*/
+#one,
+#four,
+#five {
+	display: flex;
+	flex-direction: row;
+	height: 30rem;
+	width: 40%;
+	padding-top: 14rem;
+	padding-left: 2rem;
+}
+#two,
+#tree,
+#six
+ {
+	display: flex;
+	flex-direction: row;
+	height: 30rem;
+	width: 60%;
+	padding-top: 14rem;
+	padding-left: 2rem;
+}
+/*задание блочкам параметров*/
+.picbox {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	left: 0;
+	top: 0;	
+}
+/*придание блочкам параметров*/
+.firstblock .picbox:nth-child(1)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(59,173,191,0.85);
+	transition: .3s ease-in-out;
+}
+.firstblock .picbox:nth-child(2)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(131,91,160,0.85);
+	transition: .3s ease-in-out;
+}
+.seckondblock .picbox:nth-child(1)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(199,101,101,0.85);
+	transition: .3s ease-in-out;
+}
+.seckondblock .picbox:nth-child(2)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(193,135,60,0.85);
+	transition: .3s ease-in-out;
+}
+.thirdblock .picbox:nth-child(1)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(126, 151, 207, 0.85);
+	transition: .3s ease-in-out;
+}
+.thirdblock .picbox:nth-child(2)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(104, 165, 138, 0.85);
+	transition: .3s ease-in-out;
+}
+/*отмена цвета при наведении*/
+.picbox:hover::after { opacity: 0; }
+/*секция описание*/
+.landing {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #2a2f4a;
+	padding: 65px 14% 65px 14%;
+}
+.landing h4 {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: solid 3px #fff;
+	letter-spacing: 0.3rem;
+	font-weight: 700;
+ 	width: 20rem;
+}
+.landing p {
+	font-size: 1.2rem;	
+	padding-top: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 100;
+	margin-bottom: 3.5rem;	
+}
+/*секция обратная связь*/
+.feedback {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	border-bottom: solid 1px #696f8a;
+}
+/*левая колонка*/
+.leftblock {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: 5%;
+	justify-content: center;
+	align-content: center;
+}
+.row-1 {
+	display: flex;
+	flex-direction: row;
+}
+.name,
+.email_form {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    width: 50%;
+}
+.email_form {
+    width: 50%;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.name input,
+.email_form input {
+    width: 90%;
+    height: 2.4rem;
+}
+.message textarea {
+    width: 95%;
+    height: 10rem;
+}
+.name input,
+.email_form input,
+.message textarea {
+    display: block;
+    background-color: #2a2f4a;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+.name input:focus,
+.email_form input:focus,
+.message textarea:focus {
+    outline-offset: -1px;
+    outline-color: #5ca4e8;
+}
+.name label,
+.email_form label {
+    padding-bottom: 1.25rem;
+}
+.message label {
+    padding: 1.25rem 0;
+}
+.name label,
+.email_form label,
+.message label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+.row-2 {
+	display: flex;
+	flex-direction: row;
+}
+.row-3 {
+	display: flex;
+	flex-direction: row;
+}
+.sendm,
+.clear {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.5s;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    height: 2.4rem;
+    text-transform: uppercase;
+
+}
+.sendm {
+    color: #242943;
+    background-color: #fff;
+}
+.sendm:hover {
+    background-color: #53e3fb;
+    border: 1px solid #53e3fb;
+    cursor: pointer;
+}
+.submit:active {
+    background-color: #53e3fb;
+    border: 1px solid #53e3fb;
+}
+.clear {
+    color: #fff;
+    background-color: transparent;
+}
+.clear:hover {
+    color: #53e3fb;
+    border: 1px solid #53e3fb;
+    cursor: pointer;
+}
+.clear:active {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+/*правая колонка*/
+.rightblock {
+	display: flex;
+	flex-direction: column;
+}
+/*сетка бордеров*/
+.icon {
+	display: flex;
+	flex-direction: row;
+	height: 33.33%;
+	padding: 10% 10%;
+	overflow: inherit;
+}
+.icon:nth-child(1) {
+	border-left: solid 1px #2a2f4a;
+}
+.icon:nth-child(2) {
+	border: solid 1px #2a2f4a;
+}
+.icon:nth-child(3) {
+	border-left: solid 1px #2a2f4a;
+}
+.icon span {font-size: 2rem;}
+.fb {margin: 1% 8%;}
+.fb h3 {margin-bottom: 9%; font-size: 1.1rem}
+.fb a {
+    font-size: 0.75rem;
+	border-bottom: 1px dotted #fff;
+ 	transition: all 1s;
+}
+.fb p {
+    font-size: 0.75rem;
+}
+.fb a:hover {
+	color: #53e3fb; 
+	border-bottom: 1px dotted #53e3fb;
+	transition: all 1s;
+}
+/*footer*/
+.footer {
+	margin: 3.5% 6% 2% 6%;
+}
+.footerblock {
+	font-size: 2rem;
+	padding-bottom: 2%;
+}
+.footerblock a {
+	padding-left: 0.8rem;
+	transition: all 1s;
+}
+.footerblock a:hover {
+	color: #53e3fb;
+	transition: all 1s;
+}
+/*последняя строка*/
+.lastline {
+	color: #696f8a;
+	font-size: 0.8em;
+	transition: all 1s;
+	font-weight: 2px;
+}
+.lastline a {
+	color: #696f8a;
+	font-size: 0.8rem;
+	transition: all 1s;
+	border-bottom: 1px dotted #696f8a;
+}
+.lastline a:hover {
+	color: #53e3fb;
+    transition: all 1s;
+    border-bottom: 1px dotted #53e3fb;
+}
+/*сеточная разметка*/
+.row{display: flex;}
+.col-1 {flex-basis: 8.33%; max-width: 8.33%;}
+.col-2 {flex-basis: 16.66%;	max-width: 16.66%;}
+.col-3 {flex-basis: 25%; max-width: 25%;}
+.col-4 {flex-basis: 33.33%;	max-width: 33.33%;}
+.col-5 {flex-basis: 41.66%;	max-width: 41.66%;}
+.col-6 {flex-basis: 50%; max-width: 50%;}
+.col-7 {flex-basis: 58.33%;	max-width: 58.33%;}
+.col-8 {flex-basis: 66.66%; max-width: 66.66%;}
+.col-9 {flex-basis: 75%; max-width: 75%;}
+.col-10 {flex-basis: 83.33%; max-width: 83.33%;}
+.col-11 {flex-basis: 91.66%;max-width: 91.66%;}
+.col-12 {flex-basis: 100%; max-width: 100%;}
+/*адаптивность*/
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+    .landing {
+        padding: 6%;
+    }
+ }
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 70%;
+    }
+    #one, 
+    #two,
+    #tree,
+    #four,
+    #five,
+    #six {
+        width: 50%;
+    }
+    .landing {
+        padding: 6%;
+    }
+ }
+ @media only screen and (min-width: 577px) and (max-width: 767px) {
+    html {
+        font-size: 50%;
+    }
+    .menu {
+        font-size: 10px;
+    }
+    #one, 
+    #two,
+    #tree,
+    #four,
+    #five,
+    #six {
+        width: 50%;
+    }
+    .landing {
+        padding: 6%;
+    }
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .leftblock {
+        width: 100%;
+        padding: 2rem 3.5rem;
+        max-width: 100%;
+        border-bottom: 1px solid #2a2f4a;
+    }
+    .rightblock {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%
+    }
+    .icon {
+        font-size: 100%;
+        width: 33%;
+        height: 100%;
+        padding: 3%;
+    }
+    .icon:nth-child(1),
+    .icon:nth-child(2),
+    .icon:nth-child(3) {
+        border: none;
+    }
+    .message,
+    .clear {
+        padding: 0.8rem 0.5rem;
+    }
+    .footer {
+        padding-top: 3%;
+        border-top: 1px solid #2a2f4a;
+        font-size: 10px;
+    } 
+ }
+ @media only screen and (min-width: 320px) and (max-width: 576px) {
+    html {
+        font-size: 42%;
+    }
+    .firstblock,
+    .seckondblock,
+    .thirdblock {
+        display: flex;
+        flex-direction: column;
+    }
+    #one, 
+    #two,
+    #tree,
+    #four,
+    #five,
+    #six {
+        width: 100%;
+    }
+    .landing {
+        padding: 6%;
+    }
+    .menu {
+        font-size: 6px;
+    }
+    .feedback {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    .leftblock {
+        padding: 2rem 3.5rem;
+        max-width: 100%;
+        border-bottom: 1px solid #2a2f4a;
+    }
+    .rightblock {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%
+    }
+    .icon {
+        font-size: 100%;
+        width: 100%;
+        height: 12rem;
+        padding: 3%;
+    }
+    .icon:nth-child(1),
+    .icon:nth-child(2),
+    .icon:nth-child(3) {
+        border-bottom: 1px solid #2a2f4a;
+    }
+    .footer {
+        font-size: 10px;
+    }
+ }
