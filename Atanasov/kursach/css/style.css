@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+/*    box-sizing: border-box;*/
+    margin: 0;    
+    color: white;
+}
+
+body, input, textarea {
+    font-family: "Open Sans";
+}
+
+/*  ---------- start HEADER  ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 30rem;
+    max-height: 80rem;
+    background-attachment: fixed;
+}
+
+.headerBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36,41,67,0.8);
+}
+
+.menu {
+    line-height: 3em;
+    display: flex;
+/*    background-color: transparent;*/
+}
+
+/* Лого */
+.logo {
+    display: inline-block;
+    /* line-height: 2rem; */
+    margin: 0 1rem;
+}
+
+.logo:hover strong {
+    background-color: #9bf1ff;
+    transition: background-color 0.5s ease 0.1s;
+}
+
+strong {
+    color: black;
+    background-color: white;
+/*    letter-spacing: 0.3rem;*/
+    margin: 0 0.5rem 0 0;
+    padding: 0 0.15rem 0 0.4rem;
+}
+/* Завершение лого */
+
+/* Кнопка меню */
+.menu_button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.buttonMenu {
+    margin: 0 1rem;
+}
+
+.buttonMenu span {
+    margin-right: 0.5rem;
+}
+
+.buttonMenu i {
+    margin: 0;
+}
+/* Завершение кнопки меню */
+
+.banner {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding: 10rem 10%;
+    margin: 0 auto;
+    width: calc(100% - 3rem);
+}
+
+#mainH {
+    display: flex;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    width: 100%;
+    margin-bottom: 0.8rem;
+/*    line-height: 1rem;*/
+}
+
+.bannerUnderline {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bannerText {
+    display: inline-block;
+    justify-content: flex-start;
+    max-width: 40rem;
+}
+
+.bannerText p {
+    margin: 2rem 1rem 2rem 0;
+}
+
+/* ---------- start buttonStarted ---------- */
+.buttonStarted,
+.buttonClear {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid;
+    padding: 1rem;
+    width: 13rem;
+}
+
+.buttonStarted i {
+    margin-left: 1rem;
+}
+ 
+.buttonStarted:hover,
+.buttonClear:hover,
+.logo:hover,
+.buttonMenu:hover {
+    color: #9bf1ff;
+    transition: color 0.5s ease 0.1s;
+} 
+/* ---------- end buttonStarted ---------- */
+
+/* ---------- end HEADER ---------- */
+
+/* ---------- start text formatting ---------- */
+.banner p,
+.menu,
+.buttonStarted,
+.buttonMenu,
+.buttonClear,
+.buttonSend,
+.boxpar,
+label {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.logo,
+.buttonStarted,
+.buttonClear,
+.buttonMenu {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner, .menu, .imgBox {
+    user-select: none;
+}
+/* ---------- end text formatting ----------*/
+
+/*----------Начало секции с картинками----------*/
+.photo-block {
+    background-color: black;
+/*    width: 60%;*/
+/*    padding: 5rem;*/
+    background-image: url("../img/pic02.jpg");
+/*    transform: translate(100px) scale(2);*/
+}
+
+.fading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0,0, 0.15);  
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.mask {
+/*    background-color: rgba(127,255,212,0.6);*/
+    transition: background 0.5s cubic-bezier(0, 0, 0.2, 1) 0.1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+/*start mask box color*/
+.box1 .mask {
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.box2 .mask {
+    background-color: rgba(150, 139, 206, 0.6);
+}
+.box3 .mask {
+    background-color: rgba(208, 108, 95, 0.6);
+}
+.box4 .mask {
+    background-color: rgba(228, 173, 118, 0.6);
+}
+.box5 .mask {
+    background-color: rgba(124, 154, 224, 0.6);
+}
+.box6 .mask {
+    background-color: rgba(124, 197, 159, 0.6);
+}
+/*end mask box color*/
+
+.mask:hover {
+    background-color: rgba(127,255,212,0);
+/*    transition: background 2s ease 0.5s;*/
+}
+/*Завершение секции с картинками*/
+
+
+/* ---------- start imgbox by flex ---------- */
+.imgBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box_size1, .box_size2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 40vh;
+    min-height: 20em;
+    max-height: 40em;
+}
+
+.box1, .box4, .box5 {
+    width: 40%;
+}
+
+.box2, .box3, .box6 {
+    width: 60%;
+}
+
+.box1 {background: url(../img/pic01.jpg);}
+.box2 {background: url(../img/pic02.jpg);}
+.box3 {background: url(../img/pic03.jpg);}
+.box4 {background: url(../img/pic04.jpg);}
+.box5 {background: url(../img/pic05.jpg);}
+.box6 {background: url(../img/pic06.jpg);}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.boxtext h1 {
+    border-bottom: 1px solid white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+/* ---------- end imgbox by flex ---------- */
+
+/* ---------- start afterBoxText ---------- */
+.bannerAfterBox {
+    padding: 5rem 10%;
+    margin: 0 auto;
+    display: block;
+    background-color: #2a2f4a;
+    width: 100%;
+}
+
+#afterMainH {
+    font-size: 2rem;
+    margin-top: 0;
+    max-width: max-content;
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.afterBannerText {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem 0; 
+}
+
+.afterBannerText p {
+    margin: 0;
+}
+/* ---------- end afterBoxText ---------- */
+
+/* ---------- start feedback block ---------- */
+
+section.feedback {
+    padding: 0 10% 0 10%;
+    margin: 0 auto; /* вынести в отдельное с баннером афтер */
+    background: #242943;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+section.feedbackLeft {
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+}
+
+section.feedbackRight {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr;
+}
+
+section.feedbackLeft::before {
+    content: "";
+    grid-column: 1/3;
+    grid-row: 1/4;
+    border-right: 1px solid rgba(212, 212, 255, 0.1);
+    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+section.feedbackRight::before {
+    content: "";
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+#NameFeedback {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#EmailFeedback {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#MessageFeedback {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#ButtonFeedback {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+#iconEmail {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#iconPhone {;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#iconAddress {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.feedbackData{
+    margin-left: 5rem;    
+}
+
+.feedbackH {
+    font-size: 1.7rem;
+    margin: 0 0 1rem 0;
+}
+
+.feedbackDataInfo {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.buttonSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #242943;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 1rem; 
+    margin-right: 2rem;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    width: 13rem;
+}
+
+.buttonSend:hover {
+    background-color: #9bf1ff;
+    border: 1px solid #9bf1ff;
+    transition: 0.5s ease 0.1s; 
+} 
+
+#iconPhone::before {  /* переработать */
+    content: "";
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#iconAddress::before {  /* переработать */
+    content: "";
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#NameFeedback,
+#EmailFeedback,
+#MessageFeedback {
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+#NameFeedback,
+#EmailFeedback {
+    padding-top: 3rem;
+}
+
+#iconEmail,
+#iconPhone,
+#iconAddress {
+    position: relative;
+    padding: 15% 10%;
+}
+
+#iconEmail .feedbackData .feedbackDataInfo {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+#iconEmail .feedbackData .feedbackDataInfo:hover,
+#footerTwo #copyright li a:only-of-type:hover {
+    color: #9bf1ff;
+    text-decoration: none;
+    border-bottom: none;
+    transition: 0.5s ease 0.1s;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    /* margin-top: 2rem; */
+}
+ 
+input, textarea {
+    display: block;
+    background: #2a2f4a;
+    border: none;
+    padding: 1rem;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #9bf1ff;
+    box-shadow: 0 0 0 2px #9bf1ff;
+    transition: border-color 0.5s ease 0.1s;
+    transition: box-shadow 0.5s ease 0.1s;
+}
+
+#messageField {
+    height: 15rem;
+} 
+
+.feedback .feedbackRight .logoPic {
+    position: absolute;
+}
+
+.logoPic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+}
+
+.logoPic i {
+    color: #242943;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+/*-----end feedback block-----*/
+
+/*-----start footer-----*/
+footer {
+    padding: 3rem 10% 3rem 10%;;
+    margin: 0 auto;
+    background: #242943;
+    display: block;
+/*
+    flex-direction: row;
+    flex-wrap: wrap;
+*/
+}
+
+#footerOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+footer #footerOne .logoPic {
+    margin: 0 2rem 2rem 0;
+}
+
+footer #footerTwo ul:first-child {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    list-style: none;
+}
+
+#footerTwo #copyright li:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+
+#footerTwo #copyright li {
+    margin-right: 1rem;
+    padding-left: 1rem;
+    border-left: solid 1px rgba(212, 212, 255, 0.2);
+    color: rgba(244, 244, 255, 0.3);
+    font-size: 0.8rem;
+}
+
+#footerTwo #copyright li a:only-of-type {
+    color: rgba(244, 244, 255, 0.3);
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+footer #footerOne .logoPic:hover {
+    background-color: #9bf1ff;
+    box-shadow: 0 0 5px #9bf1ff;
+    transition: 0.5s ease 0.1s;
+}
+
+/* link style and hover animation look at feedback block*/
+/*-----end footer-----*/
+
+/*-----start modal window-----*/
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 3, 45, 0.9);
+    color: white;
+    z-index: 9997;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#buttonOverlayClose {
+    line-height: 3em;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#overlayMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlayMenu > :first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#overlayMenu ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 3.5rem;
+    height: 3.5rem;
+    padding: 1rem;
+    width: 13rem;
+}
+
+#overlayMenu ul > :nth-child(-n+3) {
+    border-bottom: solid 1px rgba(212, 212, 255, 0.7);
+}
+
+
+/*-----end modal window-----*/
+
+/*start adaptive*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    тут вписать правила для указанного разрешения экрана
+    col-1,  col-2,  col-3,  col-4,  col-5,  col-6,  col-7,  col-8, col-9,  col-10,  col-11,  col-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+/*endadaptive*/

@@ -1,0 +1,70 @@
+header {
+    background: #2d284b;
+    background-image: url("images/banner.jpg");
+}
+
+.banner {
+     padding: 8rem 20%;
+
+ }
+
+.banner h1 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1rem;
+}
+.banner p {
+    text-transform: uppercase;
+}
+
+.banner a {
+    color: #fff;
+    border: 2px solid;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.banner a:hover {
+    color: #000;
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+.text p {
+    float: left;
+    width: 20rem;
+}
+
+.text a {
+    float: left;
+}
+
+
+.text::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*Секция с фотографиями*/
+
+.photo-block {
+    background-color: #000;
+    background-image: url("images/pic02.jpg");
+}
+
+.fading {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.mask {
+    padding: 5rem;
+    background: rgba(127, 255, 212, 0.6);
+    transition: background 2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+
+.mask:hover {
+    background: rgba(127, 255, 212, 0);
+}
+

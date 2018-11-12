@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="photographers and their life stories">
+	<title>main stories of photographers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> 
+</head>
+<body>
+						<!-- Header -->
+	<header id="header">
+								<!-- logo + menu-button -->
+		<div class="header floatfix">
+			<div class="logo">
+				<a href="main.html">
+					<strong>Dmitriy</strong>
+					<span>Design web</span>
+				</a>
+			</div>
+			<div class="menu-button">
+				<nav class="navigation floatfix">
+					<a href="#menu">
+						<strong>Menu</strong>		<!--если исрользовать тэг p, то все съедет,
+						 так как p блочный-->
+						<span class="fas fa-bars"></span>
+					</a>
+				</nav>
+			</div>
+		</div>
+								<!-- banner -->
+		<div class="banner">
+			<h1>Приветствие</h1>
+			<div class="floatfix">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aliquam iste error, unde quis quibusdam iu.</p>
+				<!--кнопка Get start со стрелкой-->				
+				<a href="#goStart">
+					<ul class="no-list">
+						<li>
+							<span>Get Started</span>
+						</li>
+						<li>
+							<span class="fas fa-long-arrow-alt-right fa-2x"></span>
+						</li>
+					</ul>
+				</a>
+			</div>
+		</div>
+	</header>
+						<!-- Main -->
+	<main id="goStart">
+		<section class="section1 floatfix">
+			<div class="block-content float40">
+				<div class="mask">
+					<h3>Тест1</h3>
+					<p>Lorem ipsum dolor sit amet</p>
+					<a class="img-links" href=""></a>
+				</div>
+			</div>
+			<div class="block-content float60">
+				<div class="mask">
+					<h3>Тест2</h3>
+					<p>Lonsectetur adipisicing elit</p>
+					<a class="img-links" href=""></a>
+				</div>
+			</div>
+		</section>
+		<section class="section2 floatfix">
+			<div class="block-content float60">
+				<div class="mask">
+					<h3>тест3</h3>
+					<p>Corporis dolorum dolore Minus</p>
+					<a class="img-links" href=""></a>
+				</div>	
+			</div>
+			<div class="block-content float40">
+				<div class="mask">
+					<h3>тест4</h3>
+					<p>Dignissimos eius itaque perspi</p>
+					<a class="img-links" href=""></a>
+				</div>	
+			</div>
+		</section>
+		<section class="section3 floatfix">
+			<div class="block-content float40">
+				<div class="mask">
+					<h3>тест5</h3>
+					<p>Lorem ipsum dolor</p>
+					<a class="img-links" href=""></a>
+				</div>	
+			</div>
+			<div class="block-content float60">
+				<div class="mask">
+					<h3>тест6</h3>
+					<p>Lorem consectetur adipisicing</p>
+					<a class="img-links" href=""></a>
+				</div>	
+			</div>
+		</section>
+	</main>
+									<!-- banner2 -->
+	<section  class="banner2">								
+		<div class="banner">
+			<h3>Masa libero</h3>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam veritatis quaerat vero, deserunt ipsum vitae, odio et consequatur perspiciatis, voluptate iure nisi maiores eaque? Quos autem commodi veniam cumque. Odit.</p>
+				<!--кнопка Get start со стрелкой-->				
+				<a href="">
+					<ul class="no-list">
+						<li>
+							<span>Get Started</span>
+						</li>
+						<li>
+							<span class="fas fa-long-arrow-alt-right fa-2x"></span>
+						</li>
+					</ul>
+				</a>
+					
+			</div>
+		</div>
+	</section>
+			<!-- форма и контакты -->
+	<section id="contacts">
+		<!-- flex контейнер1 -->
+		<div class="all-contacts row">
+			<!-- левая секция (ввод данных)-->
+			<section class="left-section col-8">
+				<form>					
+					<!-- flex контейнер 1.2.a (поля ввода)-->
+					<div class="input-fields row">
+						<!-- ввод имени-->
+						<div class="item-flex">
+							<label for="nameField">Name</label>
+							<input type="text" name="username" id="nameField" placeholder="введите имя" required=""> <!--*в чем разница между placeholder и value - почему если указан value, то он светиться внутри поля вместо placeholder -->
+						</div>
+						<!-- ввод почты-->
+						<div class="item-flex">
+							<label for="emailField">Email</label>
+							<input type="email" name="emailField" id="emailField" placeholder="введите почту" required="">
+						</div>
+						<!-- ввод сообщения -->
+						<div class="message">
+							<label>Message</label>
+							<textarea name="message" id="message" rows="8"></textarea>
+						</div>
+					</div>
+					<!-- flex контейнер 1.2.b (кнопки действий)-->
+					<div class="action-button row">
+						<div>
+							<input class="send-message" type="submit" name="" value="send message">
+						</div>
+						<div>
+							<input class="clear-form" type="reset" value="clear">
+						</div>
+					</div>
+				</form>
+			</section>
+			<!-- правая секция (контактная информация)-->
+			<section class="right-section col-4">
+				<section>
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-envelope"></span>
+						</div>
+						<div class="contacts">	
+							<h3>Email</h3>
+							<a href="">myemail@adress.com</a>
+						</div>	
+					</div>
+				</section>
+				<section>	
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-phone"></span>
+						</div>
+						<div class="contacts">
+							<h3>Phone</h3>
+							<span>+79210000000</span>
+						</div>	
+					</div>
+				</section>	
+				<section>	
+					<div class="row">
+						<div class="icon-fa">
+							<span class="fas fa-home"></span>
+						</div>
+						<div class="contacts">
+							<h3>Adress</h3>
+							<span>		
+								190025 St-Petersberg
+								<br>
+								Nevskiy avenue, 36
+								<br>
+								Russian Federation
+							</span>
+						</div>	
+					</div>
+				</section>	
+			</section>
+		</div>
+	</section>
+
+			<!--   FOOTER   -->
+	<footer id="footer">
+		<div class="footer">
+			<section class="icon-footer">
+				<div>
+					<ul class="no-list">
+						<li>
+							<a class="fab fa-twitter" href=""></a>	
+						</li>
+						<li>
+							<a class="fab fa-facebook-f" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-instagram" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-github" href=""></a>
+						</li>
+						<li>
+							<a class="fab fa-linkedin-in" href=""></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="copyright">
+				<div>
+					<ul class="no-list">
+						<li>@United</li>
+						<li>
+							Design:
+							<a href="https://html5up.net/forty">HTML5 UP</a>
+						</li>
+						<li>
+							Demo images:
+							<a href="https://unsplash.com/">Unsplash</a>
+						</li>
+					</ul>	
+				</div>
+			</section>
+			
+		</div>
+		
+	</footer>
+
+<!-- модальное окно - МЕНЮ-->
+	<div class="overlay" id="menu">
+		<div class="menu">
+			<ul class="links">
+				<li>
+					<a href="main.html">Home</a>
+				</li>
+				<li>
+					<a href="">empty</a>
+				</li>
+				<li>
+					<a href="second_page.html">About Irma</a>
+				</li>
+				<li>
+					<a href="third_page.html">About Gregor</a>
+				</li>
+			</ul>
+			<ul class="actions">
+				<li>
+					<a class="button-getStarted" href="">Get started</a>
+				</li>
+				<li>
+					<a class="button-logIn" href="">Login</a>
+				</li>
+			</ul>
+			<div class="exit-button">
+				<a href="">Exit</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

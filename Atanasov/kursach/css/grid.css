@@ -1,0 +1,125 @@
+/*заготовка для grid*/
+/*
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-1 {
+    float: left;
+    width: 8.33%;
+    
+}
+
+.col-2 {
+    float: left;
+    width: 16.66%;
+}
+
+.col-3 {
+    float: left;
+    width: 25%;
+}
+
+.col-4 {
+    float: left;
+    width: 33.33%;
+}
+
+.col-5 {
+    float: left;
+    width: 46.66%;
+}
+
+.col-6 {
+    float: left;
+    width: 50%%;
+}
+
+.col-7 {
+    float: left;
+    width: 58.33%;
+}
+
+.col-8 {
+    float: left;
+    width: 66.66%;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+}
+
+.col-10 {
+    float: left;
+    width: 83.33%;
+}
+
+.col-11 {
+    float: left;
+    width: 91.66%;
+}
+
+.col-12 {
+    float: left;
+    width: 100%;
+}
+*/
+/*окончание заготовки для gris*/
+
+/*grid на flex*/
+.row::after {
+    display: flex;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+    
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    flex-basis: 46.66%;
+}
+
+.col-6 {
+    flex-basis: 50%%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+}
+
+.col-11 {
+    flex-basis: 91.66%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+/*end grid на flex*/
