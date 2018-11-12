@@ -269,9 +269,9 @@ margin-left: 80px;
     display: block;
 
 }
-.title-1 p {
+.title-1 {
     float: left;
-    width: 30rem;
+    width: auto;
     font-size: 12px;
 }
 .button-1 {
@@ -281,9 +281,10 @@ margin-left: 80px;
     height: 50px;
     text-align: center;
     padding: 15px 0 0 0;
-    margin: 150px 0;
+    margin: 40px 0 0 291px;
     text-transform: uppercase;
-    text-decoration: none; 
+    text-decoration: none;
+
 }
 .button-1:hover {
     color: rgba(90, 245, 189, 0.75);
@@ -406,12 +407,24 @@ textarea {
     margin: 0 0 2px 2px;
 
 }
-.icon1{
+
+.blok2 .icon1 {
     padding-top: 10px;
     width: 15px;
     height: 15px;
-    margin-left: 76px;
-       
+    margin-left: 25px;
+}
+.blok3 .icon1 {
+    padding-top: 10px;
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
+}
+.blok4 .icon1 {
+    padding-top: 10px;
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
 }
 .fa-envelope:before {
     content: "\f0e0";
@@ -427,8 +440,18 @@ textarea {
     clear: both;
   }
 
-.icon1 p{
+.blok2 .icon1 p{
    
+    margin: 5px 55px;
+    font-size: 14px;
+    width: 245px;
+}
+.blok3 .icon1 p {
+    margin: 5px 55px;
+    font-size: 14px;
+    width: 245px;
+}
+.blok4 .icon1 p {
     margin: 5px 55px;
     font-size: 14px;
     width: 245px;
@@ -630,7 +653,244 @@ a.push_login {
 .go{
     width: 100%;
 }
+.button {
+    /* float: left; */
+    border: 1px solid #ffffff;
+    color: white;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    padding: 16px 2px 2px 2px;
+    margin: 0 0 0 172px;
+    text-transform: uppercase;
+}
 
+.section-3{
+    background: #2e2b3c;
+    height: auto;
+    width: auto;
+    display: block;
+}
+.text-1 {
+    padding: 3rem 20%;
+    text-align: left;
+    display: block;
+
+}
+span {
+    float: left;
+    width: auto;
+    font-size: 12px;
+}
+.button-1 {
+    border: 1px solid #ffffff;
+    color: white;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 20% 0 0 20%;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.form_zone {
+    width: 100%;
+    min-height: 381px;
+   
+}
+
+.form_box {
+    margin: 30px 5px 30px 30px;
+}
+.second_box {
+    display: block;
+    float: left;
+    margin-left: 12px;
+}
+#name, #email {
+    width: 180px;
+    height: 28px;
+    background: #2e2b3c;
+    border: none;
+    color: #fff;
+}
+textarea {
+    width: 370px;
+    height: 100px;
+    display: block;
+    margin-top: 30px;
+    background: #2e2b3c;
+    border: none;
+    color: #fff;
+}
+.submit1 {
+    padding: 10px 30px;
+    margin: 16px 0 20px 0;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width: 163px;
+    background: #fff;
+    color: #2e2b3c;
+}
+.submit2 {
+    background: #1e1c27;
+    color: #fff;
+    padding: 7px 30px;
+    margin: 0px 0 20px 0px;
+    font-size: 14px;
+    border-color: #fbf5f5;
+    cursor: pointer;
+    width: 127px;
+    height: 38px;
+}
+form {
+    text-transform: uppercase;
+    width: auto;
+    padding: 5px 53px;
+}
+.inner_form {
+    background: #16151d;
+    height: 380px;
+}
+
+.sidebar {
+    width: 100%;
+    background: #1e1c27;
+    height: 132px;
+}
+
+.icon1 {
+    padding-top: 0px;
+    width: 25px;
+    height: 10px;
+    margin-left: 11px;
+}
+.icon1 {
+    padding-top: 0px;
+    width: 269px;
+    height: 10px;
+    margin-left: 29px;
+}
+
+.inner_sidebar {
+    background: #16151d;
+    height: 120px;
+    width: 213px;
+    margin: 0 0 2px 4px;
+    float: left;
+}
+.blok2 .icon1 {
+    padding-top: 0px;
+    width: 15px;
+    height: 15px;
+    margin-left: 18px;
+}
+.blok3 .icon1 {
+    padding-top: 0px;
+    width: 206px;
+    height: 8px;
+    margin-left: 6px;
+}
+.blok3 .icon1 p {
+    margin: 5px 40px;
+    font-size: 14px;
+    width: 79px;
+}
+
+.address_zone {
+    background: #16151d;
+    height: 119px;
+    margin: 0 0 2px 2px;
+    float: left;
+}
+
+
+.icon1 p {
+    margin: 2px 35px;
+    font-size: 10px;
+    width: 100px;
+}
+.icon1 a, .icon1 .phone, .icon1 .home {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 14px;
+    margin-left: 0px;
+    font-size: 14px;
+    width: 190px;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    font-family: "fontawesome";
+    position: absolute;
+    padding: 3px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.phone_zone {
+    background: #16151d;
+    height: 119px;
+    margin: 0 0 2px 0px;
+    float: left;
+}
+.blok4 .icon1 {
+    padding-top: 0px;
+    width: 285px;
+    height: 8px;
+    margin-left: 6px;
+}
+.fa-phone:before {
+    content: "\f095";
+    font-family: "fontawesome";
+    position: absolute;
+    padding: 3px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    clear: both;
+}
+.fa-home:before {
+    content: "\f015";
+    font-family: "fontawesome";
+    position: absolute;
+    padding: 3px;
+    font-size: 20px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    clear: both;
+}
+.section-4 {
+    background: #2e2b3c;
+    height: 516px;
+    width: auto;
+    font-size: 30px;
+    color: #fff;
+}
+
+.inner_footer {
+    background: #16151d;
+    margin-top: 1px;
+    height: 140px;
+    padding: 26px 0 0 40px;
+}
+
+
+/*
 .box_1 {
     width: 100%;
     background: url(../images/pic01.jpg);
@@ -664,5 +924,5 @@ a.push_login {
      background: url(../images/pic06.jpg);
      background-size: cover;
      
- }
+ }*/
 }
