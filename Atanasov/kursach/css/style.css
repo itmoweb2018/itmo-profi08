@@ -6,10 +6,20 @@ body {
 /*    box-sizing: border-box;*/
     margin: 0;    
     color: white;
+    background-color: #2a2f4a;
 }
 
 body, input, textarea {
     font-family: "Open Sans";
+}
+
+#mainBlur {
+    margin: 0;
+}
+
+.mainBlurShow {
+    filter: blur(5px);
+    display: block;
 }
 
 /*  ---------- start HEADER  ---------- */
@@ -22,7 +32,7 @@ header {
     background-repeat: no-repeat;
     height: 75vh;
     min-height: 30rem;
-    max-height: 80rem;
+    max-height: 50rem;
     background-attachment: fixed;
 }
 
@@ -53,7 +63,7 @@ header {
 }
 
 strong {
-    color: black;
+    color: #242943;
     background-color: white;
 /*    letter-spacing: 0.3rem;*/
     margin: 0 0.5rem 0 0;
@@ -129,6 +139,7 @@ strong {
     height: 3.5rem;
     border: 1px solid;
     padding: 1rem;
+    margin-right: 2rem;
     width: 13rem;
 }
 
@@ -139,7 +150,8 @@ strong {
 .buttonStarted:hover,
 .buttonClear:hover,
 .logo:hover,
-.buttonMenu:hover {
+.buttonMenu:hover,
+#overlay .overlayBox #overlayMenu #overlayLIB:hover {
     color: #9bf1ff;
     transition: color 0.5s ease 0.1s;
 } 
@@ -155,7 +167,8 @@ strong {
 .buttonClear,
 .buttonSend,
 .boxpar,
-label {
+label,
+#overlay .overlayBox #overlayMenu {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
@@ -163,7 +176,8 @@ label {
 .logo,
 .buttonStarted,
 .buttonClear,
-.buttonMenu {
+.buttonMenu,
+.overlayLink {
     text-decoration: none;
     color: #fff;
 }
@@ -246,6 +260,7 @@ label {
     height: 40vh;
     min-height: 20em;
     max-height: 40em;
+    cursor: pointer;
 }
 
 .box1, .box4, .box5 {
@@ -288,7 +303,8 @@ label {
 /* ---------- end imgbox by flex ---------- */
 
 /* ---------- start afterBoxText ---------- */
-.bannerAfterBox {
+.bannerAfterBox,
+section.genericMain {
     padding: 5rem 10%;
     margin: 0 auto;
     display: block;
@@ -340,7 +356,7 @@ section.feedbackLeft {
 section.feedbackRight {
     margin: 0;
     display: grid;
-    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1.25fr;
     grid-template-columns: 1fr;
 }
 
@@ -399,7 +415,7 @@ section.feedbackRight::before {
     grid-row: 3/4;
 }
 
-.feedbackData{
+.feedbackData {
     margin-left: 5rem;    
 }
 
@@ -429,7 +445,8 @@ section.feedbackRight::before {
     width: 13rem;
 }
 
-.buttonSend:hover {
+.buttonSend:hover,
+#overlay .overlayBox #overlayMenu #overlayGetSB:hover {
     background-color: #9bf1ff;
     border: 1px solid #9bf1ff;
     transition: 0.5s ease 0.1s; 
@@ -483,7 +500,8 @@ section.feedbackRight::before {
 }
 
 #iconEmail .feedbackData .feedbackDataInfo:hover,
-#footerTwo #copyright li a:only-of-type:hover {
+#footerTwo #copyright li a:only-of-type:hover,
+#overlay .overlayBox #overlayMenu .overlayLink:hover {
     color: #9bf1ff;
     text-decoration: none;
     border-bottom: none;
@@ -540,7 +558,6 @@ textarea:focus {
     font-size: 1.5rem;
     position: absolute;
 }
-
 /*-----end feedback block-----*/
 
 /*-----start footer-----*/
@@ -549,10 +566,6 @@ footer {
     margin: 0 auto;
     background: #242943;
     display: block;
-/*
-    flex-direction: row;
-    flex-wrap: wrap;
-*/
 }
 
 #footerOne {
@@ -642,9 +655,10 @@ footer #footerOne .logoPic:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 700;
 }
 
-#overlayMenu > :first-child {
+#overlayMenu > :nth-child(-n+2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -662,28 +676,353 @@ footer #footerOne .logoPic:hover {
     justify-content: center;
     line-height: 3.5rem;
     height: 3.5rem;
-    padding: 1rem;
-    width: 13rem;
+    width: 25rem;
 }
 
-#overlayMenu ul > :nth-child(-n+3) {
-    border-bottom: solid 1px rgba(212, 212, 255, 0.7);
+#overlayMenu ul:first-child > :nth-child(-n+3) {
+    content: "";
+    border-bottom: solid 1px rgba(89, 98, 112, 0.7);
 }
 
+#overlay .overlayBox #overlayMenu #overlayGetSB,
+#overlay .overlayBox #overlayMenu #overlayLIB {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 1px solid;
+    width: 100%;
+    text-decoration: none;
+}
+
+#overlay .overlayBox #overlayMenu #overlayGetSB {
+    background: #fff;
+    color: #242943;
+    border-color: #fff;
+}
+
+#overlay .overlayBox #overlayMenu #overlayLIB {
+    color: #fff;
+}
+
+#overlay .overlayBox #overlayMenu ul:nth-child(2),
+#overlay .overlayBox #overlayMenu ul:nth-child(2) li:nth-child(2)  {
+    margin-top: 0.8rem;
+}
 
 /*-----end modal window-----*/
 
-/*start adaptive*/
+/*-----start GENERIC-----*/
+section.genericMain {
+    background-color: #242943;
+    
+}
 
-@media (min-width: 320px) and (max-width: 767px) {
-    тут вписать правила для указанного разрешения экрана
-    col-1,  col-2,  col-3,  col-4,  col-5,  col-6,  col-7,  col-8, col-9,  col-10,  col-11,  col-12 {
-        flex-basis: 100%;
-        max-width: 100%;
+#headerBoxGeneric {
+    position: fixed;
+    height: auto;
+    background-color: #2a2f4a;
+    z-index: 5000;
+}
+
+#genericH {
+    display: inline-block;
+}
+
+#genericH h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1re;
+    padding: 0 2rem 1rem 0;
+    display: inherit;
+}
+
+#genericPicture {
+    width: 100%;
+    height: 20rem;
+    background: url(../img/pic06.jpg) center top no-repeat;
+    background-size: cover;
+}
+
+#genericPicture:after {
+    content: "";
+    display: block;
+    background: rgba(0,0,0, 0.23);
+    height: 100%;
+    width: 100%;
+}
+
+#genericArticle {
+    margin: 3rem 0 3rem 0;
+}
+
+.genericMain::after {
+    content: "";
+    border-bottom: solid 1px rgba(212, 212, 255, 0.7);
+}
+
+#genericArticle p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.7rem;
+    letter-spacing: 0.02rem;
+    margin: 0 0 2rem 0;
+}
+
+#genericFeedback::after {
+    content: "";
+    grid-row: 1/4;
+    grid-column: 1/3;
+    border-top: 1px solid rgba(212, 212, 255, 0.1);
+}
+/*-----end GENERIC-----*/
+
+/*-----start adaptive-----*/
+
+@media (min-width: 1036px) and (max-width: 1280px) /*(max-device-width: 1280px )*/ {
+    header {
+         max-height: 40rem;
     }
-    .row {
-        flex-wrap: wrap;
+    
+    .banner {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: auto;
+    }
+    
+    .bannerAfterBox,
+    section.genericMain   {
+/*    padding: 3rem 5%;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto;
+    }
+    
+    section.feedback {
+    padding: 0 5% 0 5%;
+    }
+    
+    footer {
+    padding: 3rem 5% 3rem 5%;
     }
 }
 
-/*endadaptive*/
+@media (min-device-width: 769px) and (max-device-width: 1035px ) {
+    header {
+         max-height: 40rem;
+    }
+    
+    .banner {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: auto;
+    }
+    
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        width: 50%;
+    }
+    
+    .bannerAfterBox,
+    section.genericMain   {
+        padding: 3rem 5%;
+        margin: auto;
+    }
+    
+    section.feedback {
+        padding: 0 5% 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    section.feedbackLeft {
+        grid-auto-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
+    }
+    
+    section.feedbackLeft::before {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        border-right: none;
+    }
+    
+    #NameFeedback, #EmailFeedback {
+        padding-top: 0; 
+    }
+    
+    #NameFeedback {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #EmailFeedback {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #MessageFeedback {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #ButtonFeedback {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section.feedbackRight {
+        grid-template-rows: 1fr 1fr 1fr;  
+    }
+    
+    #iconEmail, #iconPhone, #iconAddress {
+        padding: 5%;
+    }
+        
+    footer {
+        padding: 3rem 5% 3rem 5%;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 768px) {
+    * {
+        font-size: x-small; 
+    }
+    
+    header {
+         max-height: 40rem;
+    }
+    
+    .banner {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: auto;
+    }
+    
+    #mainH {
+        font-size: 3rem;
+    }
+    
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        width: 100%;
+    }
+    
+    .bannerAfterBox,
+    section.genericMain   {
+        padding: 3rem 5%;
+        margin: auto;
+    }
+    
+    section.feedback {
+        padding: 0 5% 0 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    section.feedbackLeft {
+        grid-auto-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
+    }
+    
+    section.feedbackLeft::before {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        border-right: none;
+    }
+    
+    #NameFeedback, #EmailFeedback {
+        padding-top: 0; 
+    }
+    
+    #NameFeedback {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #EmailFeedback {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #MessageFeedback {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #ButtonFeedback {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .buttonSend {
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .buttonStarted, .buttonClear {
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    section.feedbackRight {
+        grid-template-rows: 1fr 1fr 1fr;  
+    }
+    
+    #iconEmail, #iconPhone, #iconAddress {
+        padding: 8% 5%;
+    }
+        
+    footer {
+        padding: 2rem 5% 2rem 5%
+    }  
+    
+    #footerOne,
+    #footerTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    footer #footerTwo ul:first-child {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        line-height: 2rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    #footerTwo #copyright li {
+        border-left: none;
+    }
+    
+    #genericFeedback::after {
+        grid-column: 1/2;
+    }
+    
+}
+
+
+
+
+
+/*-----end adaptive-----*/
