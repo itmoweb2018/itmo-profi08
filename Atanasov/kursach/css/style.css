@@ -545,18 +545,19 @@ textarea:focus {
 
 .logoPic {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: #fff;
     width: 3rem;
     height: 3rem;
+	text-decoration: none;
 }
 
 .logoPic i {
     color: #242943;
     font-size: 1.5rem;
-    position: absolute;
+/*    position: absolute;  */
 }
 /*-----end feedback block-----*/
 
@@ -1020,9 +1021,4 @@ section.genericMain {
     }
     
 }
-
-
-
-
-
 /*-----end adaptive-----*/
