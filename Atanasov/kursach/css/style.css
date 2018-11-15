@@ -812,7 +812,7 @@ section.genericMain {
     }
 }
 
-@media (min-device-width: 769px) and (max-device-width: 1035px ) {
+@media (min-width: 769px) and (max-width: 1035px ) {
     header {
          max-height: 40rem;
     }
