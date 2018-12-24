@@ -52,7 +52,7 @@ section ul li {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    flex: auto;
+    /* flex: auto; */
     justify-content: left;
     flex-wrap: wrap;
 }
@@ -65,6 +65,12 @@ section ul li {
 }
 .catalog__item {
     margin: 10px;
+}
+.catalog__item:hover {
+    border: 1px solid;
+    padding: 9px;
+    margin: 0;
+    cursor: pointer;
 }
 .catalog__item img {
     width: 200px;
