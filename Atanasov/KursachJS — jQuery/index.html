@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kursach - Atanasov</title>
+    <link rel="stylesheet" href="css/eshop.css">
+</head>
+<body>
+    <aside>
+        <div class="filter">
+            <p>По категории</p>
+            <ul class="filter__categories">
+                <!-- Шаблон вывод фильтра по категориям -->
+                <li><a href="#" data-category="Категория 1">Категория 1</a> <span class="badge">20</span></li>
+                <li><a href="#" data-category="Категория 2">Категория 2</a> <span class="badge">12</span></li>
+                <li><a href="#" data-category="...">...</a> <span class="badge">32</span></li>
+                <li><a href="#" data-category="Категория N">Категория N</a> <span class="badge">21</span></li>
+            </ul>
+            <p>По стоимости</p>
+            <ul class="filter__cost">
+                <li><a href="#" data-price="less-10000">До 10 000р</a> <span class="badge">11</span></li>
+                <li><a href="#" data-price="more-10000">От 10 000р</a> <span class="badge">9</span></li>
+            </ul>
+            <p><a href="#" data-action="filter" data-type="greater" data-filter="cost" data-value="-1">Показать все товары</a></p>
+        </div>
+    </aside>
+    <section class="main">
+        <div class="sorting">
+            <div id="DivSorting">
+                <div id="DivCost">
+                    <span>Стомость</span>
+                    <ul>
+                        <li>
+                            <button id="CostUp" href="#">↑ - По возрастанию</button>
+                        </li>
+                        <li>
+                            <button id="CostDown" href="#">↓ - По убыванию</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="DivWeight">
+                <span>Вес</span>
+                <ul>
+                    <li>
+                        <button id="WeightUp" href="#">↑ - По возрастанию</button>
+                    </li>
+                    <li>
+                        <button id="WeightDown" href="#">↓ - По убыванию</button>
+                    </li>
+                </ul>
+                </div>
+                <div id="DivVogue">
+                <span>Популярность</span>
+                <ul>
+                    <li>
+                        <button id="VogueUp" href="#">↑ - По возрастанию</button>
+                    </li>
+                    <li>
+                        <button id="VogueDown" href="#">↓ - По убыванию</button>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div id="DivBtn">
+                <button
+                        id="Cart"
+                        data-action="open-cart">Корзина</button>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="catalog__item">
+                <span class="catalog__item-name">Название товара</span>
+                <img class="catalog__item-preview" src="images/im1.svg" alt="">
+                <span class="catalog__item-cost">10 000р</span>
+            </div>
+        </div>
+        <div class="cart">
+
+        </div>
+        <div class="goods">
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/eshop.js"></script>
+</body>
+</html>
